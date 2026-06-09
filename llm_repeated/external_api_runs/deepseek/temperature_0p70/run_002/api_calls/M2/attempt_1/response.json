@@ -1,0 +1,36 @@
+{
+  "id": "db46640e-1fb0-4d6f-a5b1-a1dc8ec20058",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"candidates\": [\"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Br\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Br*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br + a7*Sn*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br + a7*Br*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Cl + a7*Br*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Br + a8*Sn*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Br + a8*Br*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Cl + a8*Br*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br + a7*Sn*Cl + a8*Br*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Br + a8*Sn*Cl + a9*Br*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Br\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Br*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br + a7*Sn*Cl\", \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br + a7*Br*Cl\"]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1780841905,
+  "model": "deepseek-v4-flash",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+  "usage": {
+    "completion_tokens": 799,
+    "prompt_tokens": 493,
+    "total_tokens": 1292,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 493
+  }
+}

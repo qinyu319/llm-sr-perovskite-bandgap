@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated paper and the versioned archive."
+type: software
+title: "Reproducible Physics-Constrained LLM-Assisted Symbolic Regression for Interpretable Band-Gap Modeling in Hybrid Perovskites"
+authors:
+  - family-names: "Wen"
+    given-names: "Qinyu"
+version: "1.0.0"
+date-released: "2026-06-10"
+license: MIT
+repository-code: "https://github.com/qinyu319/llm-sr-perovskite-bandgap"
+keywords:
+  - perovskites
+  - symbolic regression
+  - interpretable machine learning
+  - large language models
+  - reproducibility

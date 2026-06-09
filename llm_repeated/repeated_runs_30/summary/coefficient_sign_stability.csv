@@ -1,0 +1,10 @@
+﻿term,positive_runs,negative_runs,zero_runs
+Intercept,30,0,0
+Sn,0,30,0
+Br,30,0,0
+Cl,30,0,0
+Cs,30,0,0
+Sn^2,30,0,0
+Br^2,30,0,0
+Cs*Sn,0,30,0
+Cs*Br,0,30,0

@@ -1,0 +1,1326 @@
+[
+  {
+    "candidate_index": 1,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Sn*Br + a9*Sn*Cl + a10*Cs*Sn + a11*Cs*Br + a12*Cs*Cl",
+    "valid": false,
+    "invalid_reasons": [
+      "more than 4 interaction terms"
+    ],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Br^2",
+      "Cs^2",
+      "Sn*Br",
+      "Sn*Cl",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": null,
+    "duplicate_of": null
+  },
+  {
+    "candidate_index": 2,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Sn*Br + a9*Cs*Sn + a10*Cs*Br + a11*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Br^2",
+      "Cs^2",
+      "Sn*Br",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Sn*Br + a9*Cs*Sn + a10*Cs*Br + a11*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 11,
+    "cv_rmse_mean": 0.05636769181184089,
+    "cv_rmse_std": 0.009171553883076129,
+    "cv_r2": 0.9660406899248947,
+    "fold_rmse": [
+      0.05470877556944848,
+      0.07227394829566562,
+      0.05325262759953397,
+      0.048675384207255985,
+      0.05292772338730041
+    ],
+    "train_rmse": 0.05207086862644626,
+    "train_mae": 0.03758851780039705,
+    "train_r2": 0.9716439761833641,
+    "condition_number": 24.53012058942633,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.550460155644137,
+        "ci_95_low": 1.5409165243100393,
+        "ci_95_high": 1.5600037869782348
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.095145715775626,
+        "ci_95_low": -1.1568030627966084,
+        "ci_95_high": -1.0334883687546434
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.3973994236466814,
+        "ci_95_low": 0.3372248820524029,
+        "ci_95_high": 0.4575739652409599
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6113700175523722,
+        "ci_95_low": 1.5685965506801487,
+        "ci_95_high": 1.6541434844245957
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.07430460697363414,
+        "ci_95_low": 0.0019509230216446655,
+        "ci_95_high": 0.1466582909256236
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.9320883307599319,
+        "ci_95_low": 0.8620063985366864,
+        "ci_95_high": 1.0021702629831775
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.33460193507782776,
+        "ci_95_low": 0.2679447264988018,
+        "ci_95_high": 0.4012591436568537
+      },
+      {
+        "term": "Cs^2",
+        "coefficient": 0.11236662712514914,
+        "ci_95_low": 0.035102389547534335,
+        "ci_95_high": 0.18963086470276394
+      },
+      {
+        "term": "Sn*Br",
+        "coefficient": -0.13281326793626283,
+        "ci_95_low": -0.2140752959652076,
+        "ci_95_high": -0.05155123990731805
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.24548299346793762,
+        "ci_95_low": -0.2953617036385109,
+        "ci_95_high": -0.19560428329736437
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.1478362043891721,
+        "ci_95_low": -0.20957681607113618,
+        "ci_95_high": -0.08609559270720804
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3402222499355063,
+        "ci_95_low": -0.4203217663527897,
+        "ci_95_high": -0.2601227335182229
+      }
+    ]
+  },
+  {
+    "candidate_index": 3,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Br^2",
+      "Cs^2",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 10,
+    "cv_rmse_mean": 0.056460961720875655,
+    "cv_rmse_std": 0.00976475637958474,
+    "cv_r2": 0.9658375640798007,
+    "fold_rmse": [
+      0.05367115694065665,
+      0.0734491472605937,
+      0.0528239209507296,
+      0.048349974321923866,
+      0.054010609130474445
+    ],
+    "train_rmse": 0.052598708919453646,
+    "train_mae": 0.03785053918537625,
+    "train_r2": 0.9710661746392519,
+    "condition_number": 24.170744968662827,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.5543407859569287,
+        "ci_95_low": 1.545012788848686,
+        "ci_95_high": 1.5636687830651714
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.1084708530409044,
+        "ci_95_low": -1.1701451079345073,
+        "ci_95_high": -1.0467965981473015
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.3604099039417853,
+        "ci_95_low": 0.3041442560813519,
+        "ci_95_high": 0.41667555180221866
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.612477201029286,
+        "ci_95_low": 1.569318390734874,
+        "ci_95_high": 1.655636011323698
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.0838692958266709,
+        "ci_95_low": 0.011093848514966448,
+        "ci_95_high": 0.15664474313837534
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.9255406866447385,
+        "ci_95_low": 0.8549341666909004,
+        "ci_95_high": 0.9961472065985767
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.36701739414989326,
+        "ci_95_low": 0.30279785058793135,
+        "ci_95_high": 0.4312369377118552
+      },
+      {
+        "term": "Cs^2",
+        "coefficient": 0.10934448864516039,
+        "ci_95_low": 0.03139673502670866,
+        "ci_95_high": 0.18729224226361213
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.25965886951707606,
+        "ci_95_low": -0.30922638449132334,
+        "ci_95_high": -0.21009135454282882
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.16154567176562717,
+        "ci_95_low": -0.22327261800825102,
+        "ci_95_high": -0.09981872552300333
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3408550010199507,
+        "ci_95_low": -0.42168532284134985,
+        "ci_95_high": -0.26002467919855154
+      }
+    ]
+  },
+  {
+    "candidate_index": 4,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Br^2",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 9,
+    "cv_rmse_mean": 0.05687376487926461,
+    "cv_rmse_std": 0.009507704384787086,
+    "cv_r2": 0.9653900364435928,
+    "fold_rmse": [
+      0.05418116113065819,
+      0.07346693787581285,
+      0.05334699908788974,
+      0.04916136422911846,
+      0.054212362072843814
+    ],
+    "train_rmse": 0.05299124389948635,
+    "train_mae": 0.03801919209974947,
+    "train_r2": 0.9706327070329943,
+    "condition_number": 22.010459424957766,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.549773099661345,
+        "ci_95_low": 1.5409753497387826,
+        "ci_95_high": 1.5585708495839075
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.1036771776462688,
+        "ci_95_low": -1.1656548618669023,
+        "ci_95_high": -1.0416994934256354
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.35710674697392997,
+        "ci_95_low": 0.30052689762899665,
+        "ci_95_high": 0.4136865963188633
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6186761683226498,
+        "ci_95_low": 1.5754665872088447,
+        "ci_95_high": 1.661885749436455
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.17504506977636772,
+        "ci_95_low": 0.14209510721139848,
+        "ci_95_high": 0.20799503234133696
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.9219225565915641,
+        "ci_95_low": 0.8509069247262311,
+        "ci_95_high": 0.9929381884568971
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.3748441575254476,
+        "ci_95_low": 0.3104537706786878,
+        "ci_95_high": 0.4392345443722074
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.2477303120840902,
+        "ci_95_low": -0.29687873815841703,
+        "ci_95_high": -0.19858188600976334
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.14403418752372024,
+        "ci_95_low": -0.20487655917955735,
+        "ci_95_high": -0.08319181586788313
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.33180987053530286,
+        "ci_95_low": -0.4129035841553813,
+        "ci_95_high": -0.2507161569152244
+      }
+    ]
+  },
+  {
+    "candidate_index": 5,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Cs^2",
+      "Sn*Br",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 10,
+    "cv_rmse_mean": 0.063006665716515,
+    "cv_rmse_std": 0.008203016767725895,
+    "cv_r2": 0.9578957354984619,
+    "fold_rmse": [
+      0.06128957598166417,
+      0.07750379570472327,
+      0.059141567011076444,
+      0.057722853030982825,
+      0.059375536854128295
+    ],
+    "train_rmse": 0.05685546348877953,
+    "train_mae": 0.04112490562387096,
+    "train_r2": 0.9661935089021321,
+    "condition_number": 23.973823101422465,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.527764778165581,
+        "ci_95_low": 1.5185968713513003,
+        "ci_95_high": 1.5369326849798617
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.044926469180412,
+        "ci_95_low": -1.1112912881377697,
+        "ci_95_high": -0.9785616502230544
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.6794111911227966,
+        "ci_95_low": 0.6558962751435963,
+        "ci_95_high": 0.7029261071019969
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6022040451073105,
+        "ci_95_low": 1.5555891225467333,
+        "ci_95_high": 1.6488189676678877
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.03685793926262035,
+        "ci_95_low": -0.0416451188077621,
+        "ci_95_high": 0.1153609973330028
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.8986993693772947,
+        "ci_95_low": 0.8225988297677449,
+        "ci_95_high": 0.9747999089868444
+      },
+      {
+        "term": "Cs^2",
+        "coefficient": 0.14728929950815353,
+        "ci_95_low": 0.06335153479437054,
+        "ci_95_high": 0.2312270642219365
+      },
+      {
+        "term": "Sn*Br",
+        "coefficient": -0.2541857490544528,
+        "ci_95_low": -0.33881195463093156,
+        "ci_95_high": -0.16955954347797403
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.23990454932892546,
+        "ci_95_low": -0.2942989257349288,
+        "ci_95_high": -0.18551017292292216
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.12400357317683633,
+        "ci_95_low": -0.19115104071038053,
+        "ci_95_high": -0.05685610564329213
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3335464792524734,
+        "ci_95_low": -0.42090728540540573,
+        "ci_95_high": -0.24618567309954104
+      }
+    ]
+  },
+  {
+    "candidate_index": 6,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Cs^2",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 9,
+    "cv_rmse_mean": 0.06488497206644592,
+    "cv_rmse_std": 0.009695834665828022,
+    "cv_r2": 0.9551612238048726,
+    "fold_rmse": [
+      0.061556258845636216,
+      0.08194833508940687,
+      0.05896412964637679,
+      0.05895149710314293,
+      0.06300463964766678
+    ],
+    "train_rmse": 0.05877557671135558,
+    "train_mae": 0.041144395322194875,
+    "train_r2": 0.9638715370093226,
+    "condition_number": 23.962518870122196,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.5312964703693213,
+        "ci_95_low": 1.5219065164176893,
+        "ci_95_high": 1.5406864243209533
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.0626904201046339,
+        "ci_95_low": -1.1309559232606883,
+        "ci_95_high": -0.9944249169485796
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.6591089291435435,
+        "ci_95_low": 0.6358488198651848,
+        "ci_95_high": 0.6823690384219021
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6026643225000838,
+        "ci_95_low": 1.554523069117235,
+        "ci_95_high": 1.6508055758829328
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.049324061273802164,
+        "ci_95_low": -0.031636507431018965,
+        "ci_95_high": 0.13028462997862328
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.8781589633660651,
+        "ci_95_low": 0.799884175908725,
+        "ci_95_high": 0.9564337508234053
+      },
+      {
+        "term": "Cs^2",
+        "coefficient": 0.14804749774133316,
+        "ci_95_low": 0.061361249234385115,
+        "ci_95_high": 0.2347337462482812
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.2685356456908038,
+        "ci_95_low": -0.32384208675122544,
+        "ci_95_high": -0.21322920463038214
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.14794207102772927,
+        "ci_95_low": -0.21679834856957242,
+        "ci_95_high": -0.07908579348588612
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3335171202976542,
+        "ci_95_low": -0.4237389027744311,
+        "ci_95_high": -0.24329533782087726
+      }
+    ]
+  },
+  {
+    "candidate_index": 7,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Br^2",
+      "Cs^2",
+      "Sn*Br",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 10,
+    "cv_rmse_mean": 0.08475252698104682,
+    "cv_rmse_std": 0.004484608462147125,
+    "cv_r2": 0.924695414294269,
+    "fold_rmse": [
+      0.08585843212499128,
+      0.08885552668425979,
+      0.08421511426484544,
+      0.07735768081324078,
+      0.08747588101789683
+    ],
+    "train_rmse": 0.07981225603659929,
+    "train_mae": 0.05613149373933737,
+    "train_r2": 0.933381498171225,
+    "condition_number": 24.37109868967936,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.5243771696172816,
+        "ci_95_low": 1.5100754240469878,
+        "ci_95_high": 1.5386789151875755
+      },
+      {
+        "term": "Sn",
+        "coefficient": -0.3274723908525439,
+        "ci_95_low": -0.36067047391980334,
+        "ci_95_high": -0.2942743077852845
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.4800999560868565,
+        "ci_95_low": 0.3884514018354407,
+        "ci_95_high": 0.5717485103382723
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6381431792724945,
+        "ci_95_low": 1.5727192000594392,
+        "ci_95_high": 1.7035671584855498
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.10664032591088268,
+        "ci_95_low": -0.004088147747478052,
+        "ci_95_high": 0.21736879956924343
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.2504597776407619,
+        "ci_95_low": 0.14885218204711143,
+        "ci_95_high": 0.35206737323441234
+      },
+      {
+        "term": "Cs^2",
+        "coefficient": 0.07349451543488683,
+        "ci_95_low": -0.04473109604259225,
+        "ci_95_high": 0.1917201269123659
+      },
+      {
+        "term": "Sn*Br",
+        "coefficient": -0.0710309990810811,
+        "ci_95_low": -0.1952594011373882,
+        "ci_95_high": 0.053197402975226016
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.12435443492800818,
+        "ci_95_low": -0.1994468657499312,
+        "ci_95_high": -0.04926200410608518
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.12504096045311394,
+        "ci_95_low": -0.21954437778688402,
+        "ci_95_high": -0.030537543119343855
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3227672917213642,
+        "ci_95_low": -0.4454026152400225,
+        "ci_95_high": -0.2001319682027059
+      }
+    ]
+  },
+  {
+    "candidate_index": 8,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Br^2",
+      "Cs^2",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 9,
+    "cv_rmse_mean": 0.08438870458745722,
+    "cv_rmse_std": 0.005420594993335244,
+    "cv_r2": 0.9252568589297748,
+    "fold_rmse": [
+      0.08611830308371396,
+      0.08898898258212079,
+      0.0841847648166595,
+      0.07521950211949198,
+      0.08743197033529984
+    ],
+    "train_rmse": 0.07991151914242096,
+    "train_mae": 0.05612783668620681,
+    "train_r2": 0.9332156872570945,
+    "condition_number": 23.940575754285668,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.5265577204640606,
+        "ci_95_low": 1.512770325019714,
+        "ci_95_high": 1.5403451159084072
+      },
+      {
+        "term": "Sn",
+        "coefficient": -0.33751584495424897,
+        "ci_95_low": -0.36569338731109335,
+        "ci_95_high": -0.3093383025974046
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.4599406981449655,
+        "ci_95_low": 0.37532384901033033,
+        "ci_95_high": 0.5445575472796007
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6386363478815644,
+        "ci_95_low": 1.5732015013427647,
+        "ci_95_high": 1.7040711944203641
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.11165058784453057,
+        "ci_95_low": 0.001241447356001013,
+        "ci_95_high": 0.22205972833306012
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.2681701568664857,
+        "ci_95_low": 0.1713742946617136,
+        "ci_95_high": 0.3649660190712578
+      },
+      {
+        "term": "Cs^2",
+        "coefficient": 0.07201943978342622,
+        "ci_95_low": -0.046207929327955324,
+        "ci_95_high": 0.19024680889480777
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.1324173770763378,
+        "ci_95_low": -0.20619252961925838,
+        "ci_95_high": -0.05864222453341722
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.13248299709114325,
+        "ci_95_low": -0.22610951078864894,
+        "ci_95_high": -0.038856483393637564
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3231726004501686,
+        "ci_95_low": -0.44583690573572776,
+        "ci_95_high": -0.20050829516460944
+      }
+    ]
+  },
+  {
+    "candidate_index": 9,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Sn*Cl + a9*Cs*Sn + a10*Cs*Br + a11*Cs*Cl",
+    "valid": false,
+    "invalid_reasons": [
+      "more than 4 interaction terms"
+    ],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Br^2",
+      "Sn*Br",
+      "Sn*Cl",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": null,
+    "duplicate_of": null
+  },
+  {
+    "candidate_index": 10,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Br^2",
+      "Sn*Br",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 10,
+    "cv_rmse_mean": 0.05682614850394132,
+    "cv_rmse_std": 0.008923897314187116,
+    "cv_r2": 0.9655360156386892,
+    "fold_rmse": [
+      0.05515506949948263,
+      0.07236374691857984,
+      0.05377152647170049,
+      0.04960980961566247,
+      0.05323059001428118
+    ],
+    "train_rmse": 0.052489244849879185,
+    "train_mae": 0.03788133126796756,
+    "train_r2": 0.9711864786796187,
+    "condition_number": 23.72205080504142,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.5458515527349008,
+        "ci_95_low": 1.5367860592768174,
+        "ci_95_high": 1.5549170461929842
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.090506135866531,
+        "ci_95_low": -1.1525140967145697,
+        "ci_95_high": -1.028498175018492
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.39321920703861685,
+        "ci_95_low": 0.33269048681050034,
+        "ci_95_high": 0.45374792726673335
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6177602455869278,
+        "ci_95_low": 1.5749137309861285,
+        "ci_95_high": 1.660606760187727
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.16815038026506937,
+        "ci_95_low": 0.13519330601695775,
+        "ci_95_high": 0.201107454513181
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.9282328947841552,
+        "ci_95_low": 0.8577084216585754,
+        "ci_95_high": 0.9987573679097349
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.3433307154229949,
+        "ci_95_low": 0.27647721998779,
+        "ci_95_high": 0.41018421085819984
+      },
+      {
+        "term": "Sn*Br",
+        "coefficient": -0.12998494816687428,
+        "ci_95_low": -0.2117952467146167,
+        "ci_95_high": -0.04817464961913187
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.2335336490379399,
+        "ci_95_low": -0.28307708107002055,
+        "ci_95_high": -0.18399021700585927
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.13014298196792423,
+        "ci_95_low": -0.19109892038090606,
+        "ci_95_high": -0.0691870435549424
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3309459223856203,
+        "ci_95_low": -0.411352810133939,
+        "ci_95_high": -0.25053903463730165
+      }
+    ]
+  },
+  {
+    "candidate_index": 11,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Cl + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Br^2",
+      "Sn*Cl",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Cl + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "duplicate_of": null,
+    "term_count": 10,
+    "cv_rmse_mean": 0.057505145875377084,
+    "cv_rmse_std": 0.009449951341042425,
+    "cv_r2": 0.9646414726417357,
+    "fold_rmse": [
+      0.056921774997886816,
+      0.07375625349052513,
+      0.05324632864953198,
+      0.049615708463316505,
+      0.05398566377562498
+    ],
+    "train_rmse": 0.05282621745681108,
+    "train_mae": 0.03804577443933767,
+    "train_r2": 0.9708153346969004,
+    "condition_number": 35.6850203676145,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.5494769645303974,
+        "ci_95_low": 1.54069185196879,
+        "ci_95_high": 1.5582620770920048
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.1002666511136985,
+        "ci_95_low": -1.1622268179453037,
+        "ci_95_high": -1.0383064842820933
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.3563899227981841,
+        "ci_95_low": 0.29992487625797476,
+        "ci_95_high": 0.41285496933839344
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6186577316526491,
+        "ci_95_low": 1.5755400474652765,
+        "ci_95_high": 1.6617754158400218
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.181243383327654,
+        "ci_95_low": 0.1476602359827317,
+        "ci_95_high": 0.2148265306725763
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.9179535914398839,
+        "ci_95_low": 0.8469539081871634,
+        "ci_95_high": 0.9889532746926043
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.37550839991930346,
+        "ci_95_low": 0.3112507868836121,
+        "ci_95_high": 0.43976601295499484
+      },
+      {
+        "term": "Sn*Cl",
+        "coefficient": 0.1215103991058129,
+        "ci_95_low": -0.012515776588811534,
+        "ci_95_high": 0.25553657480043734
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.26593384680287,
+        "ci_95_low": -0.31892866544392157,
+        "ci_95_high": -0.21293902816181848
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.1453922600615654,
+        "ci_95_low": -0.20612370365849764,
+        "ci_95_high": -0.08466081646463315
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3908772369813255,
+        "ci_95_low": -0.4947663708970454,
+        "ci_95_high": -0.28698810306560557
+      }
+    ]
+  },
+  {
+    "candidate_index": 12,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Br^2",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+    "duplicate_of": 4,
+    "term_count": 9,
+    "cv_rmse_mean": 0.05687376487926461,
+    "cv_rmse_std": 0.009507704384787086,
+    "cv_r2": 0.9653900364435928,
+    "fold_rmse": [
+      0.05418116113065819,
+      0.07346693787581285,
+      0.05334699908788974,
+      0.04916136422911846,
+      0.054212362072843814
+    ],
+    "train_rmse": 0.05299124389948635,
+    "train_mae": 0.03801919209974947,
+    "train_r2": 0.9706327070329943,
+    "condition_number": 22.010459424957766,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.549773099661345,
+        "ci_95_low": 1.5409753497387826,
+        "ci_95_high": 1.5585708495839075
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.1036771776462688,
+        "ci_95_low": -1.1656548618669023,
+        "ci_95_high": -1.0416994934256354
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.35710674697392997,
+        "ci_95_low": 0.30052689762899665,
+        "ci_95_high": 0.4136865963188633
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6186761683226498,
+        "ci_95_low": 1.5754665872088447,
+        "ci_95_high": 1.661885749436455
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.17504506977636772,
+        "ci_95_low": 0.14209510721139848,
+        "ci_95_high": 0.20799503234133696
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.9219225565915641,
+        "ci_95_low": 0.8509069247262311,
+        "ci_95_high": 0.9929381884568971
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.3748441575254476,
+        "ci_95_low": 0.3104537706786878,
+        "ci_95_high": 0.4392345443722074
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.2477303120840902,
+        "ci_95_low": -0.29687873815841703,
+        "ci_95_high": -0.19858188600976334
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.14403418752372024,
+        "ci_95_low": -0.20487655917955735,
+        "ci_95_high": -0.08319181586788313
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.33180987053530286,
+        "ci_95_low": -0.4129035841553813,
+        "ci_95_high": -0.2507161569152244
+      }
+    ]
+  },
+  {
+    "candidate_index": 13,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Sn*Br + a8*Sn*Cl + a9*Cs*Sn + a10*Cs*Br + a11*Cs*Cl",
+    "valid": false,
+    "invalid_reasons": [
+      "more than 4 interaction terms"
+    ],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Cs^2",
+      "Sn*Br",
+      "Sn*Cl",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": null,
+    "duplicate_of": null
+  },
+  {
+    "candidate_index": 14,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Sn^2",
+      "Cs^2",
+      "Sn*Br",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "duplicate_of": 5,
+    "term_count": 10,
+    "cv_rmse_mean": 0.063006665716515,
+    "cv_rmse_std": 0.008203016767725895,
+    "cv_r2": 0.9578957354984619,
+    "fold_rmse": [
+      0.06128957598166417,
+      0.07750379570472327,
+      0.059141567011076444,
+      0.057722853030982825,
+      0.059375536854128295
+    ],
+    "train_rmse": 0.05685546348877953,
+    "train_mae": 0.04112490562387096,
+    "train_r2": 0.9661935089021321,
+    "condition_number": 23.973823101422465,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.527764778165581,
+        "ci_95_low": 1.5185968713513003,
+        "ci_95_high": 1.5369326849798617
+      },
+      {
+        "term": "Sn",
+        "coefficient": -1.044926469180412,
+        "ci_95_low": -1.1112912881377697,
+        "ci_95_high": -0.9785616502230544
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.6794111911227966,
+        "ci_95_low": 0.6558962751435963,
+        "ci_95_high": 0.7029261071019969
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6022040451073105,
+        "ci_95_low": 1.5555891225467333,
+        "ci_95_high": 1.6488189676678877
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.03685793926262035,
+        "ci_95_low": -0.0416451188077621,
+        "ci_95_high": 0.1153609973330028
+      },
+      {
+        "term": "Sn^2",
+        "coefficient": 0.8986993693772947,
+        "ci_95_low": 0.8225988297677449,
+        "ci_95_high": 0.9747999089868444
+      },
+      {
+        "term": "Cs^2",
+        "coefficient": 0.14728929950815353,
+        "ci_95_low": 0.06335153479437054,
+        "ci_95_high": 0.2312270642219365
+      },
+      {
+        "term": "Sn*Br",
+        "coefficient": -0.2541857490544528,
+        "ci_95_low": -0.33881195463093156,
+        "ci_95_high": -0.16955954347797403
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.23990454932892546,
+        "ci_95_low": -0.2942989257349288,
+        "ci_95_high": -0.18551017292292216
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.12400357317683633,
+        "ci_95_low": -0.19115104071038053,
+        "ci_95_high": -0.05685610564329213
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3335464792524734,
+        "ci_95_low": -0.42090728540540573,
+        "ci_95_high": -0.24618567309954104
+      }
+    ]
+  },
+  {
+    "candidate_index": 15,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Sn*Br + a8*Sn*Cl + a9*Cs*Sn + a10*Cs*Br + a11*Cs*Cl",
+    "valid": false,
+    "invalid_reasons": [
+      "more than 4 interaction terms"
+    ],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Br^2",
+      "Cs^2",
+      "Sn*Br",
+      "Sn*Cl",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": null,
+    "duplicate_of": null
+  },
+  {
+    "candidate_index": 16,
+    "raw": "a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "valid": true,
+    "invalid_reasons": [],
+    "has_constant": true,
+    "terms": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "Br^2",
+      "Cs^2",
+      "Sn*Br",
+      "Cs*Sn",
+      "Cs*Br",
+      "Cs*Cl"
+    ],
+    "canonical_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl",
+    "duplicate_of": 7,
+    "term_count": 10,
+    "cv_rmse_mean": 0.08475252698104682,
+    "cv_rmse_std": 0.004484608462147125,
+    "cv_r2": 0.924695414294269,
+    "fold_rmse": [
+      0.08585843212499128,
+      0.08885552668425979,
+      0.08421511426484544,
+      0.07735768081324078,
+      0.08747588101789683
+    ],
+    "train_rmse": 0.07981225603659929,
+    "train_mae": 0.05613149373933737,
+    "train_r2": 0.933381498171225,
+    "condition_number": 24.37109868967936,
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "coefficient": 1.5243771696172816,
+        "ci_95_low": 1.5100754240469878,
+        "ci_95_high": 1.5386789151875755
+      },
+      {
+        "term": "Sn",
+        "coefficient": -0.3274723908525439,
+        "ci_95_low": -0.36067047391980334,
+        "ci_95_high": -0.2942743077852845
+      },
+      {
+        "term": "Br",
+        "coefficient": 0.4800999560868565,
+        "ci_95_low": 0.3884514018354407,
+        "ci_95_high": 0.5717485103382723
+      },
+      {
+        "term": "Cl",
+        "coefficient": 1.6381431792724945,
+        "ci_95_low": 1.5727192000594392,
+        "ci_95_high": 1.7035671584855498
+      },
+      {
+        "term": "Cs",
+        "coefficient": 0.10664032591088268,
+        "ci_95_low": -0.004088147747478052,
+        "ci_95_high": 0.21736879956924343
+      },
+      {
+        "term": "Br^2",
+        "coefficient": 0.2504597776407619,
+        "ci_95_low": 0.14885218204711143,
+        "ci_95_high": 0.35206737323441234
+      },
+      {
+        "term": "Cs^2",
+        "coefficient": 0.07349451543488683,
+        "ci_95_low": -0.04473109604259225,
+        "ci_95_high": 0.1917201269123659
+      },
+      {
+        "term": "Sn*Br",
+        "coefficient": -0.0710309990810811,
+        "ci_95_low": -0.1952594011373882,
+        "ci_95_high": 0.053197402975226016
+      },
+      {
+        "term": "Cs*Sn",
+        "coefficient": -0.12435443492800818,
+        "ci_95_low": -0.1994468657499312,
+        "ci_95_high": -0.04926200410608518
+      },
+      {
+        "term": "Cs*Br",
+        "coefficient": -0.12504096045311394,
+        "ci_95_low": -0.21954437778688402,
+        "ci_95_high": -0.030537543119343855
+      },
+      {
+        "term": "Cs*Cl",
+        "coefficient": -0.3227672917213642,
+        "ci_95_low": -0.4454026152400225,
+        "ci_95_high": -0.2001319682027059
+      }
+    ]
+  }
+]

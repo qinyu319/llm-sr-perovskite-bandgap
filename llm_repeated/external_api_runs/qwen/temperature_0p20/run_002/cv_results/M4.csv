@@ -1,0 +1,17 @@
+﻿candidate_index,raw,valid,invalid_reasons,duplicate_of,canonical_expression,terms,term_count,cv_rmse_mean,cv_rmse_std,cv_r2,condition_number
+1,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs^2,,,,,
+2,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Sn*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Cs^2;Cs*Sn,,,,,
+3,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Sn*Br,,,,,
+4,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs^2 + a6*Sn*Cs + a7*Br*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Cs^2;Cs*Sn;Cs*Br,,,,,
+5,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cl^2 + a7*Sn*Cl,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Cl^2;Sn*Cl,,,,,
+6,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Br*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Br^2;Cs^2;Cs*Br,,,,,
+7,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cl^2,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cl^2,,,,,
+8,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Sn*Br + a7*Sn*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Sn*Br;Cs*Sn,,,,,
+9,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs^2 + a6*Sn*Cs + a7*Cl*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Cs^2;Cs*Sn;Cs*Cl,,,,,
+10,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Cl,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Sn*Cl,,,,,
+11,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs^2 + a6*Br*Cs + a7*Sn*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Cs^2;Cs*Sn;Cs*Br,,,,,
+12,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs^2,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Sn*Br,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs^2;Sn*Br,8.0,0.063113177141363,0.004241846451622212,0.9581732673017407,24.498892936771586
+13,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Sn*Cs + a8*Br*Cs,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Cs*Sn + a8*Cs*Br,Sn;Br;Cl;Cs;Sn^2;Cs^2;Cs*Sn;Cs*Br,8.0,0.06362416459855445,0.00195390340610853,0.9576281739758393,23.94480908753472
+14,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Sn*Cs,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs*Sn,Sn;Br;Cl;Cs;Sn^2;Br^2;Sn*Br;Cs*Sn,8.0,0.058528419977085924,0.0034474771374119455,0.9640587765531865,23.50700217533162
+15,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs^2 + a6*Sn*Cs + a7*Br*Cs + a8*Cl*Cs,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs^2 + a6*Cs*Sn + a7*Cs*Br + a8*Cs*Cl,Sn;Br;Cl;Cs;Cs^2;Cs*Sn;Cs*Br;Cs*Cl,8.0,0.08786911922308949,0.005757462153403236,0.918946446731012,23.606594440166898
+16,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Sn*Cs,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Cs*Sn,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs^2;Cs*Sn,8.0,0.05871150052984966,0.004094866150156857,0.963792483210172,24.067815792183353

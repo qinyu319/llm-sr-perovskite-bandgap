@@ -1,0 +1,22 @@
+Independent workflow run: 007
+Sampling temperature: 0.2
+Current stage: M0
+
+Generate exactly 16 expression structures. Every expression must include a constant
+term and follow the frozen stage prompt below. Return only JSON, without Markdown.
+
+Frozen stage prompt:
+You are a materials-physics and symbolic-regression expert. We aim to build an interpretable analytical model for the optical band gap Eg (eV) of 3D ABX3 hybrid perovskites.
+
+Input features are composition fractions with clear physical meaning:
+Sn (B-site Sn fraction), Br and Cl (X-site halide fractions). Each lies in [0,1].
+
+Task: Propose a strictly linear analytical structure (constant + first-order terms only) to be later fitted on the training set.
+Constraints:
+1) Allowed terms: {constant, Sn, Br, Cl} only.
+2) Do NOT use squared terms, interaction products, ratios, logs, exponentials, or any higher-order terms.
+3) Keep the structure minimal and physically interpretable.
+4) Do NOT provide any numerical coefficients and do NOT explain.
+
+Output format: output exactly one line, e.g.
+Eg = a0 + a1*Sn + a2*Br + a3*Cl

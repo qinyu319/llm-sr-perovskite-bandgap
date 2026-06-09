@@ -1,0 +1,29 @@
+random_state: 2026
+training_excel: ../data/train_518.xlsx
+external_test_excel: ../data/test_92.xlsx
+target_column_train: Bg
+target_column_test: bg
+group_aware_base: original_training_only
+closure_tolerance: 1.0e-6
+closure_policy: exclude_invalid_without_renormalization
+composition_group_shuffle:
+  n_splits: 20
+  test_size: 0.15
+inner_cv:
+  n_splits: 5
+  equivalence_margin: 0.05
+candidate_terms:
+  max_terms: 10
+  enforce_hierarchy: true
+reference:
+  frozen_m4_terms:
+    - Sn
+    - Br
+    - Cl
+    - Cs
+    - Sn2
+    - Br2
+    - CsSn
+    - CsCl
+  frozen_m4_test_rmse: 0.06061347175153858
+  frozen_m4_test_r2: 0.9765451159242243

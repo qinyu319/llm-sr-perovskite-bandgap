@@ -1,0 +1,36 @@
+{
+  "id": "af0c11fb-c9f1-4bb8-a995-10c39993b2f1",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"candidates\": [\n\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Cl^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2 + a5*Cl^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cl^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a3*Cl\",\n\"Eg = a0 + a1*Sn + a2*Br + a4*Sn^2 + a5*Br^2 + a6*Cl^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a4*Sn^2 + a5*Br^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a4*Sn^2 + a6*Cl^2\",\n\"Eg = a0 + a1*Sn + a2*Br + a5*Br^2 + a6*Cl^2\",\n\"Eg = a0 + a1*Sn + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2\",\n\"Eg = a0 + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2\",\n\"Eg = a0 + a1*Sn + a4*Sn^2\",\n\"Eg = a0 + a2*Br + a5*Br^2 + a6*Cl^2\"\n]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1780842317,
+  "model": "deepseek-v4-flash",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+  "usage": {
+    "completion_tokens": 502,
+    "prompt_tokens": 461,
+    "total_tokens": 963,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 461
+  }
+}

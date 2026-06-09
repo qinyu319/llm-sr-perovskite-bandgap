@@ -1,0 +1,34 @@
+{
+  "id": "chatcmpl-30dae51f-a92b-9c43-8f7b-047b661ac9f6",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"candidates\": [\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cl^2 + a8*Cs^2 + a9*Cs*Sn + a10*Cs*Br\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br + a10*Cs*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl + a10*Sn*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl + a10*Br*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs^2 + a7*Cs*Sn + a8*Cs*Br + a9*Sn*Br\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs^2 + a6*Cs*Sn + a7*Cs*Br + a8*Cs*Cl + a9*Sn*Br + a10*Sn*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Cs*Br + a8*Cs*Cl + a9*Br*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs*Sn + a7*Cs*Br + a8*Cs*Cl + a9*Sn*Br\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cl^2 + a6*Cs*Sn + a7*Cs*Br + a8*Cs*Cl + a9*Sn*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs*Sn + a6*Cs*Br + a7*Cs*Cl + a8*Sn*Br + a9*Sn*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs*Sn + a6*Cs*Br + a7*Cs*Cl + a8*Br*Cl + a9*Sn^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs*Sn + a6*Cs*Br + a7*Cs*Cl + a8*Sn^2 + a9*Br^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs*Sn + a6*Cs*Br + a7*Cs*Cl + a8*Sn^2 + a9*Cl^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs*Sn + a6*Cs*Br + a7*Cs*Cl + a8*Sn*Br + a9*Br*Cl\"]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1780843942,
+  "model": "qwen-plus",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1043,
+    "prompt_tokens": 545,
+    "total_tokens": 1588,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    }
+  }
+}

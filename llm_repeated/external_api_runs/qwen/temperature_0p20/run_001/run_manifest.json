@@ -1,0 +1,130 @@
+{
+  "provider": "qwen",
+  "requested_model": "qwen-plus",
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "qwen_seed": 2026060701,
+  "run_id": 1,
+  "calls": [
+    {
+      "stage": "M0",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:35:38.648144+00:00",
+      "finished_at_utc": "2026-06-07T14:35:48.551621+00:00",
+      "elapsed_seconds": 9.903,
+      "response_id": "chatcmpl-c5c80e10-90b4-9e8c-89e5-54a2134984fa",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 410,
+        "prompt_tokens": 348,
+        "total_tokens": 758,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 7,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl"
+    },
+    {
+      "stage": "M1",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:35:48.613504+00:00",
+      "finished_at_utc": "2026-06-07T14:36:04.206306+00:00",
+      "elapsed_seconds": 15.593,
+      "response_id": "chatcmpl-343bafb8-7451-9224-aeca-6e48435ce64e",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 688,
+        "prompt_tokens": 473,
+        "total_tokens": 1161,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 8,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2"
+    },
+    {
+      "stage": "M2",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:36:04.266510+00:00",
+      "finished_at_utc": "2026-06-07T14:36:21.238344+00:00",
+      "elapsed_seconds": 16.972,
+      "response_id": "chatcmpl-2d9b8011-5801-930e-bcf1-4261d1f9ac5b",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 755,
+        "prompt_tokens": 510,
+        "total_tokens": 1265,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br"
+    },
+    {
+      "stage": "M3",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:36:21.370992+00:00",
+      "finished_at_utc": "2026-06-07T14:36:48.485296+00:00",
+      "elapsed_seconds": 27.114,
+      "response_id": "chatcmpl-0a7037bc-2ce8-9015-a291-b63aac6d6339",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1211,
+        "prompt_tokens": 545,
+        "total_tokens": 1756,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 13,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Cs*Sn + a9*Cs*Br"
+    },
+    {
+      "stage": "M4",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:36:48.617465+00:00",
+      "finished_at_utc": "2026-06-07T14:37:05.908565+00:00",
+      "elapsed_seconds": 17.291,
+      "response_id": "chatcmpl-e4c7ba25-966d-97b3-b52f-2fe1c8cd8935",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 762,
+        "prompt_tokens": 555,
+        "total_tokens": 1317,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 2,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Cs*Sn"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+Task 1 data inspection and QC report
+Closure tolerance: 1e-06
+Policy: exclude invalid original-training rows without renormalization; original external test is not used for model selection.
+
+Training raw rows: 518
+Training valid rows used for group-aware workflow: 507
+Training closure/QC excluded rows: 11
+External test rows: 92
+External test closure/QC issues, reference only: 2
+
+Available columns after standardization:
+id, FA, MA, Cs, Pb, Sn, Br, Cl, I, Eg, source_row_index, sample_id, original_split, A_sum, B_sum, X_sum, A_closure_error, B_closure_error, X_closure_error, numeric_complete, fractions_within_0_1, closure_pass
+
+Training target Eg summary:
+count    518.000000
+mean       1.651228
+std        0.309522
+min        1.170000
+25%        1.530000
+50%        1.606000
+75%        1.710000
+max        3.160000
+
+Curated training target Eg summary:
+count    507.000000
+mean       1.652576
+std        0.312166
+min        1.170000
+25%        1.529000
+50%        1.604000
+75%        1.712500
+max        3.160000
+
+Excluded training source_row_index/id and closure errors:
+ source_row_index  id  A_closure_error  B_closure_error  X_closure_error
+               16  16           0.0000             0.00           -0.003
+               45  45           0.0000             0.00            0.017
+              153 153          -0.0008             0.00            0.000
+              179 179          -0.0010             0.00            0.000
+              211 211          -0.0004             0.00            0.000
+              225 225          -0.0100            -0.01            0.000
+              332 332          -0.0010             0.00            0.000
+              421 421          -0.0400             0.00            0.000
+              433 433          -0.0100             0.00            0.000
+              472 472          -0.0008             0.00            0.000
+              514 514          -0.0008             0.00            0.000

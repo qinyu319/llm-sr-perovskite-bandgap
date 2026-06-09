@@ -1,0 +1,15 @@
+﻿term,frequency,percentage
+Sn,1,100.0
+Br,1,100.0
+Cl,1,100.0
+Cs,1,100.0
+Sn^2,1,100.0
+Br^2,0,0.0
+Cl^2,0,0.0
+Cs^2,0,0.0
+Sn*Br,1,100.0
+Sn*Cl,0,0.0
+Br*Cl,0,0.0
+Cs*Sn,1,100.0
+Cs*Br,1,100.0
+Cs*Cl,0,0.0

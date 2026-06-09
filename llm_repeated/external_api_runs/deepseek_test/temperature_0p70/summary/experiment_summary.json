@@ -1,0 +1,28 @@
+{
+  "completed_runs": 1,
+  "failed_runs": 0,
+  "unique_final_structures": 1,
+  "mean_pairwise_jaccard": null,
+  "structure_frequencies": [
+    {
+      "terms": "Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Sn;Cs*Br",
+      "frequency": 1,
+      "percentage": 100.0
+    }
+  ],
+  "cv_rmse": {
+    "mean": 0.058127236767094595,
+    "std": 0.0,
+    "min": 0.058127236767094595,
+    "median": 0.058127236767094595,
+    "max": 0.058127236767094595
+  },
+  "test_rmse": {
+    "mean": 0.06175816011399793,
+    "std": 0.0,
+    "min": 0.06175816011399793,
+    "median": 0.06175816011399793,
+    "max": 0.06175816011399793
+  },
+  "failures": []
+}

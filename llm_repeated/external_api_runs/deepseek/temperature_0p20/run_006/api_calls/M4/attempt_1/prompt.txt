@@ -1,0 +1,31 @@
+Independent workflow run: 006
+Sampling temperature: 0.2
+Current stage: M4
+
+Generate exactly 16 expression structures. Every expression must include a constant
+term and follow the frozen stage prompt below. Return only JSON, without Markdown.
+
+Previous-stage deterministic training-set selection within this same independent run:
+- selected structure: Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn
+- selected non-constant terms: Sn, Br, Cl, Cs, Sn^2, Br^2, Cs*Sn
+- mean five-fold CV RMSE: 0.05873674 eV
+
+Use that structure only as the previous-stage baseline. Do not use results from any
+other run. Extend, revise, or simplify it only under the current stage constraints.
+
+Frozen stage prompt:
+You are a symbolic-regression and materials-physics expert. We already have a relatively expressive quadratic model using Sn/Br/Cl/Cs (main effects + squares + a few interactions). Now we want the final recommended formula: simplify the structure as much as possible while maintaining near-optimal predictive performance (to be verified on a held-out test set).
+
+Inputs: Sn, Br, Cl, Cs in [0,1].
+
+Task: Propose a final simplified quadratic structure:
+- Allowed: constant + a subset of main effects + a small subset of squares + a small subset of key pairwise interactions
+- Not allowed: any cubic+ terms, ratios, logs, exponentials
+
+Hard constraints:
+1) Minimize complexity: target 8-11 non-constant terms total.
+2) Every retained term must have clear physical meaning (Sn doping, halide mixing, A-site stabilization/lattice effect, and key couplings).
+3) Prefer terms likely to generalize: strong main effects + only a few essential couplings (e.g., Sn-halide, Cs-B/X).
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, the final expression structure.

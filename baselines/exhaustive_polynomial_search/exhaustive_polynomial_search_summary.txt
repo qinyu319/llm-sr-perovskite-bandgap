@@ -1,0 +1,23 @@
+Exhaustive polynomial search
+
+Output generated: 2026-06-08T20:15:18
+Train file: 训练集.xlsx; n=518
+Test file: 测试集.xlsx; n=92
+Terms: Sn, Br, Cl, Sn², Br², Cl², SnBr, SnCl, BrCl
+Models: 511
+CV: KFold(n_splits=5, shuffle=True, random_state=42), OLS refit in each fold
+
+Key answers:
+1. M4-pruned terms: Sn, Br, Cl, Sn², Br², Cl²
+2. M4-pruned Pareto front: No
+3. M4-pruned CV RMSE: 0.063939
+4. M4-pruned same-k rank: 3 of 84; better same-k models: 2
+5. Best same-k terms: Sn, Br, Cl, Sn², Br², SnBr; CV RMSE: 0.062853
+6. Global best terms: Sn, Br, Cl, Sn², Br², SnBr; k=6; CV RMSE=0.062853
+7. Pareto front size: 6
+8. Cl2 verdict: retained by M4-pruned, but not consistently required; global best excludes Cl2.
+9. Interaction verdict: interactions enter the strongest low-CV subsets, but not all interactions are stable; SnCl is absent from the global best and M4-pruned.
+
+Files:
+baselines/exhaustive_polynomial_search/exhaustive_polynomial_search.xlsx
+baselines/exhaustive_polynomial_search/all_511_models.csv

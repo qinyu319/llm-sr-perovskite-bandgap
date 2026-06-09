@@ -1,0 +1,81 @@
+{
+  "stage": "M3",
+  "raw_candidate_count": 16,
+  "valid_candidate_count": 16,
+  "unique_valid_structure_count": 16,
+  "best_cv_rmse": 0.05783253900240185,
+  "five_percent_threshold": 0.06072416595252195,
+  "selected_candidate_index": 13,
+  "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cl^2 + a8*Cs*Sn",
+  "selected_terms": [
+    "Sn",
+    "Br",
+    "Cl",
+    "Cs",
+    "Sn^2",
+    "Br^2",
+    "Cl^2",
+    "Cs*Sn"
+  ],
+  "selected_term_count": 8,
+  "selected_cv_rmse_mean": 0.060179563548481904,
+  "selected_cv_rmse_std": 0.005125445039750457,
+  "selected_cv_r2": 0.9618841119893442,
+  "selected_coefficients": [
+    {
+      "term": "Intercept",
+      "coefficient": 1.5576778422921131,
+      "ci_95_low": 1.5484511964131087,
+      "ci_95_high": 1.5669044881711176
+    },
+    {
+      "term": "Sn",
+      "coefficient": -1.1014151200952593,
+      "ci_95_low": -1.1682384112867932,
+      "ci_95_high": -1.0345918289037255
+    },
+    {
+      "term": "Br",
+      "coefficient": 0.35192922944822824,
+      "ci_95_low": 0.29001506921180703,
+      "ci_95_high": 0.41384338968464945
+    },
+    {
+      "term": "Cl",
+      "coefficient": 1.508281403746374,
+      "ci_95_low": 1.3549909394949469,
+      "ci_95_high": 1.6615718679978013
+    },
+    {
+      "term": "Cs",
+      "coefficient": 0.09883505784174272,
+      "ci_95_low": 0.07329499504170789,
+      "ci_95_high": 0.12437512064177755
+    },
+    {
+      "term": "Sn^2",
+      "coefficient": 0.9135243783399735,
+      "ci_95_low": 0.8369800473623954,
+      "ci_95_high": 0.9900687093175515
+    },
+    {
+      "term": "Br^2",
+      "coefficient": 0.3598304801320835,
+      "ci_95_low": 0.29018266307293117,
+      "ci_95_high": 0.42947829719123587
+    },
+    {
+      "term": "Cl^2",
+      "coefficient": 0.020731050436195858,
+      "ci_95_low": -0.15829265872715112,
+      "ci_95_high": 0.19975475959954284
+    },
+    {
+      "term": "Cs*Sn",
+      "coefficient": -0.2504969017123752,
+      "ci_95_low": -0.3022791381604458,
+      "ci_95_high": -0.1987146652643046
+    }
+  ],
+  "selected_condition_number": 49.567999564156985
+}

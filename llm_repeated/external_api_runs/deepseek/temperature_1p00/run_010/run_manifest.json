@@ -1,0 +1,140 @@
+{
+  "provider": "deepseek",
+  "requested_model": "deepseek-v4-flash",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "qwen_seed": null,
+  "run_id": 10,
+  "calls": [
+    {
+      "stage": "M0",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:26:04.362533+00:00",
+      "finished_at_utc": "2026-06-07T14:26:06.559753+00:00",
+      "elapsed_seconds": 2.197,
+      "response_id": "0dc851d8-01c7-49fb-ae13-01e68cc8e9f9",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 221,
+        "prompt_tokens": 335,
+        "total_tokens": 556,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 335
+      },
+      "valid_candidate_count": 14,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl"
+    },
+    {
+      "stage": "M1",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:26:06.662589+00:00",
+      "finished_at_utc": "2026-06-07T14:26:09.954060+00:00",
+      "elapsed_seconds": 3.291,
+      "response_id": "05d8703e-47f7-47c2-9d8f-ac2227f2c049",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 464,
+        "prompt_tokens": 461,
+        "total_tokens": 925,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 461
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2"
+    },
+    {
+      "stage": "M2",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:26:10.074398+00:00",
+      "finished_at_utc": "2026-06-07T14:26:15.028586+00:00",
+      "elapsed_seconds": 4.954,
+      "response_id": "fa203f7e-b929-46f1-91cd-d8433c55b496",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 820,
+        "prompt_tokens": 493,
+        "total_tokens": 1313,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 493
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br"
+    },
+    {
+      "stage": "M3",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:26:15.146492+00:00",
+      "finished_at_utc": "2026-06-07T14:26:20.226560+00:00",
+      "elapsed_seconds": 5.08,
+      "response_id": "92a25061-84e6-41ca-beff-b50dbd90f347",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 858,
+        "prompt_tokens": 528,
+        "total_tokens": 1386,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 528
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn"
+    },
+    {
+      "stage": "M4",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:26:20.381246+00:00",
+      "finished_at_utc": "2026-06-07T14:26:25.039272+00:00",
+      "elapsed_seconds": 4.658,
+      "response_id": "e4042505-74ca-41c9-8b7b-cca83c4ae2d1",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 732,
+        "prompt_tokens": 518,
+        "total_tokens": 1250,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 518
+      },
+      "valid_candidate_count": 5,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br"
+    }
+  ]
+}

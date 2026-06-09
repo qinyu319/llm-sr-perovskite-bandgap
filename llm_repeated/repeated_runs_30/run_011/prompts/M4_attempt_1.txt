@@ -1,0 +1,35 @@
+Independent repeated-run ID: 011; current stage: M4.
+
+Repeated-run batch instruction:
+- This is one stage inside an independently repeated M0-to-M4 experiment.
+- Apply the scientific and structural constraints in the stage prompt exactly.
+- Generate exactly 16 candidate expression structures.
+- Make the candidates structurally distinct where the constraints allow.
+- Each candidate must itself follow the original one-line expression format.
+- Do not fit coefficients, use data, report performance, or explain.
+- Return only the schema-conforming object containing the 16 candidate strings.
+
+Previous-stage deterministic training-set selection for this same run:
+- selected structure: Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn
+- selected non-constant terms: Sn, Br, Cl, Cs, Sn^2, Br^2, Cs*Sn
+- mean five-fold CV RMSE: 0.05873674 eV
+
+Use this selected structure as the baseline inherited from the previous stage. Extend,
+revise, or simplify it only within the current stage's allowed term pool and constraints.
+
+Original frozen stage prompt:
+You are a symbolic-regression and materials-physics expert. We already have a relatively expressive quadratic model using Sn/Br/Cl/Cs (main effects + squares + a few interactions). Now we want the final recommended formula: simplify the structure as much as possible while maintaining near-optimal predictive performance (to be verified on a held-out test set).
+
+Inputs: Sn, Br, Cl, Cs in [0,1].
+
+Task: Propose a final simplified quadratic structure:
+- Allowed: constant + a subset of main effects + a small subset of squares + a small subset of key pairwise interactions
+- Not allowed: any cubic+ terms, ratios, logs, exponentials
+
+Hard constraints:
+1) Minimize complexity: target 8-11 non-constant terms total.
+2) Every retained term must have clear physical meaning (Sn doping, halide mixing, A-site stabilization/lattice effect, and key couplings).
+3) Prefer terms likely to generalize: strong main effects + only a few essential couplings (e.g., Sn-halide, Cs-B/X).
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, the final expression structure.

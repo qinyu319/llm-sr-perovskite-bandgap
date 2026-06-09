@@ -1,0 +1,152 @@
+{
+  "provider": "deepseek",
+  "requested_model": "deepseek-v4-flash",
+  "temperature": 0.7,
+  "top_p": 1.0,
+  "qwen_seed": null,
+  "run_id": 8,
+  "calls": [
+    {
+      "stage": "M0",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:20:40.407120+00:00",
+      "finished_at_utc": "2026-06-07T14:20:43.256969+00:00",
+      "elapsed_seconds": 2.85,
+      "response_id": "943e7a45-e136-4ee3-a132-36abde7c090a",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 361,
+        "prompt_tokens": 335,
+        "total_tokens": 696,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 335
+      },
+      "valid_candidate_count": 7,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl"
+    },
+    {
+      "stage": "M1",
+      "attempt": 1,
+      "status": "failed",
+      "error": "ValueError: response does not contain a JSON object"
+    },
+    {
+      "stage": "M1",
+      "attempt": 2,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:20:46.364378+00:00",
+      "finished_at_utc": "2026-06-07T14:20:50.283268+00:00",
+      "elapsed_seconds": 3.919,
+      "response_id": "e0269d7e-b2a3-42a6-bd29-0ade9dd6327f",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 428,
+        "prompt_tokens": 492,
+        "total_tokens": 920,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 492
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2"
+    },
+    {
+      "stage": "M2",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:20:50.424207+00:00",
+      "finished_at_utc": "2026-06-07T14:20:55.738741+00:00",
+      "elapsed_seconds": 5.314,
+      "response_id": "01e7e59a-7af8-46c9-99d7-f46ba2e262f7",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 834,
+        "prompt_tokens": 493,
+        "total_tokens": 1327,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 493
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn*Br"
+    },
+    {
+      "stage": "M3",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:20:55.848414+00:00",
+      "finished_at_utc": "2026-06-07T14:21:02.387628+00:00",
+      "elapsed_seconds": 6.539,
+      "response_id": "efd0b140-982f-4383-b639-16e6f72be6df",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1080,
+        "prompt_tokens": 539,
+        "total_tokens": 1619,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 539
+      },
+      "valid_candidate_count": 13,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cl^2 + a8*Cs*Sn + a9*Cs*Br"
+    },
+    {
+      "stage": "M4",
+      "attempt": 1,
+      "status": "failed",
+      "error": "ValueError: response does not contain a JSON object"
+    },
+    {
+      "stage": "M4",
+      "attempt": 2,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:21:08.989379+00:00",
+      "finished_at_utc": "2026-06-07T14:21:15.401898+00:00",
+      "elapsed_seconds": 6.412,
+      "response_id": "ffa74a73-3fe9-49f6-9a89-12bd2a883905",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 949,
+        "prompt_tokens": 571,
+        "total_tokens": 1520,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 571
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cl^2 + a8*Cs*Sn"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"candidates": ["a0 + a1*Sn", "a0 + a1*Br", "a0 + a1*Cl", "a0 + a1*Sn + a2*Br", "a0 + a1*Sn + a2*Cl", "a0 + a1*Br + a2*Cl", "a0 + a1*Sn + a2*Br + a3*Cl", "a0", "a0 + a1*Sn", "a0 + a1*Br", "a0 + a1*Cl", "a0 + a1*Sn + a2*Br", "a0 + a1*Sn + a2*Cl", "a0 + a1*Br + a2*Cl", "a0 + a1*Sn + a2*Br + a3*Cl", "a0"]}

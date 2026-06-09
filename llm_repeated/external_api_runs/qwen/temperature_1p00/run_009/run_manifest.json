@@ -1,0 +1,142 @@
+{
+  "provider": "qwen",
+  "requested_model": "qwen-plus",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "qwen_seed": 2026060709,
+  "run_id": 9,
+  "calls": [
+    {
+      "stage": "M0",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T15:19:29.743964+00:00",
+      "finished_at_utc": "2026-06-07T15:19:39.434329+00:00",
+      "elapsed_seconds": 9.69,
+      "response_id": "chatcmpl-b0571e88-5a57-9a1c-ae34-24c67b5ddb31",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 410,
+        "prompt_tokens": 348,
+        "total_tokens": 758,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 7,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl"
+    },
+    {
+      "stage": "M1",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T15:19:39.519143+00:00",
+      "finished_at_utc": "2026-06-07T15:19:55.006365+00:00",
+      "elapsed_seconds": 15.487,
+      "response_id": "chatcmpl-d497bd2b-2bb8-98a6-9f83-5f49480c73ee",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 688,
+        "prompt_tokens": 473,
+        "total_tokens": 1161,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 8,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2"
+    },
+    {
+      "stage": "M2",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T15:19:55.062433+00:00",
+      "finished_at_utc": "2026-06-07T15:20:13.047255+00:00",
+      "elapsed_seconds": 17.985,
+      "response_id": "chatcmpl-97a9c30f-346a-9dd4-991e-2102e373e161",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 793,
+        "prompt_tokens": 510,
+        "total_tokens": 1303,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 15,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br"
+    },
+    {
+      "stage": "M3",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T15:20:13.158305+00:00",
+      "finished_at_utc": "2026-06-07T15:20:37.300980+00:00",
+      "elapsed_seconds": 24.143,
+      "response_id": "chatcmpl-168ece73-9843-9d99-851b-bdcb6a7ad08b",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1078,
+        "prompt_tokens": 545,
+        "total_tokens": 1623,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Cs*Sn"
+    },
+    {
+      "stage": "M4",
+      "attempt": 1,
+      "status": "failed",
+      "error": "ValueError: M4 produced no legal candidates"
+    },
+    {
+      "stage": "M4",
+      "attempt": 2,
+      "status": "failed",
+      "error": "ValueError: M4 produced no legal candidates"
+    },
+    {
+      "stage": "M4",
+      "attempt": 3,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T15:21:09.031374+00:00",
+      "finished_at_utc": "2026-06-07T15:21:27.637101+00:00",
+      "elapsed_seconds": 18.606,
+      "response_id": "chatcmpl-9b2e0c5c-7343-9b37-93ca-44c44eb8c21d",
+      "response_model": "qwen-plus",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 827,
+        "prompt_tokens": 574,
+        "total_tokens": 1401,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "valid_candidate_count": 8,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs^2 + a8*Cs*Sn"
+    }
+  ]
+}

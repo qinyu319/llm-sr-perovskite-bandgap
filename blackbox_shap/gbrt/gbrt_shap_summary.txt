@@ -1,0 +1,27 @@
+GBRT + SHAP experiment
+
+Features: Sn, Br, Cl, Cs, MA
+Best GBRT params: {'learning_rate': 0.03, 'max_depth': 3, 'max_features': 0.8, 'min_samples_leaf': 1, 'n_estimators': 400, 'subsample': 0.8}
+
+Performance:
+- CV RMSE: 0.053247 eV
+- OOF RMSE: 0.053699 eV
+- Test RMSE: 0.052021 eV
+- Test MAE: 0.040229 eV
+- Test R2: 0.982724
+
+Global SHAP importance:
+- 1. Br: mean |SHAP| = 0.107792 eV
+- 2. Sn: mean |SHAP| = 0.096614 eV
+- 3. Cl: mean |SHAP| = 0.081266 eV
+- 4. Cs: mean |SHAP| = 0.012837 eV
+- 5. MA: mean |SHAP| = 0.012104 eV
+
+Top SHAP interaction pairs:
+- Br x Cl: 0.007246 eV
+- Sn x Cs: 0.004357 eV
+- Sn x Br: 0.003164 eV
+- Sn x MA: 0.002623 eV
+- Br x Cs: 0.002154 eV
+
+Generated: 2026-06-08T23:00:28

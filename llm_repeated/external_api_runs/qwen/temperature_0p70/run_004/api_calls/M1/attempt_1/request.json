@@ -1,0 +1,18 @@
+{
+  "model": "qwen-plus",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You propose symbolic structures for a controlled scientific experiment.\nFollow the supplied stage constraints exactly. Do not fit coefficients, inspect data,\nreport performance, or explain your choices. Return only one JSON object with exactly\nthis shape: {\"candidates\": [\"expression 1\", \"...\", \"expression 16\"]}.\nThe candidates should be structurally distinct where the stage constraints allow."
+    },
+    {
+      "role": "user",
+      "content": "Independent workflow run: 004\nSampling temperature: 0.7\nCurrent stage: M1\n\nGenerate exactly 16 expression structures. Every expression must include a constant\nterm and follow the frozen stage prompt below. Return only JSON, without Markdown.\n\nPrevious-stage deterministic training-set selection within this same independent run:\n- selected structure: Eg = a0 + a1*Sn + a2*Br + a3*Cl\n- selected non-constant terms: Sn, Br, Cl\n- mean five-fold CV RMSE: 0.08836923 eV\n\nUse that structure only as the previous-stage baseline. Do not use results from any\nother run. Extend, revise, or simplify it only under the current stage constraints.\n\nFrozen stage prompt:\nYou are a materials-physics and symbolic-regression expert. The linear baseline is insufficient; we want to capture single-variable nonlinearity (curvature) in the band-gap response.\n\nInputs: Sn, Br, Cl in [0,1].\n\nTask: Propose an interpretable quadratic structure with main effects and squared terms, to be fitted later on the training set.\nConstraints:\n1) Allowed terms: {constant, Sn, Br, Cl, Sn^2, Br^2, Cl^2}.\n2) Do NOT use any interaction/product terms (e.g., Sn*Br), and do NOT use higher powers.\n3) Do NOT use ratios, logs, exponentials, or any non-polynomial terms.\n4) Keep the structure compact; do not include unnecessary terms.\n5) Do NOT provide numerical coefficients and do NOT explain.\n\nOutput format: exactly one line, e.g.\nEg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2\n"
+    }
+  ],
+  "temperature": 0.7,
+  "top_p": 1.0,
+  "max_tokens": 3000,
+  "stream": false,
+  "seed": 2026060704
+}

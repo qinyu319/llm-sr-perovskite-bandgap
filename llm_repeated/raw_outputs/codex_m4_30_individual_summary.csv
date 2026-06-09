@@ -1,0 +1,31 @@
+﻿run_id,structure_id,source,reasoning_effort,non_constant_term_count,m4_term_count_valid,canonical_structure,raw_output
+1,S7,codex_subagent,,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Sn,1 + Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Sn
+2,S5,codex_subagent,,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,1 + Sn + Br + Cl + Cs + Sn² + Br² + Cs² + Sn·Br + Sn·Cl + Cs·Br
+3,S4,codex_subagent,,10,True,Sn + Br + Cl + Cs + Sn^2 + Br*Cl + Sn*Br + Sn*Cl + Cs*Sn + Cs*Br,1 + Sn + Br + Cl + Cs + Sn^2 + BrCl + SnBr + SnCl + CsSn + CsBr
+4,S2,codex_subagent,,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br,1 + Sn + Br + Cl + Cs + Sn² + Br² + Cl² + Sn·Br + Sn·Cl + Cs·Br
+5,S4,codex_subagent,,10,True,Sn + Br + Cl + Cs + Sn^2 + Br*Cl + Sn*Br + Sn*Cl + Cs*Sn + Cs*Br,1 + Sn + Br + Cl + Cs + Sn^2 + BrCl + SnBr + SnCl + CsSn + CsBr
+6,S3,codex_subagent,,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,1 + Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl
+7,S6,codex_exec,high,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cs² + β₈Sn·Br + β₉Sn·Cl + β₁₀Cs·Br + β₁₁Cs·Cl
+8,S3,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br) + β₁₁(Cs·Cl)
+9,S1,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Cs² + β₉Sn·Br + β₁₀Sn·Cl + β₁₁Cs·Br
+10,S1,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Cs² + β₉Sn·Br + β₁₀Sn·Cl + β₁₁Cs·Br
+11,S2,codex_exec,low,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br)
+12,S1,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Cs² + β₉Sn·Br + β₁₀Sn·Cl + β₁₁Cs·Br
+13,S1,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Cs² + β₉Sn·Br + β₁₀Sn·Cl + β₁₁Cs·Br
+14,S3,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br) + β₁₁(Cs·Cl)
+15,S5,codex_exec,low,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,1 + Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cs^2 + Sn·Br + Sn·Cl + Cs·Br
+16,S1,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Cs² + β₉Sn·Br + β₁₀Sn·Cl + β₁₁Cs·Br
+17,S3,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,y = β0 + β1Sn + β2Br + β3Cl + β4Cs + β5Sn² + β6Br² + β7Cl² + β8Sn·Br + β9Sn·Cl + β10Cs·Br + β11Cs·Cl
+18,S3,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br) + β₁₁(Cs·Cl)
+19,S1,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Cs² + β₉Sn·Br + β₁₀Sn·Cl + β₁₁Cs·Br
+20,S2,codex_exec,low,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br)
+21,S1,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Cs² + β₉Sn·Br + β₁₀Sn·Cl + β₁₁Cs·Br
+22,S6,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cs² + β₈Sn·Br + β₉Sn·Cl + β₁₀Cs·Br + β₁₁Cs·Cl
+23,S1,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Cs² + β₉Sn·Br + β₁₀Sn·Cl + β₁₁Cs·Br
+24,S3,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br) + β₁₁(Cs·Cl)
+25,S2,codex_exec,low,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br)
+26,S2,codex_exec,low,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br)
+27,S2,codex_exec,low,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Sn·Br + β₉Sn·Cl + β₁₀Cs·Br
+28,S3,codex_exec,low,11,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Sn·Br + β₉Sn·Cl + β₁₀Cs·Br + β₁₁Cs·Cl
+29,S2,codex_exec,low,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈(Sn·Br) + β₉(Sn·Cl) + β₁₀(Cs·Br)
+30,S2,codex_exec,low,10,True,Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br,y = β₀ + β₁Sn + β₂Br + β₃Cl + β₄Cs + β₅Sn² + β₆Br² + β₇Cl² + β₈Sn·Br + β₉Sn·Cl + β₁₀Cs·Br

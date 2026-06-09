@@ -1,0 +1,444 @@
+下面给你的是**可以直接执行的 LLM repeated runs 实验标准操作流程（SOP）**。
+它按照“实验设计 → 单次运行流程 → 批量运行 → 统计分析 → 结果组织 → 写入论文”的完整链条展开。
+
+你可以把它当成你论文中的 **Section 2.X Repeated LLM-run Protocol** 的实现版本。
+
+---
+
+# 一、实验总体目标
+
+验证：
+
+1. LLM 结构生成是否稳定
+2. 最终模型是否为偶然输出
+3. 核心项是否反复出现
+4. 性能波动是否可接受
+5. 结果是否对不同 LLM 稳健
+
+---
+
+# 二、实验总体结构
+
+建议采用：
+
+```
+Experiment A: Primary repeated runs (正文)
+- 主 LLM
+- 30 次独立运行
+- 完整 M0 → M4 workflow
+
+Experiment B: Cross-LLM robustness (SI)
+- 2 个额外 LLM
+- 每个 5–10 次
+- 可只跑最终阶段
+```
+
+---
+
+# 三、准备阶段（一次性完成）
+
+## Step 0. 固定实验环境
+
+必须记录：
+
+* Python 版本
+* numpy / sklearn 版本
+* 随机种子
+* LLM 名称与版本
+* temperature
+* top_p
+* max_tokens
+* prompt 文件版本
+* train/test split 文件
+
+建议保存：
+
+```
+env.yaml
+requirements.txt
+seed_manifest.csv
+```
+
+---
+
+## Step 1. 冻结数据
+
+固定：
+
+* 610 数据
+* 85/15 划分（518/92）
+* 训练集索引文件
+* 测试集索引文件
+
+保存：
+
+```
+data/train_indices.npy
+data/test_indices.npy
+```
+
+⚠️ 不允许在 repeated runs 过程中重新划分数据。
+
+---
+
+## Step 2. 冻结 Prompt
+
+为每个阶段建立固定 prompt 文件：
+
+```
+prompts/M0.txt
+prompts/M1.txt
+prompts/M2.txt
+prompts/M3.txt
+prompts/M4.txt
+```
+
+内容必须包含：
+
+* 允许变量（Sn, Br, Cl 或 Sn, Br, Cl, Cs）
+* 只允许二阶
+* 不允许 log/exp/division
+* 不允许高阶
+* 不输出系数
+* 单行公式
+
+示例：
+
+```
+Propose one compact symbolic structure for Eg using only Sn, Br, and Cl.
+Allowed terms: linear, squared, pairwise interaction.
+No coefficients.
+No higher-order terms.
+No log, exp, division.
+Return one single-line expression only.
+```
+
+⚠️ 所有 repeated runs 必须使用同一 prompt 文件。
+
+---
+
+# 四、单次 LLM 运行流程（核心流程）
+
+以下流程定义 **1 次 run 的完整执行步骤**。
+
+---
+
+## Step 3. 生成候选结构
+
+对于一个 run：
+
+```
+for stage in [M0, M1, M2, M3, M4]:
+    调用 LLM 生成 16 个候选结构
+```
+
+保存原始输出：
+
+```
+raw_outputs/run_001_M0.txt
+raw_outputs/run_001_M1.txt
+...
+```
+
+⚠️ 不允许人工修改 LLM 输出。
+
+---
+
+## Step 4. 结构解析与合法性检查
+
+对每个候选结构：
+
+### 检查规则
+
+1. 是否只包含允许变量
+2. 是否只包含 linear / squared / pairwise
+3. 是否无 log/exp/division
+4. 是否未超过最大项数
+5. 是否无重复项
+
+非法结构记录：
+
+```
+invalid_reason = "contains division"
+```
+
+不要删除记录。
+
+---
+
+## Step 5. 建立设计矩阵
+
+对合法结构：
+
+构建：
+
+[
+X = [Sn, Br, Cl, Sn^2, Br^2, Cl^2, SnBr, SnCl, BrCl]
+]
+
+只使用训练集。
+
+---
+
+## Step 6. OLS 拟合
+
+对训练集做：
+
+[
+Eg = β_0 + Σ β_i term_i
+]
+
+记录：
+
+* coefficients
+* 95% CI
+* VIF（可选）
+* condition number
+
+保存：
+
+```
+fitted_models/run_001_candidate_05.json
+```
+
+---
+
+## Step 7. 5-fold CV 评估
+
+对每个候选结构：
+
+计算：
+
+* CV RMSE mean
+* CV RMSE std
+* CV R²
+
+保存：
+
+```
+cv_results/run_001_stage_M2.csv
+```
+
+---
+
+## Step 8. 阶段内选择
+
+规则：
+
+1. 选 CV RMSE 最低结构
+2. 若 5% accuracy-equivalent 集合存在
+3. 选择项数最少的结构
+
+⚠️ 不使用 test set。
+
+---
+
+## Step 9. 最终模型评估
+
+当 M4 完成：
+
+对选定模型：
+
+* 计算 train RMSE
+* 计算 test RMSE
+* 计算 test MAE
+* 计算 test R²
+* 计算 external validation RMSE
+
+保存：
+
+```
+selected_models/run_001_final.json
+```
+
+---
+
+# 五、批量运行（30 次）
+
+编写主循环：
+
+```
+for run_id in 1..30:
+    执行 Step 3–9
+```
+
+必须保证：
+
+* 每次 LLM 独立调用
+* 不复用上下文
+* 不复用历史对话
+
+---
+
+# 六、统计分析阶段
+
+现在你有 30 个最终模型。
+
+---
+
+## Step 10. 性能稳定性统计
+
+建立汇总表：
+
+| run | CV RMSE | test RMSE | test MAE | term count |
+| --- | ------- | --------- | -------- | ---------- |
+
+计算：
+
+* mean
+* std
+* min
+* median
+* max
+
+---
+
+## Step 11. 项频率统计
+
+统计每个项出现次数：
+
+| Term | Frequency | Percentage |
+| ---- | --------- | ---------- |
+| Sn   | 30        | 100%       |
+| Br   | 30        | 100%       |
+| Cl   | 30        | 100%       |
+| Sn²  | 28        | 93%        |
+| ...  | ...       | ...        |
+
+---
+
+## Step 12. Jaccard 相似度
+
+对所有 run 两两计算：
+
+[
+J(A,B) = |A∩B| / |A∪B|
+]
+
+生成：
+
+* mean Jaccard
+* histogram
+
+---
+
+## Step 13. 系数符号稳定性
+
+统计：
+
+| Term | Positive runs | Negative runs |
+| ---- | ------------- | ------------- |
+
+特别关注：
+
+* Sn 是否稳定为负
+* Br/Cl 是否稳定为正
+
+---
+
+# 七、图形输出
+
+正文放 1 张图，包含：
+
+(a) test RMSE boxplot
+(b) term frequency barplot
+(c) term count distribution
+(d) Jaccard histogram
+
+SI 放完整表格。
+
+---
+
+# 八、跨 LLM 实验（SI）
+
+选择 2 个额外 LLM：
+
+```
+LLM-B: 10 runs
+LLM-C: 10 runs
+```
+
+可以只跑最终阶段（节省时间）。
+
+重复：
+
+* 生成候选
+* OLS
+* CV
+* test
+
+比较：
+
+* 核心项频率
+* test RMSE 均值
+* 是否落入同一低阶多项式项族
+
+---
+
+# 九、GitHub 结构建议
+
+```
+repeated_llm_runs/
+  prompts/
+  raw_outputs/
+  parsed_structures/
+  cv_results/
+  selected_models/
+  summary/
+```
+
+summary 里包含：
+
+* repeated_run_metrics.csv
+* term_frequency.csv
+* jaccard_similarity.csv
+* coefficient_sign_stability.csv
+
+---
+
+# 十、论文写法模板
+
+## Methods 写法
+
+> To quantify the stochastic component of LLM-based structure proposal, we performed 30 independent repeated runs under identical prompts, sampling settings, train/test split, and model-selection rules. For each run, raw LLM outputs were stored, invalid expressions were filtered by predefined syntactic and physical constraints, coefficients were fitted deterministically by OLS on the training split, and the final model was selected by five-fold CV.
+
+---
+
+## Results 写法
+
+> Although exact symbolic strings varied across runs, the selected models repeatedly converged to the same low-order polynomial term family dominated by Sn, Br, and Cl with quadratic curvature and selected pairwise interactions. The distribution of held-out test RMSE remained narrow (mean = …, SD = …), indicating that the final expression is not an isolated stochastic output.
+
+---
+
+# 十一、最低可接受版本
+
+如果时间紧：
+
+* 只做 30 次 primary LLM
+* 不做多模型
+* 不做敏感性温度分析
+
+这已经足够回应审稿人。
+
+---
+
+# 十二、完成后判断标准
+
+实验结果理想情况：
+
+* 核心项频率 ≥ 80%
+* test RMSE 标准差很小
+* Jaccard 相似度高
+* 系数符号稳定
+
+如果满足以上，你可以非常自信地回应：
+
+**LLM-SR 结构不是偶然输出，而是稳定收敛结果。**
+
+---
+
+如果你愿意，我可以：
+
+* 给你写自动化 Python 实验脚本框架
+* 给你生成 term frequency / Jaccard 计算代码
+* 或直接帮你设计论文图的结构布局

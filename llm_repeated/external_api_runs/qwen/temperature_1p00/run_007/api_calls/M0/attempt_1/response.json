@@ -1,0 +1,34 @@
+{
+  "id": "chatcmpl-0482622d-4d94-925c-9fe0-065f3f683437",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"candidates\": [\"Eg = a0 + a1*Sn\", \"Eg = a0 + a1*Br\", \"Eg = a0 + a1*Cl\", \"Eg = a0 + a1*Sn + a2*Br\", \"Eg = a0 + a1*Sn + a2*Cl\", \"Eg = a0 + a1*Br + a2*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl\", \"Eg = a0\", \"Eg = a0 + a1*Sn + a2*Sn\", \"Eg = a0 + a1*Br + a2*Br\", \"Eg = a0 + a1*Cl + a2*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a2*Cl\", \"Eg = a0 + a1*Sn + a1*Br + a1*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a1*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a2*Cl + a3*Sn\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn\"]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1780845380,
+  "model": "qwen-plus",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 290,
+    "prompt_tokens": 348,
+    "total_tokens": 638,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    }
+  }
+}

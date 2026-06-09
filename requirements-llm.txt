@@ -1,0 +1,3 @@
+# Optional: only needed to make new external API calls.
+openai==2.6.1
+dashscope

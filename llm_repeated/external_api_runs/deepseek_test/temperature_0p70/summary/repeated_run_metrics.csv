@@ -1,0 +1,2 @@
+﻿run_id,provider,requested_model,temperature,top_p,qwen_seed,terms,term_count,cv_rmse_mean,cv_rmse_std,test_rmse,test_mae,test_r2
+1,deepseek,deepseek-v4-flash,0.7,1.0,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Sn;Cs*Br,8,0.058127236767094595,0.004242602312181955,0.06175816011399793,0.04660800300542293,0.975650857602251

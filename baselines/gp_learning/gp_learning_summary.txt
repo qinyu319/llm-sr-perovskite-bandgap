@@ -1,0 +1,26 @@
+GPlearning experiment (Gaussian Process Regression)
+
+Best model by training five-fold CV:
+- Feature set: Composition-5
+- Features: Sn, Br, Cl, Cs, MA
+- Kernel: Matern-1.5
+- CV RMSE: 0.051320 eV
+- CV SD: 0.005855 eV
+
+Post hoc test performance:
+- Test RMSE: 0.048604 eV
+- Test MAE: 0.037050 eV
+- Test R2: 0.984919
+- Test NLPD: -1.629773
+- 95% interval coverage: 0.924
+- Mean 95% interval width: 0.179409 eV
+- Learned kernel: 3.78**2 * Matern(length_scale=11.5, nu=1.5) + WhiteKernel(noise_level=0.0158)
+
+Final analytic M4 comparison:
+- Final M4 CV RMSE: 0.057532 eV
+- Final M4 test RMSE: 0.060613 eV
+
+Conclusion:
+The GP model is a strong predictive benchmark and improves RMSE over the frozen analytic M4. It should be reported as a non-parametric predictive model, not as a replacement for the compact final formula.
+
+Generated: 2026-06-08T22:53:41

@@ -1,0 +1,114 @@
+{
+  "M4_pruned_ref": {
+    "test_rmse": 0.0537,
+    "n_terms": 10
+  },
+  "P_polynomial": {
+    "n_seeds": 5,
+    "best_test_rmse_mean": 0.0683,
+    "best_test_rmse_std": 0.0096,
+    "best_test_rmse_min": 0.061,
+    "n_unique_best_structures": 5,
+    "per_seed": [
+      {
+        "seed": 0,
+        "best_equation": "((1.5633067 - Sn) + (Cl * 1.570934)) + (((((Br - (Cs * (Cl + Sn))) * 0.4103536) - -0.30400825) * ((Cs * 0.24493864) + Br)) - (Sn * (0.18617415 - Sn)))",
+        "best_complexity": 31,
+        "best_test_rmse": 0.061,
+        "best_test_r2": 0.9762,
+        "cmatched_complexity": 33,
+        "cmatched_test_rmse": 0.0572
+      },
+      {
+        "seed": 1,
+        "best_equation": "((1.5510498 - ((((Sn + (Cl * Br)) + -0.1129726) * Cs) + (Sn * ((Sn - (1.2578107 - Cs)) * -0.8133338)))) + (Cl * 1.5607214)) + (((Br * 0.33506465) + 0.38327086) * Br)",
+        "best_complexity": 33,
+        "best_test_rmse": 0.0619,
+        "best_test_r2": 0.9755,
+        "cmatched_complexity": 33,
+        "cmatched_test_rmse": 0.0619
+      },
+      {
+        "seed": 2,
+        "best_equation": "(((Br * 0.61127913) - Sn) * (1.1267556 - Sn)) + ((Cl * 1.5059634) - -1.5390152)",
+        "best_complexity": 15,
+        "best_test_rmse": 0.0871,
+        "best_test_r2": 0.9515,
+        "cmatched_complexity": 33,
+        "cmatched_test_rmse": 0.0657
+      },
+      {
+        "seed": 3,
+        "best_equation": "((Cl + (Br * 0.42449588)) - -0.98113066) * (((Sn + -1.2006718) * Sn) + 1.5719876)",
+        "best_complexity": 15,
+        "best_test_rmse": 0.0663,
+        "best_test_r2": 0.972,
+        "cmatched_complexity": 33,
+        "cmatched_test_rmse": 0.0595
+      },
+      {
+        "seed": 4,
+        "best_equation": "((((Cl + Br) * ((Br + 0.7441826) * 0.40599248)) + Cl) + 2.0111275) + (((Sn + 0.2982248) - (Cs * 0.0636854)) * (-1.4992204 - ((Cl * (Cs - Cl)) - Sn)))",
+        "best_complexity": 31,
+        "best_test_rmse": 0.065,
+        "best_test_r2": 0.973,
+        "cmatched_complexity": 33,
+        "cmatched_test_rmse": 0.061
+      }
+    ]
+  },
+  "R_rich": {
+    "n_seeds": 5,
+    "best_test_rmse_mean": 0.0637,
+    "best_test_rmse_std": 0.0028,
+    "best_test_rmse_min": 0.0611,
+    "n_unique_best_structures": 5,
+    "per_seed": [
+      {
+        "seed": 0,
+        "best_equation": "((((square(Br) + (Cl / 0.23152709)) + Br) / (Sn - -2.7484522)) + 1.5659834) + ((Sn - 1.1804014) * Sn)",
+        "best_complexity": 20,
+        "best_test_rmse": 0.0648,
+        "best_test_r2": 0.9732,
+        "cmatched_complexity": 32,
+        "cmatched_test_rmse": 0.0596
+      },
+      {
+        "seed": 1,
+        "best_equation": "((Sn * ((Sn + -1.20983) - (Cl * Br))) + square(Cl + ((Br + 0.38896373) * 0.63263416))) + 1.5129596",
+        "best_complexity": 20,
+        "best_test_rmse": 0.0688,
+        "best_test_r2": 0.9698,
+        "cmatched_complexity": 33,
+        "cmatched_test_rmse": 0.0562
+      },
+      {
+        "seed": 2,
+        "best_equation": "(((Cl * 1.6010089) + square(Sn)) - (square(Br) * -0.3723963)) + (1.557377 - ((Sn * 1.1680565) + ((Br * -0.33667123) + ((Cl + (Sn - 0.46790972)) * (Cs * 0.26274535)))))",
+        "best_complexity": 31,
+        "best_test_rmse": 0.0619,
+        "best_test_r2": 0.9755,
+        "cmatched_complexity": 33,
+        "cmatched_test_rmse": 0.0605
+      },
+      {
+        "seed": 3,
+        "best_equation": "1.4583485 + ((Cl / 0.62410617) - ((((Cs * (Sn + (Cl + -0.5048932))) / 3.9979472) - square((Br / -1.6869565) - 0.30310172)) + (Sn - square(Sn / -1.1116421))))",
+        "best_complexity": 29,
+        "best_test_rmse": 0.0611,
+        "best_test_r2": 0.9762,
+        "cmatched_complexity": 33,
+        "cmatched_test_rmse": 0.0581
+      },
+      {
+        "seed": 4,
+        "best_equation": "((Cs * (0.12298688 - ((Sn + Cl) * 0.2628758))) + (square((Br + 0.44508743) * 0.6126404) + 1.1421797)) + (square(Sn + -0.58399475) + (Cl * 1.6007954))",
+        "best_complexity": 27,
+        "best_test_rmse": 0.062,
+        "best_test_r2": 0.9755,
+        "cmatched_complexity": 32,
+        "cmatched_test_rmse": 0.0616
+      }
+    ]
+  }
+}

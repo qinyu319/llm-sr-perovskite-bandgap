@@ -1,0 +1,152 @@
+{
+  "provider": "deepseek",
+  "requested_model": "deepseek-v4-flash",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "qwen_seed": null,
+  "run_id": 5,
+  "calls": [
+    {
+      "stage": "M0",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:23:55.722553+00:00",
+      "finished_at_utc": "2026-06-07T14:23:57.881089+00:00",
+      "elapsed_seconds": 2.158,
+      "response_id": "c98ce9a8-9991-47d3-9084-36d0c47824c8",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 231,
+        "prompt_tokens": 335,
+        "total_tokens": 566,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 335
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl"
+    },
+    {
+      "stage": "M1",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:23:58.000116+00:00",
+      "finished_at_utc": "2026-06-07T14:24:01.357628+00:00",
+      "elapsed_seconds": 3.357,
+      "response_id": "c53a9571-4ea0-4f9d-b257-c78eb5c5db65",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 486,
+        "prompt_tokens": 461,
+        "total_tokens": 947,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 461
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2"
+    },
+    {
+      "stage": "M2",
+      "attempt": 1,
+      "status": "failed",
+      "error": "ValueError: response does not contain a JSON object"
+    },
+    {
+      "stage": "M2",
+      "attempt": 2,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:24:06.286756+00:00",
+      "finished_at_utc": "2026-06-07T14:24:11.313715+00:00",
+      "elapsed_seconds": 5.027,
+      "response_id": "5bd68eab-bdfc-4679-a657-7b48f2afc7fd",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 764,
+        "prompt_tokens": 524,
+        "total_tokens": 1288,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 524
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br"
+    },
+    {
+      "stage": "M3",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:24:11.445127+00:00",
+      "finished_at_utc": "2026-06-07T14:24:17.784449+00:00",
+      "elapsed_seconds": 6.339,
+      "response_id": "a8f769e3-1f82-40fa-a56d-379335cba056",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1012,
+        "prompt_tokens": 528,
+        "total_tokens": 1540,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 528
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl"
+    },
+    {
+      "stage": "M4",
+      "attempt": 1,
+      "status": "failed",
+      "error": "ValueError: M4 produced no legal candidates"
+    },
+    {
+      "stage": "M4",
+      "attempt": 2,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:24:22.510176+00:00",
+      "finished_at_utc": "2026-06-07T14:24:27.640922+00:00",
+      "elapsed_seconds": 5.131,
+      "response_id": "8bd5b30b-d793-4a8b-80c6-02c3839d5e05",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 753,
+        "prompt_tokens": 570,
+        "total_tokens": 1323,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 570
+      },
+      "valid_candidate_count": 4,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Cl"
+    }
+  ]
+}

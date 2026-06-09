@@ -1,0 +1,35 @@
+Independent workflow run: 003
+Sampling temperature: 0.2
+Current stage: M2
+
+Generate exactly 16 expression structures. Every expression must include a constant
+term and follow the frozen stage prompt below. Return only JSON, without Markdown.
+
+Previous-stage deterministic training-set selection within this same independent run:
+- selected structure: Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2
+- selected non-constant terms: Sn, Br, Cl, Sn^2, Br^2
+- mean five-fold CV RMSE: 0.06381619 eV
+
+Use that structure only as the previous-stage baseline. Do not use results from any
+other run. Extend, revise, or simplify it only under the current stage constraints.
+
+Frozen stage prompt:
+You are a materials-physics and symbolic-regression expert. To capture metal-halide coupling and mixed-halide effects, we now allow second-order interaction terms.
+
+Inputs: Sn, Br, Cl in [0,1].
+
+Task: Propose a second-order (quadratic) analytical structure that may include main effects, squared terms, and a small number of physically motivated pairwise interactions, to be fitted later on the training set.
+
+Allowed term pool:
+- Main effects: Sn, Br, Cl
+- Squares: Sn^2, Br^2, Cl^2
+- Pairwise interactions (choose up to 2-3): Sn*Br, Sn*Cl, Br*Cl
+- Constant term
+
+Constraints:
+1) Use only the term pool above. No higher-order terms, no ratios, no logs, no exponentials.
+2) Use at most 2-3 interaction terms; prioritize physically meaningful couplings (metal-halide and mixed-halide).
+3) Keep total non-constant terms <= 10.
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, a single expression structure.

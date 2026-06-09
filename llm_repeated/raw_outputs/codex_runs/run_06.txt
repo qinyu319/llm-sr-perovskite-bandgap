@@ -1,0 +1,1 @@
+1 + Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl

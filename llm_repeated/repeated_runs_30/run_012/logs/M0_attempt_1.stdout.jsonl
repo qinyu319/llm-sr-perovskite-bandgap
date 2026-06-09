@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"019ea134-3854-7712-96fc-71bf7d7f0616"}
+{"type":"turn.started"}
+{"type":"error","message":"Reconnecting... 2/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 3/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 4/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 5/5 (request timed out)"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"candidates\":[\"Eg = a0\",\"Eg = a0 + a1*Sn\",\"Eg = a0 + a1*Br\",\"Eg = a0 + a1*Cl\",\"Eg = a0 + a1*Sn + a2*Br\",\"Eg = a0 + a1*Sn + a2*Cl\",\"Eg = a0 + a1*Br + a2*Cl\",\"Eg = a0 + a1*Sn + a2*Br + a3*Cl\",\"Eg = a0 + a1*(Sn + Br)\",\"Eg = a0 + a1*(Sn + Cl)\",\"Eg = a0 + a1*(Br + Cl)\",\"Eg = a0 + a1*(Sn + Br + Cl)\",\"Eg = a0 + a1*Sn + a2*(Br + Cl)\",\"Eg = a0 + a1*Br + a2*(Sn + Cl)\",\"Eg = a0 + a1*Cl + a2*(Sn + Br)\",\"Eg = a0 + a1*(Sn + Br) + a2*Cl\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":10455,"cached_input_tokens":10112,"output_tokens":395,"reasoning_output_tokens":152}}

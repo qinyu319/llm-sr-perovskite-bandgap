@@ -1,0 +1,88 @@
+{
+  "stage": "M4",
+  "raw_candidate_count": 16,
+  "valid_candidate_count": 12,
+  "unique_valid_structure_count": 12,
+  "best_cv_rmse": 0.05800181294855572,
+  "five_percent_threshold": 0.060901903595983506,
+  "selected_candidate_index": 11,
+  "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs*Sn + a9*Cs*Br",
+  "selected_terms": [
+    "Sn",
+    "Br",
+    "Cl",
+    "Cs",
+    "Sn^2",
+    "Br^2",
+    "Sn*Br",
+    "Cs*Sn",
+    "Cs*Br"
+  ],
+  "selected_term_count": 9,
+  "selected_cv_rmse_mean": 0.05800181294855572,
+  "selected_cv_rmse_std": 0.004056505260227116,
+  "selected_cv_r2": 0.9646598177850519,
+  "selected_coefficients": [
+    {
+      "term": "Intercept",
+      "coefficient": 1.5487183965109719,
+      "ci_95_low": 1.539124009987215,
+      "ci_95_high": 1.5583127830347288
+    },
+    {
+      "term": "Sn",
+      "coefficient": -1.0890411839105827,
+      "ci_95_low": -1.154860255029691,
+      "ci_95_high": -1.0232221127914745
+    },
+    {
+      "term": "Br",
+      "coefficient": 0.4004426643631823,
+      "ci_95_low": 0.33621970501992327,
+      "ci_95_high": 0.4646656237064414
+    },
+    {
+      "term": "Cl",
+      "coefficient": 1.522385708230979,
+      "ci_95_low": 1.4841301788996664,
+      "ci_95_high": 1.5606412375622918
+    },
+    {
+      "term": "Cs",
+      "coefficient": 0.14068189319640373,
+      "ci_95_low": 0.10642341169904937,
+      "ci_95_high": 0.1749403746937581
+    },
+    {
+      "term": "Sn^2",
+      "coefficient": 0.9243361218172292,
+      "ci_95_low": 0.8494826124208812,
+      "ci_95_high": 0.9991896312135773
+    },
+    {
+      "term": "Br^2",
+      "coefficient": 0.33674158211976063,
+      "ci_95_low": 0.265798342175138,
+      "ci_95_high": 0.4076848220643833
+    },
+    {
+      "term": "Sn*Br",
+      "coefficient": -0.13226204289586388,
+      "ci_95_low": -0.21909998054292024,
+      "ci_95_high": -0.045424105248807536
+    },
+    {
+      "term": "Cs*Sn",
+      "coefficient": -0.25575048710038095,
+      "ci_95_low": -0.30802674601213387,
+      "ci_95_high": -0.20347422818862806
+    },
+    {
+      "term": "Cs*Br",
+      "coefficient": -0.1214479467209903,
+      "ci_95_low": -0.18611253262833835,
+      "ci_95_high": -0.05678336081364224
+    }
+  ],
+  "selected_condition_number": 23.703871252643694
+}

@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-06-07T07:46:28.770942+00:00",
+  "run_count": 30,
+  "all_single_line": true,
+  "m4_term_count_valid_runs": 30,
+  "unique_raw_outputs": 13,
+  "unique_canonical_structures": 7,
+  "canonical_structure_frequencies": [
+    {
+      "structure": "Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br",
+      "frequency": 8
+    },
+    {
+      "structure": "Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br",
+      "frequency": 8
+    },
+    {
+      "structure": "Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl",
+      "frequency": 7
+    },
+    {
+      "structure": "Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br",
+      "frequency": 2
+    },
+    {
+      "structure": "Sn + Br + Cl + Cs + Sn^2 + Br*Cl + Sn*Br + Sn*Cl + Cs*Sn + Cs*Br",
+      "frequency": 2
+    },
+    {
+      "structure": "Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cs^2 + Sn*Br + Sn*Cl + Cs*Br + Cs*Cl",
+      "frequency": 2
+    },
+    {
+      "structure": "Sn + Br + Cl + Cs + Sn^2 + Br^2 + Cl^2 + Sn*Br + Sn*Cl + Cs*Sn",
+      "frequency": 1
+    }
+  ],
+  "method_note": "Runs 1-6 used isolated Codex subagent threads. Runs 7-30 used independent ephemeral codex exec sessions. Codex does not expose temperature or seed controls for this workflow."
+}

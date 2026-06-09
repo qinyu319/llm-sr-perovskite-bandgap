@@ -1,0 +1,18 @@
+RF / XGBoost + SHAP experiment
+
+Features: Sn, Br, Cl, Cs, MA
+
+Performance:
+- Random Forest CV RMSE: 0.059683 eV; test RMSE: 0.055863 eV; test R2: 0.980078
+- XGBoost CV RMSE: 0.051267 eV; test RMSE: 0.060565 eV; test R2: 0.976583
+- Best by CV: XGBoost
+
+Global SHAP top features:
+- RF: Br (0.108728)
+- XGBoost: Br (0.098448)
+
+Top SHAP interaction pairs:
+- RF: Br x Cl (0.008405)
+- XGBoost: Br x Cl (0.016507)
+
+Generated: 2026-06-08T23:08:51

@@ -1,0 +1,17 @@
+﻿candidate_index,raw,valid,invalid_reasons,duplicate_of,canonical_expression,terms,term_count,cv_rmse_mean,cv_rmse_std,cv_r2,condition_number
+1,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2,Sn;Br;Cl;Sn^2,4.0,0.06930096155365931,0.0029854979786585827,0.949690423723918,20.465492419497497
+2,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2,Sn;Br;Cl;Br^2,4.0,0.08629710089954677,0.00483448119159448,0.921925147075996,18.791336545442693
+3,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cl^2,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cl^2,Sn;Br;Cl;Cl^2,4.0,0.08855630216924677,0.006559688595695378,0.917629504957556,48.18101850375021
+4,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2,Sn;Br;Cl;Sn^2;Br^2,5.0,0.06381619210960617,0.0048707206201949885,0.9571879206007586,21.525446749159425
+5,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Cl^2,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Cl^2,Sn;Br;Cl;Sn^2;Cl^2,5.0,0.06961080151153028,0.0029073516369842235,0.9492460655550627,48.54078013206082
+6,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2 + a5*Cl^2,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2 + a5*Cl^2,Sn;Br;Cl;Br^2;Cl^2,5.0,0.08653693419043293,0.00498328338845775,0.921479221385301,48.85332938537515
+7,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2,Sn;Br;Cl;Sn^2;Br^2;Cl^2,6.0,0.06456922679024857,0.005078242134174922,0.956158700117455,49.17614842996105
+8,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn,False,contains duplicate term,,,Sn;Br;Cl;Sn^2;Br^2;Cl^2,,,,,
+9,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Br,False,contains duplicate term,,,Sn;Br;Cl;Sn^2;Br^2;Cl^2,,,,,
+10,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Cl,False,contains duplicate term,,,Sn;Br;Cl;Sn^2;Br^2;Cl^2,,,,,
+11,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn + a8*Br,False,contains duplicate term,,,Sn;Br;Cl;Sn^2;Br^2;Cl^2,,,,,
+12,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn + a8*Cl,False,contains duplicate term,,,Sn;Br;Cl;Sn^2;Br^2;Cl^2,,,,,
+13,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Br + a8*Cl,False,contains duplicate term,,,Sn;Br;Cl;Sn^2;Br^2;Cl^2,,,,,
+14,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2 + a7*Sn + a8*Br + a9*Cl,False,contains duplicate term,,,Sn;Br;Cl;Sn^2;Br^2;Cl^2,,,,,
+15,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2,True,,4.0,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2,Sn;Br;Cl;Sn^2;Br^2,5.0,0.06381619210960617,0.0048707206201949885,0.9571879206007586,21.525446749159425
+16,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2 + a5*Cl^2,True,,6.0,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2 + a5*Cl^2,Sn;Br;Cl;Br^2;Cl^2,5.0,0.08653693419043293,0.00498328338845775,0.921479221385301,48.85332938537515

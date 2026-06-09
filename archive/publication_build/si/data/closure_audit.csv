@@ -1,0 +1,3 @@
+cohort,n,closure_pass,closure_issue,max_abs_A_error,max_abs_B_error,max_abs_X_error
+Training,518,507,11,0.039999999999999925,0.010000000000000009,0.016999999999999904
+Held-out test,92,90,2,0.0007999999999999119,0.0,0.0

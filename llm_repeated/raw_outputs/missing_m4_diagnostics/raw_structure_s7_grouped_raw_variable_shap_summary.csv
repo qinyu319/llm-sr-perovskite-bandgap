@@ -1,0 +1,5 @@
+﻿model_id,raw_variable,mean_abs_grouped_shap,mean_grouped_shap,min_grouped_shap,max_grouped_shap,allocation_note
+raw_structure_s7,Br,0.11439183869047959,-8.573150769306228e-19,-0.11311675437226891,0.6064502174808244,Main and square terms assigned to their raw variable; pairwise interaction terms split 50/50.
+raw_structure_s7,Sn,0.09286147604323561,-3.4292603077224913e-18,-0.31875145698288393,0.06155054565762355,Main and square terms assigned to their raw variable; pairwise interaction terms split 50/50.
+raw_structure_s7,Cl,0.07349239520044083,-2.5719452307918683e-18,-0.03876686427070096,1.5163919733731395,Main and square terms assigned to their raw variable; pairwise interaction terms split 50/50.
+raw_structure_s7,Cs,0.01085903245456799,-4.286575384653114e-19,-0.01518777530918343,0.08596307613258242,Main and square terms assigned to their raw variable; pairwise interaction terms split 50/50.

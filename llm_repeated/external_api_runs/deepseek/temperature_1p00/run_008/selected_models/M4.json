@@ -1,0 +1,81 @@
+{
+  "stage": "M4",
+  "raw_candidate_count": 16,
+  "valid_candidate_count": 1,
+  "unique_valid_structure_count": 1,
+  "best_cv_rmse": 0.06558778027066985,
+  "five_percent_threshold": 0.06886716928420335,
+  "selected_candidate_index": 12,
+  "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Cs*Br + a8*Cs*Cl",
+  "selected_terms": [
+    "Sn",
+    "Br",
+    "Cl",
+    "Cs",
+    "Sn^2",
+    "Cs*Sn",
+    "Cs*Br",
+    "Cs*Cl"
+  ],
+  "selected_term_count": 8,
+  "selected_cv_rmse_mean": 0.06558778027066985,
+  "selected_cv_rmse_std": 0.00935009164043629,
+  "selected_cv_r2": 0.9542582149025545,
+  "selected_coefficients": [
+    {
+      "term": "Intercept",
+      "coefficient": 1.5243945619930352,
+      "ci_95_low": 1.5158338098910238,
+      "ci_95_high": 1.5329553140950467
+    },
+    {
+      "term": "Sn",
+      "coefficient": -1.0548187409382592,
+      "ci_95_low": -1.1236110535473136,
+      "ci_95_high": -0.9860264283292048
+    },
+    {
+      "term": "Br",
+      "coefficient": 0.6632926758289803,
+      "ci_95_low": 0.639930113006318,
+      "ci_95_high": 0.6866552386516427
+    },
+    {
+      "term": "Cl",
+      "coefficient": 1.610835791702553,
+      "ci_95_low": 1.5624528203120014,
+      "ci_95_high": 1.6592187630931048
+    },
+    {
+      "term": "Cs",
+      "coefficient": 0.17270580769537813,
+      "ci_95_low": 0.13579562671343245,
+      "ci_95_high": 0.2096159886773238
+    },
+    {
+      "term": "Sn^2",
+      "coefficient": 0.8718444383060212,
+      "ci_95_low": 0.7928734411480283,
+      "ci_95_high": 0.9508154354640141
+    },
+    {
+      "term": "Cs*Sn",
+      "coefficient": -0.2525203348320177,
+      "ci_95_low": -0.30757223206832307,
+      "ci_95_high": -0.19746843759571234
+    },
+    {
+      "term": "Cs*Br",
+      "coefficient": -0.12365621414745445,
+      "ci_95_low": -0.19170332571697563,
+      "ci_95_high": -0.05560910257793329
+    },
+    {
+      "term": "Cs*Cl",
+      "coefficient": -0.32096379681632914,
+      "ci_95_low": -0.4117868473019048,
+      "ci_95_high": -0.2301407463307535
+    }
+  ],
+  "selected_condition_number": 21.050999460507942
+}

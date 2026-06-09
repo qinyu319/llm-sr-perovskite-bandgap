@@ -1,0 +1,36 @@
+{
+  "id": "b9c7e569-7802-43ab-bb75-6c5b19318195",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"candidates\": [\"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Cl^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2 + a5*Cl^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cl^2\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a4*Sn^2 + a5*Br^2\", \"Eg = a0 + a1*Sn + a2*Br + a4*Sn^2 + a5*Cl^2\", \"Eg = a0 + a1*Sn + a2*Br + a4*Sn^2\", \"Eg = a0 + a1*Sn + a2*Br + a4*Br^2\", \"Eg = a0 + a1*Sn + a4*Sn^2\", \"Eg = a0 + a1*Sn + a4*Cl^2\", \"Eg = a0 + a1*Sn + a4*Sn^2 + a5*Br^2\", \"Eg = a0 + a1*Sn\"]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1780842269,
+  "model": "deepseek-v4-flash",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+  "usage": {
+    "completion_tokens": 435,
+    "prompt_tokens": 461,
+    "total_tokens": 896,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 461
+  }
+}

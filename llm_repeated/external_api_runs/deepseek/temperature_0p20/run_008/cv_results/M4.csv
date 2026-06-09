@@ -1,0 +1,17 @@
+﻿candidate_index,raw,valid,invalid_reasons,duplicate_of,canonical_expression,terms,term_count,cv_rmse_mean,cv_rmse_std,cv_r2,condition_number
+1,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Sn,,,,,
+2,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Cs*Sn,,,,,
+3,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2,,,,,
+4,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Br*Cl,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br*Cl;Cs*Sn,,,,,
+5,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Br*Cl,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Br*Cl,,,,,
+6,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Cs*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Cs*Sn;Cs*Br,,,,,
+7,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Br,,,,,
+8,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Sn*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Sn*Br;Cs*Sn,,,,,
+9,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Sn*Br,,,,,
+10,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Sn*Cl,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Sn*Cl;Cs*Sn,,,,,
+11,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Cl,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Sn*Cl,,,,,
+12,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Cl*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Cs*Sn;Cs*Cl,,,,,
+13,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cl*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Cl,,,,,
+14,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Br^2,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Sn,,,,,
+15,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Br*Cl + a8*Cs*Br,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br*Cl + a7*Cs*Sn + a8*Cs*Br,Sn;Br;Cl;Cs;Sn^2;Br*Cl;Cs*Sn;Cs*Br,8.0,0.06505636547189449,0.0013164320226797743,0.9557164972794525,38.938280915903036
+16,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Br*Cl,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Br*Cl + a8*Cs*Sn,Sn;Br;Cl;Cs;Sn^2;Br^2;Br*Cl;Cs*Sn,8.0,0.06039423576731649,0.005645060455572468,0.9615653741078883,38.948129062099056

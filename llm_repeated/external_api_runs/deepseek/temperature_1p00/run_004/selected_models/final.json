@@ -1,0 +1,566 @@
+{
+  "provider": "deepseek",
+  "requested_model": "deepseek-v4-flash",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "qwen_seed": null,
+  "run_id": 4,
+  "selection_policy": "Within each stage, candidates within 5% of the best training-set five-fold CV RMSE were accuracy-equivalent; the fewest-term candidate won, followed by lower CV RMSE and candidate index. Test data were loaded only after M4 selection.",
+  "stage_selections": [
+    {
+      "stage": "M0",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 14,
+      "unique_valid_structure_count": 7,
+      "best_cv_rmse": 0.08836922814088868,
+      "five_percent_threshold": 0.09278768954793312,
+      "selected_candidate_index": 1,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl"
+      ],
+      "selected_term_count": 3,
+      "selected_cv_rmse_mean": 0.08836922814088868,
+      "selected_cv_rmse_std": 0.006404898223502302,
+      "selected_cv_r2": 0.9179911938646828,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.5240066744453633,
+          "ci_95_low": 1.5132262028729142,
+          "ci_95_high": 1.5347871460178124
+        },
+        {
+          "term": "Sn",
+          "coefficient": -0.3549003749144135,
+          "ci_95_low": -0.38115681940839574,
+          "ci_95_high": -0.3286439304204313
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.673609955308627,
+          "ci_95_low": 0.6429989412463196,
+          "ci_95_high": 0.7042209693709344
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.5518117484449636,
+          "ci_95_low": 1.4936273066420114,
+          "ci_95_high": 1.6099961902479158
+        }
+      ],
+      "selected_condition_number": 7.9520094275500055
+    },
+    {
+      "stage": "M1",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 16,
+      "unique_valid_structure_count": 16,
+      "best_cv_rmse": 0.06381619210960617,
+      "five_percent_threshold": 0.06700700171508647,
+      "selected_candidate_index": 4,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Sn^2",
+        "Br^2"
+      ],
+      "selected_term_count": 5,
+      "selected_cv_rmse_mean": 0.06381619210960617,
+      "selected_cv_rmse_std": 0.0048707206201949885,
+      "selected_cv_r2": 0.9571879206007586,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.568925388787943,
+          "ci_95_low": 1.559413857995193,
+          "ci_95_high": 1.578436919580693
+        },
+        {
+          "term": "Sn",
+          "coefficient": -1.0996478865174957,
+          "ci_95_low": -1.1720163278358153,
+          "ci_95_high": -1.027279445199176
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.34522902520737436,
+          "ci_95_low": 0.2791236001198587,
+          "ci_95_high": 0.41133445029489
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.5102498090004057,
+          "ci_95_low": 1.4682233451892799,
+          "ci_95_high": 1.5522762728115316
+        },
+        {
+          "term": "Sn^2",
+          "coefficient": 0.8587412503131316,
+          "ci_95_low": 0.7777618833039259,
+          "ci_95_high": 0.9397206173223374
+        },
+        {
+          "term": "Br^2",
+          "coefficient": 0.372680990275899,
+          "ci_95_low": 0.29720018649802493,
+          "ci_95_high": 0.4481617940537731
+        }
+      ],
+      "selected_condition_number": 21.525446749159425
+    },
+    {
+      "stage": "M2",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 16,
+      "unique_valid_structure_count": 11,
+      "best_cv_rmse": 0.0638175279438075,
+      "five_percent_threshold": 0.06700840434099788,
+      "selected_candidate_index": 4,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br + a7*Sn*Cl",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Sn^2",
+        "Br^2",
+        "Sn*Br",
+        "Sn*Cl"
+      ],
+      "selected_term_count": 7,
+      "selected_cv_rmse_mean": 0.0638175279438075,
+      "selected_cv_rmse_std": 0.00731213991296914,
+      "selected_cv_r2": 0.9569392746862546,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.561029559169062,
+          "ci_95_low": 1.5513596625426702,
+          "ci_95_high": 1.5706994557954537
+        },
+        {
+          "term": "Sn",
+          "coefficient": -1.0975752360269375,
+          "ci_95_low": -1.1675947208609925,
+          "ci_95_high": -1.0275557511928826
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.3989269658432779,
+          "ci_95_low": 0.33040575035252695,
+          "ci_95_high": 0.4674481813340289
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.5596653070941884,
+          "ci_95_low": 1.515667470725245,
+          "ci_95_high": 1.6036631434631317
+        },
+        {
+          "term": "Sn^2",
+          "coefficient": 0.9065664445495552,
+          "ci_95_low": 0.8279559629429103,
+          "ci_95_high": 0.9851769261562
+        },
+        {
+          "term": "Br^2",
+          "coefficient": 0.3287023471285702,
+          "ci_95_low": 0.25331816055526746,
+          "ci_95_high": 0.404086533701873
+        },
+        {
+          "term": "Sn*Br",
+          "coefficient": -0.1862731532574663,
+          "ci_95_low": -0.2773548825356976,
+          "ci_95_high": -0.09519142397923494
+        },
+        {
+          "term": "Sn*Cl",
+          "coefficient": -0.29377865800270575,
+          "ci_95_low": -0.4019866369510122,
+          "ci_95_high": -0.18557067905439928
+        }
+      ],
+      "selected_condition_number": 23.983038074269263
+    },
+    {
+      "stage": "M3",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 14,
+      "unique_valid_structure_count": 14,
+      "best_cv_rmse": 0.05682614850394132,
+      "five_percent_threshold": 0.059667455929138385,
+      "selected_candidate_index": 12,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Cl",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Cs",
+        "Sn^2",
+        "Br^2",
+        "Cs*Sn",
+        "Cs*Cl"
+      ],
+      "selected_term_count": 8,
+      "selected_cv_rmse_mean": 0.0584650434056078,
+      "selected_cv_rmse_std": 0.011217748020692558,
+      "selected_cv_r2": 0.9631707175013153,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.5552651680420209,
+          "ci_95_low": 1.5466085674372454,
+          "ci_95_high": 1.5639217686467963
+        },
+        {
+          "term": "Sn",
+          "coefficient": -1.1025280815784517,
+          "ci_95_low": -1.1657471376427642,
+          "ci_95_high": -1.0393090255141393
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.3431953132457193,
+          "ci_95_low": 0.2857925666978585,
+          "ci_95_high": 0.40059805979358004
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.6193177112496753,
+          "ci_95_low": 1.575242186018184,
+          "ci_95_high": 1.6633932364811665
+        },
+        {
+          "term": "Cs",
+          "coefficient": 0.12267888917628164,
+          "ci_95_low": 0.09776786050217379,
+          "ci_95_high": 0.1475899178503895
+        },
+        {
+          "term": "Sn^2",
+          "coefficient": 0.9170216432831484,
+          "ci_95_low": 0.8446121809642734,
+          "ci_95_high": 0.9894311056020234
+        },
+        {
+          "term": "Br^2",
+          "coefficient": 0.3660740356074962,
+          "ci_95_low": 0.3005007372446597,
+          "ci_95_high": 0.43164733397033267
+        },
+        {
+          "term": "Cs*Sn",
+          "coefficient": -0.22715626984385845,
+          "ci_95_low": -0.2765006164741183,
+          "ci_95_high": -0.17781192321359862
+        },
+        {
+          "term": "Cs*Cl",
+          "coefficient": -0.3252750459356004,
+          "ci_95_low": -0.407947611315837,
+          "ci_95_high": -0.24260248055536382
+        }
+      ],
+      "selected_condition_number": 21.992651226704012
+    },
+    {
+      "stage": "M4",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 10,
+      "unique_valid_structure_count": 7,
+      "best_cv_rmse": 0.06206579869710262,
+      "five_percent_threshold": 0.06516908863195775,
+      "selected_candidate_index": 13,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs*Cl",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Cs",
+        "Sn^2",
+        "Br^2",
+        "Sn*Br",
+        "Cs*Cl"
+      ],
+      "selected_term_count": 8,
+      "selected_cv_rmse_mean": 0.06206579869710262,
+      "selected_cv_rmse_std": 0.010425222923883364,
+      "selected_cv_r2": 0.9587749464588949,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.554089067883489,
+          "ci_95_low": 1.5445366749065605,
+          "ci_95_high": 1.5636414608604177
+        },
+        {
+          "term": "Sn",
+          "coefficient": -1.0710179081432016,
+          "ci_95_low": -1.138119579631189,
+          "ci_95_high": -1.0039162366552143
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.39903291923640644,
+          "ci_95_low": 0.3335097597109803,
+          "ci_95_high": 0.4645560787618326
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.6109641370377343,
+          "ci_95_low": 1.5645356060376354,
+          "ci_95_high": 1.6573926680378332
+        },
+        {
+          "term": "Cs",
+          "coefficient": 0.0694752077764952,
+          "ci_95_low": 0.046423466372683485,
+          "ci_95_high": 0.0925269491803069
+        },
+        {
+          "term": "Sn^2",
+          "coefficient": 0.8700472472087554,
+          "ci_95_low": 0.7948129411258125,
+          "ci_95_high": 0.9452815532916983
+        },
+        {
+          "term": "Br^2",
+          "coefficient": 0.32394567084007986,
+          "ci_95_low": 0.2518036989307222,
+          "ci_95_high": 0.39608764274943753
+        },
+        {
+          "term": "Sn*Br",
+          "coefficient": -0.2105558137491516,
+          "ci_95_low": -0.2972704411578527,
+          "ci_95_high": -0.12384118634045047
+        },
+        {
+          "term": "Cs*Cl",
+          "coefficient": -0.36658515375189527,
+          "ci_95_low": -0.45311548092087633,
+          "ci_95_high": -0.2800548265829142
+        }
+      ],
+      "selected_condition_number": 23.26493913227485
+    }
+  ],
+  "api_calls": [
+    {
+      "stage": "M0",
+      "attempt": 1,
+      "status": "failed",
+      "error": "ValueError: expected 16 candidates, received 8"
+    },
+    {
+      "stage": "M0",
+      "attempt": 2,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:23:22.149037+00:00",
+      "finished_at_utc": "2026-06-07T14:23:24.528548+00:00",
+      "elapsed_seconds": 2.379,
+      "response_id": "4897e5b6-fd96-4805-87cb-8a50e4de70b1",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 189,
+        "prompt_tokens": 367,
+        "total_tokens": 556,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 367
+      },
+      "valid_candidate_count": 14,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl"
+    },
+    {
+      "stage": "M1",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:23:24.651217+00:00",
+      "finished_at_utc": "2026-06-07T14:23:27.444256+00:00",
+      "elapsed_seconds": 2.793,
+      "response_id": "b48a5bc2-4dc1-45a3-9e72-e465a50e5675",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 429,
+        "prompt_tokens": 461,
+        "total_tokens": 890,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 461
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2"
+    },
+    {
+      "stage": "M2",
+      "attempt": 1,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:23:27.572111+00:00",
+      "finished_at_utc": "2026-06-07T14:23:32.263748+00:00",
+      "elapsed_seconds": 4.692,
+      "response_id": "9970bbcd-70d5-41bd-9c07-2a0a2ab3ac97",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 799,
+        "prompt_tokens": 493,
+        "total_tokens": 1292,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 493
+      },
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br + a7*Sn*Cl"
+    },
+    {
+      "stage": "M3",
+      "attempt": 1,
+      "status": "failed",
+      "error": "ValueError: response does not contain a JSON object"
+    },
+    {
+      "stage": "M3",
+      "attempt": 2,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:23:38.642268+00:00",
+      "finished_at_utc": "2026-06-07T14:23:44.966063+00:00",
+      "elapsed_seconds": 6.324,
+      "response_id": "dc45e1d8-6f89-4cd3-96e6-e18978e99840",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 998,
+        "prompt_tokens": 570,
+        "total_tokens": 1568,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 570
+      },
+      "valid_candidate_count": 14,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Cl"
+    },
+    {
+      "stage": "M4",
+      "attempt": 1,
+      "status": "failed",
+      "error": "ValueError: response does not contain a JSON object"
+    },
+    {
+      "stage": "M4",
+      "attempt": 2,
+      "status": "accepted",
+      "started_at_utc": "2026-06-07T14:23:49.919847+00:00",
+      "finished_at_utc": "2026-06-07T14:23:55.603210+00:00",
+      "elapsed_seconds": 5.683,
+      "response_id": "7942c019-b79c-4ba8-a6f4-e869944bdf49",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 825,
+        "prompt_tokens": 560,
+        "total_tokens": 1385,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 560
+      },
+      "valid_candidate_count": 10,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs*Cl"
+    }
+  ],
+  "final_cv_rmse_mean": 0.06206579869710262,
+  "final_cv_rmse_std": 0.010425222923883364,
+  "final_cv_r2": 0.9587749464588949,
+  "terms": [
+    "Sn",
+    "Br",
+    "Cl",
+    "Cs",
+    "Sn^2",
+    "Br^2",
+    "Sn*Br",
+    "Cs*Cl"
+  ],
+  "term_count": 8,
+  "symbolic_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Sn*Br + a8*Cs*Cl",
+  "fitted_expression": "Eg = 1.55408907 - 1.07101791*Sn + 0.39903292*Br + 1.61096414*Cl + 0.06947521*Cs + 0.87004725*Sn^2 + 0.32394567*Br^2 - 0.21055581*Sn*Br - 0.36658515*Cs*Cl",
+  "coefficients": [
+    {
+      "term": "Intercept",
+      "coefficient": 1.5540890678834895
+    },
+    {
+      "term": "Sn",
+      "coefficient": -1.0710179081432016
+    },
+    {
+      "term": "Br",
+      "coefficient": 0.39903291923640505
+    },
+    {
+      "term": "Cl",
+      "coefficient": 1.6109641370377326
+    },
+    {
+      "term": "Cs",
+      "coefficient": 0.0694752077764958
+    },
+    {
+      "term": "Sn^2",
+      "coefficient": 0.8700472472087548
+    },
+    {
+      "term": "Br^2",
+      "coefficient": 0.3239456708400789
+    },
+    {
+      "term": "Sn*Br",
+      "coefficient": -0.21055581374915117
+    },
+    {
+      "term": "Cs*Cl",
+      "coefficient": -0.3665851537518926
+    }
+  ],
+  "train_rows": 518,
+  "test_rows": 92,
+  "train_rmse": 0.05703242215408838,
+  "train_mae": 0.040755471084576465,
+  "train_r2": 0.9659827407190309,
+  "test_rmse": 0.05958708888885772,
+  "test_mae": 0.04626226472515878,
+  "test_r2": 0.9773327252624943,
+  "completed_at_utc": "2026-06-07T14:23:55.716273+00:00"
+}

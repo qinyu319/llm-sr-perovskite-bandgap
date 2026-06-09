@@ -1,0 +1,36 @@
+Independent workflow run: 003
+Sampling temperature: 1.0
+Current stage: M3
+
+Generate exactly 16 expression structures. Every expression must include a constant
+term and follow the frozen stage prompt below. Return only JSON, without Markdown.
+
+Previous-stage deterministic training-set selection within this same independent run:
+- selected structure: Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Sn*Br
+- selected non-constant terms: Sn, Br, Cl, Sn^2, Br^2, Sn*Br
+- mean five-fold CV RMSE: 0.06328227 eV
+
+Use that structure only as the previous-stage baseline. Do not use results from any
+other run. Extend, revise, or simplify it only under the current stage constraints.
+
+Frozen stage prompt:
+You are a materials-physics and symbolic-regression expert. We now incorporate A-site effects by introducing Cs (A-site Cs fraction in [0,1]) in addition to Sn, Br, Cl.
+
+Inputs: Sn, Br, Cl, Cs in [0,1].
+
+Task: Propose an interpretable quadratic analytical structure that includes Cs main effects and (optionally) Cs-related coupling terms, to be fitted later on the training set.
+
+Allowed terms:
+- Main effects: Sn, Br, Cl, Cs
+- Squares: Sn^2, Br^2, Cl^2, Cs^2 (optional)
+- Interactions: prioritize Cs with B/X terms (Cs*Sn, Cs*Br, Cs*Cl)
+- Optionally keep a small number of {Sn*Br, Sn*Cl, Br*Cl} if physically justified
+- Constant term
+
+Constraints:
+1) Only quadratic terms (main, squares, pairwise products). No higher-order, ratios, logs, exponentials.
+2) Total interaction terms <= 4; prioritize Cs-coupling terms first.
+3) Keep the structure compact (target <= 12 non-constant terms).
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, a single expression structure.

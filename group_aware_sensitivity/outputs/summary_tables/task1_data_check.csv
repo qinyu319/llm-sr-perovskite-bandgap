@@ -1,0 +1,4 @@
+﻿dataset,n_rows,target_column,closure_invalid_rows,used_for_group_aware_workflow,note
+training_raw,518,Eg,11,False,Raw source; valid subset is used after strict closure QC.
+training_valid_curated,507,Eg,0,True,"Only these original-training rows enter group labels, splits, screening, CV, and selection."
+external_test,92,Eg,2,False,Excluded from all selection/pruning/final choice; retained only as frozen random-split reference.

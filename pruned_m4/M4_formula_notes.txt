@@ -1,0 +1,23 @@
+Pruned M4 according to standard.txt
+
+Final selected model: M4
+Pruning definition: M4 removes the Br*Cl interaction from M3, then refits coefficients by OLS on the training set.
+
+Formula:
+Eg = 1.55012 - 1.09085·Sn + 0.40063·Br + 1.57730·Cl + 0.07307·Cs + 0.92785·Sn^2 + 0.33196·Br^2 + 0.04127·Cl^2 + 0.12242·Cs^2 - 0.13723·Sn·Br + 0.15491·Sn·Cl - 0.26891·Sn·Cs - 0.14853·Br·Cs - 0.41869·Cl·Cs
+
+Selection protocol:
+- Candidate scope: M0-M4 structures supplied in M0-M4.xlsx.
+- Coefficients: OLS on training set only.
+- Main metric: five-fold CV RMSE on the training set.
+- CV implementation: sklearn KFold(n_splits=5, shuffle=True, random_state=42).
+- Test set: post hoc reporting only; not used for screening, pruning, or final selection.
+
+Key metrics:
+- M3 CV RMSE = 0.058333 eV
+- M4 CV RMSE = 0.059460 eV
+- 5 percent equivalence threshold = 0.058333 eV
+- M4 train RMSE = 0.051789 eV
+- M4 test RMSE, post hoc only = 0.053835 eV
+
+Conclusion: M4 is CV-qualified, remains within the 5 percent accuracy-equivalent range of M3, and uses one fewer term. Therefore M4 is selected by constrained parsimony, not by test RMSE.

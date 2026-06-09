@@ -1,0 +1,4 @@
+﻿group_strategy,n_splits,mean_test_rmse,sd_test_rmse,median_test_rmse,worst_test_rmse,mean_test_mae,sd_test_mae,mean_jaccard_to_M4,median_jaccard_to_M4,mean_n_terms,median_n_terms,main_failure_regime
+composition_family_group_shuffle,20,0.08844326154953565,0.03354827604558347,0.074958710124128,0.1622250770661361,0.06761504446788494,0.026558885023920915,0.7790277777777778,0.8375,7.15,7.0,Cs_rich__Pb_rich__I_rich;Cs_rich__Pb_rich__mixed_halide;Cs_rich__mixed_B__I_rich;FA_rich__Sn_rich__mixed_halide;MA_rich__Sn_rich__Cl_containing
+halide_logo,4,0.27095738859526325,0.41235489406475884,0.06939488682110659,0.8894008329518155,0.22002013345196622,0.3385880677459449,0.875,0.875,7.0,7.0,Cl_containing
+a_site_logo,4,0.08546806605299345,0.06362354638294378,0.07096375680461656,0.1738221549247762,0.06662562122540715,0.052688718745114806,0.8506944444444444,0.8888888888888888,7.25,8.0,Cs_rich

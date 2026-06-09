@@ -1,0 +1,40 @@
+Independent repeated-run ID: 019; current stage: M3.
+
+Repeated-run batch instruction:
+- This is one stage inside an independently repeated M0-to-M4 experiment.
+- Apply the scientific and structural constraints in the stage prompt exactly.
+- Generate exactly 16 candidate expression structures.
+- Make the candidates structurally distinct where the constraints allow.
+- Each candidate must itself follow the original one-line expression format.
+- Do not fit coefficients, use data, report performance, or explain.
+- Return only the schema-conforming object containing the 16 candidate strings.
+
+Previous-stage deterministic training-set selection for this same run:
+- selected structure: Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2
+- selected non-constant terms: Sn, Br, Cl, Sn^2, Br^2
+- mean five-fold CV RMSE: 0.06381619 eV
+
+Use this selected structure as the baseline inherited from the previous stage. Extend,
+revise, or simplify it only within the current stage's allowed term pool and constraints.
+
+Original frozen stage prompt:
+You are a materials-physics and symbolic-regression expert. We now incorporate A-site effects by introducing Cs (A-site Cs fraction in [0,1]) in addition to Sn, Br, Cl.
+
+Inputs: Sn, Br, Cl, Cs in [0,1].
+
+Task: Propose an interpretable quadratic analytical structure that includes Cs main effects and (optionally) Cs-related coupling terms, to be fitted later on the training set.
+
+Allowed terms:
+- Main effects: Sn, Br, Cl, Cs
+- Squares: Sn^2, Br^2, Cl^2, Cs^2 (optional)
+- Interactions: prioritize Cs with B/X terms (Cs*Sn, Cs*Br, Cs*Cl)
+- Optionally keep a small number of {Sn*Br, Sn*Cl, Br*Cl} if physically justified
+- Constant term
+
+Constraints:
+1) Only quadratic terms (main, squares, pairwise products). No higher-order, ratios, logs, exponentials.
+2) Total interaction terms <= 4; prioritize Cs-coupling terms first.
+3) Keep the structure compact (target <= 12 non-constant terms).
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, a single expression structure.

@@ -1,0 +1,22 @@
+Experiment 3: MA / A-site encoding sensitivity
+
+Generated: 2026-06-08T22:15:44
+Train: 训练集.xlsx; n=518
+Test: 测试集.xlsx; n=92
+
+Models:
+- Sn-Br-Cl core: 9-term Sn/Br/Cl quadratic polynomial
+- Sn-Br-Cl + Cs: Core + Cs main effect
+- Sn-Br-Cl + Cs interactions: Core + Cs + Cs² + Cs·Sn + Cs·Br + Cs·Cl; matches earlier M3 structure
+- Sn-Br-Cl + MA: Core + MA main effect
+- Sn-Br-Cl + Cs + MA: Core + Cs + MA; FA is the implicit A-site baseline under FA+MA+Cs=1
+
+Key results:
+- Core CV RMSE: 0.066548 eV
+- +Cs main CV RMSE: 0.066566 eV
+- +Cs interactions CV RMSE: 0.058333 eV
+- +MA main CV RMSE: 0.065590 eV
+- +Cs+MA main CV RMSE: 0.064405 eV
+
+Conclusion:
+A-site information is supported only in the Cs nonlinear/interaction structure. Cs or MA main effects alone do not produce a comparable CV gain. If the final main formula includes A-site, use the Cs interaction formulation rather than isolated linear A-site corrections.

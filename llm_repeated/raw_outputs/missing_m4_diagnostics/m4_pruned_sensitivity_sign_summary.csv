@@ -1,0 +1,5 @@
+﻿model_id,variable,min_derivative,max_derivative,mean_derivative,sign_direction,derivative_range_crosses_zero,exact_zero_on_grid
+m4_pruned,Sn,-1.1344646461598624,0.7013445402517261,-0.21656005295406824,mixed,True,False
+m4_pruned,Br,0.34765138013848657,1.085233468745694,0.7164424244420904,positive,False,False
+m4_pruned,Cl,1.5230643664017576,1.5230643664017576,1.5230643664017585,positive,False,False
+m4_pruned,Cs,0.08182317222815028,0.08182317222815028,0.08182317222815026,positive,False,False

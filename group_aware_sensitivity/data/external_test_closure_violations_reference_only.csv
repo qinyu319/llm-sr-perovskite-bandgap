@@ -1,0 +1,3 @@
+﻿id,FA,MA,Cs,Pb,Sn,Br,Cl,I,Eg,source_row_index,sample_id,original_split,A_sum,B_sum,X_sum,A_closure_error,B_closure_error,X_closure_error,numeric_complete,fractions_within_0_1,closure_pass
+63,0.666,0.2668,0.0664,1.0,0.0,0.256,0.0,0.744,1.71,63,external_test_63,external_test,0.9992000000000001,1.0,1.0,-0.0007999999999999119,0.0,0.0,True,True,False
+67,0.8668,0.0664,0.066,1.0,0.0,0.256,0.0,0.744,1.7,67,external_test_67,external_test,0.9992000000000001,1.0,1.0,-0.0007999999999999119,0.0,0.0,True,True,False

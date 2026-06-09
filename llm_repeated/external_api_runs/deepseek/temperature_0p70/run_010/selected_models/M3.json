@@ -1,0 +1,88 @@
+{
+  "stage": "M3",
+  "raw_candidate_count": 16,
+  "valid_candidate_count": 14,
+  "unique_valid_structure_count": 14,
+  "best_cv_rmse": 0.05687376487926461,
+  "five_percent_threshold": 0.05971745312322785,
+  "selected_candidate_index": 6,
+  "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br + a9*Cs*Cl",
+  "selected_terms": [
+    "Sn",
+    "Br",
+    "Cl",
+    "Cs",
+    "Sn^2",
+    "Br^2",
+    "Cs*Sn",
+    "Cs*Br",
+    "Cs*Cl"
+  ],
+  "selected_term_count": 9,
+  "selected_cv_rmse_mean": 0.05687376487926461,
+  "selected_cv_rmse_std": 0.009507704384787086,
+  "selected_cv_r2": 0.9653900364435928,
+  "selected_coefficients": [
+    {
+      "term": "Intercept",
+      "coefficient": 1.549773099661345,
+      "ci_95_low": 1.5409753497387826,
+      "ci_95_high": 1.5585708495839075
+    },
+    {
+      "term": "Sn",
+      "coefficient": -1.1036771776462688,
+      "ci_95_low": -1.1656548618669023,
+      "ci_95_high": -1.0416994934256354
+    },
+    {
+      "term": "Br",
+      "coefficient": 0.35710674697392997,
+      "ci_95_low": 0.30052689762899665,
+      "ci_95_high": 0.4136865963188633
+    },
+    {
+      "term": "Cl",
+      "coefficient": 1.6186761683226498,
+      "ci_95_low": 1.5754665872088447,
+      "ci_95_high": 1.661885749436455
+    },
+    {
+      "term": "Cs",
+      "coefficient": 0.17504506977636772,
+      "ci_95_low": 0.14209510721139848,
+      "ci_95_high": 0.20799503234133696
+    },
+    {
+      "term": "Sn^2",
+      "coefficient": 0.9219225565915641,
+      "ci_95_low": 0.8509069247262311,
+      "ci_95_high": 0.9929381884568971
+    },
+    {
+      "term": "Br^2",
+      "coefficient": 0.3748441575254476,
+      "ci_95_low": 0.3104537706786878,
+      "ci_95_high": 0.4392345443722074
+    },
+    {
+      "term": "Cs*Sn",
+      "coefficient": -0.2477303120840902,
+      "ci_95_low": -0.29687873815841703,
+      "ci_95_high": -0.19858188600976334
+    },
+    {
+      "term": "Cs*Br",
+      "coefficient": -0.14403418752372024,
+      "ci_95_low": -0.20487655917955735,
+      "ci_95_high": -0.08319181586788313
+    },
+    {
+      "term": "Cs*Cl",
+      "coefficient": -0.33180987053530286,
+      "ci_95_low": -0.4129035841553813,
+      "ci_95_high": -0.2507161569152244
+    }
+  ],
+  "selected_condition_number": 22.010459424957766
+}

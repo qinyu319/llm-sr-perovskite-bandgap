@@ -1,0 +1,46 @@
+{
+  "stage": "M0",
+  "raw_candidate_count": 16,
+  "valid_candidate_count": 15,
+  "unique_valid_structure_count": 7,
+  "best_cv_rmse": 0.08836922814088868,
+  "five_percent_threshold": 0.09278768954793312,
+  "selected_candidate_index": 1,
+  "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl",
+  "selected_terms": [
+    "Sn",
+    "Br",
+    "Cl"
+  ],
+  "selected_term_count": 3,
+  "selected_cv_rmse_mean": 0.08836922814088868,
+  "selected_cv_rmse_std": 0.006404898223502302,
+  "selected_cv_r2": 0.9179911938646828,
+  "selected_coefficients": [
+    {
+      "term": "Intercept",
+      "coefficient": 1.5240066744453633,
+      "ci_95_low": 1.5132262028729142,
+      "ci_95_high": 1.5347871460178124
+    },
+    {
+      "term": "Sn",
+      "coefficient": -0.3549003749144135,
+      "ci_95_low": -0.38115681940839574,
+      "ci_95_high": -0.3286439304204313
+    },
+    {
+      "term": "Br",
+      "coefficient": 0.673609955308627,
+      "ci_95_low": 0.6429989412463196,
+      "ci_95_high": 0.7042209693709344
+    },
+    {
+      "term": "Cl",
+      "coefficient": 1.5518117484449636,
+      "ci_95_low": 1.4936273066420114,
+      "ci_95_high": 1.6099961902479158
+    }
+  ],
+  "selected_condition_number": 7.9520094275500055
+}

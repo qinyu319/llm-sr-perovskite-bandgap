@@ -1,0 +1,36 @@
+{
+  "id": "7942c019-b79c-4ba8-a6f4-e869944bdf49",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\n  \"candidates\": [\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn*Br + a6*Sn*Cl + a7*Cs*Br + a8*Cs*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Sn*Br + a7*Cs*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Sn*Br + a7*Cs*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Br + a7*Cs*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs*Br + a7*Cs*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn*Br + a6*Sn*Cl + a7*Cs*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Sn*Br + a7*Cs*Cl + a8*Cs*Br\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Sn*Br + a7*Cs*Cl + a8*Cs*Br\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn*Br + a6*Sn*Cl + a7*Cs*Cl + a8*Cs*Br\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Sn*Br + a7*Cs*Cl + a8*Sn*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Sn*Br + a7*Cs*Cl + a8*Sn*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn*Br + a6*Sn*Cl + a7*Cs*Cl + a8*Cs*Sn^2\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Cl + a8*Sn*Br\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Cl + a8*Sn*Cl\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Br + a7*Cs*Cl + a8*Sn*Br\",\n    \"a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs*Br + a7*Cs*Cl + a8*Sn*Br\"\n  ]\n}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1780842229,
+  "model": "deepseek-v4-flash",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+  "usage": {
+    "completion_tokens": 825,
+    "prompt_tokens": 560,
+    "total_tokens": 1385,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 560
+  }
+}

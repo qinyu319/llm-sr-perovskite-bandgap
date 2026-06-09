@@ -1,0 +1,19 @@
+You are a materials-physics and symbolic-regression expert. To capture metal-halide coupling and mixed-halide effects, we now allow second-order interaction terms.
+
+Inputs: Sn, Br, Cl in [0,1].
+
+Task: Propose a second-order (quadratic) analytical structure that may include main effects, squared terms, and a small number of physically motivated pairwise interactions, to be fitted later on the training set.
+
+Allowed term pool:
+- Main effects: Sn, Br, Cl
+- Squares: Sn^2, Br^2, Cl^2
+- Pairwise interactions (choose up to 2-3): Sn*Br, Sn*Cl, Br*Cl
+- Constant term
+
+Constraints:
+1) Use only the term pool above. No higher-order terms, no ratios, no logs, no exponentials.
+2) Use at most 2-3 interaction terms; prioritize physically meaningful couplings (metal-halide and mixed-halide).
+3) Keep total non-constant terms <= 10.
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, a single expression structure.

@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"019ea14d-ab07-7362-8535-458c81966489"}
+{"type":"turn.started"}
+{"type":"error","message":"Reconnecting... 2/5 (stream disconnected before completion: 远程主机强迫关闭了一个现有的连接。 (os error 10054))"}
+{"type":"error","message":"Reconnecting... 3/5 (stream disconnected before completion: 远程主机强迫关闭了一个现有的连接。 (os error 10054))"}
+{"type":"error","message":"Reconnecting... 4/5 (stream disconnected before completion: 远程主机强迫关闭了一个现有的连接。 (os error 10054))"}
+{"type":"error","message":"Reconnecting... 5/5 (stream disconnected before completion: 远程主机强迫关闭了一个现有的连接。 (os error 10054))"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"candidates\":[\"Eg = a0\",\"Eg = a1*Sn\",\"Eg = a1*Br\",\"Eg = a1*Cl\",\"Eg = a0 + a1*Sn\",\"Eg = a0 + a1*Br\",\"Eg = a0 + a1*Cl\",\"Eg = a1*Sn + a2*Br\",\"Eg = a1*Sn + a2*Cl\",\"Eg = a1*Br + a2*Cl\",\"Eg = a0 + a1*Sn + a2*Br\",\"Eg = a0 + a1*Sn + a2*Cl\",\"Eg = a0 + a1*Br + a2*Cl\",\"Eg = a1*Sn + a2*Br + a3*Cl\",\"Eg = a0 + a1*Sn + a2*Br + a3*Cl\",\"Eg = a0 + a1*Cl + a2*Br + a3*Sn\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":10455,"cached_input_tokens":10112,"output_tokens":438,"reasoning_output_tokens":227}}

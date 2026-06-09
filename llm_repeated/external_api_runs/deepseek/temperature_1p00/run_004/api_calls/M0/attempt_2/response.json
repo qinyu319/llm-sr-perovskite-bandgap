@@ -1,0 +1,36 @@
+{
+  "id": "4897e5b6-fd96-4805-87cb-8a50e4de70b1",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"candidates\": [\"a0 + a1*Sn + a2*Br + a3*Cl\", \"a0 + a1*Sn + a2*Br\", \"a0 + a1*Sn + a2*Cl\", \"a0 + a1*Br + a2*Cl\", \"a0 + a1*Sn\", \"a0 + a1*Br\", \"a0 + a1*Cl\", \"a0\", \"a0 + a1*Sn + a2*Br + a3*Cl\", \"a0 + a1*Sn + a2*Br\", \"a0 + a1*Sn + a2*Cl\", \"a0 + a1*Br + a2*Cl\", \"a0 + a1*Sn\", \"a0 + a1*Br\", \"a0 + a1*Cl\", \"a0\"]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1780842201,
+  "model": "deepseek-v4-flash",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+  "usage": {
+    "completion_tokens": 189,
+    "prompt_tokens": 367,
+    "total_tokens": 556,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 367
+  }
+}

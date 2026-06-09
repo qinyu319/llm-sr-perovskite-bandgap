@@ -1,0 +1,395 @@
+{
+  "run_id": 3,
+  "thread_id": "019ea125-3243-7862-8502-d3e4568da875",
+  "model": "gpt-5.5",
+  "reasoning_effort": "low",
+  "cv_seed": 20260607,
+  "selection_policy": "Within each stage, structures within 5% of the best training-set five-fold CV RMSE were accuracy-equivalent; fewest terms won, then lower CV RMSE. Test data were evaluated only after M4 selection.",
+  "stage_selections": [
+    {
+      "stage": "M0",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 15,
+      "unique_valid_structure_count": 7,
+      "best_cv_rmse": 0.08836922814088868,
+      "five_percent_threshold": 0.09278768954793312,
+      "selected_candidate_index": 8,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl"
+      ],
+      "selected_term_count": 3,
+      "selected_cv_rmse_mean": 0.08836922814088868,
+      "selected_cv_rmse_std": 0.006404898223502302,
+      "selected_cv_r2": 0.9179911938646828,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.5240066744453633,
+          "ci_95_low": 1.5132262028729142,
+          "ci_95_high": 1.5347871460178124
+        },
+        {
+          "term": "Sn",
+          "coefficient": -0.3549003749144135,
+          "ci_95_low": -0.38115681940839574,
+          "ci_95_high": -0.3286439304204313
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.673609955308627,
+          "ci_95_low": 0.6429989412463196,
+          "ci_95_high": 0.7042209693709344
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.5518117484449636,
+          "ci_95_low": 1.4936273066420114,
+          "ci_95_high": 1.6099961902479158
+        }
+      ],
+      "selected_condition_number": 7.9520094275500055
+    },
+    {
+      "stage": "M1",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 15,
+      "unique_valid_structure_count": 15,
+      "best_cv_rmse": 0.06381619210960617,
+      "five_percent_threshold": 0.06700700171508647,
+      "selected_candidate_index": 5,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Sn^2",
+        "Br^2"
+      ],
+      "selected_term_count": 5,
+      "selected_cv_rmse_mean": 0.06381619210960617,
+      "selected_cv_rmse_std": 0.0048707206201949885,
+      "selected_cv_r2": 0.9571879206007586,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.568925388787943,
+          "ci_95_low": 1.559413857995193,
+          "ci_95_high": 1.578436919580693
+        },
+        {
+          "term": "Sn",
+          "coefficient": -1.0996478865174957,
+          "ci_95_low": -1.1720163278358153,
+          "ci_95_high": -1.027279445199176
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.34522902520737436,
+          "ci_95_low": 0.2791236001198587,
+          "ci_95_high": 0.41133445029489
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.5102498090004057,
+          "ci_95_low": 1.4682233451892799,
+          "ci_95_high": 1.5522762728115316
+        },
+        {
+          "term": "Sn^2",
+          "coefficient": 0.8587412503131316,
+          "ci_95_low": 0.7777618833039259,
+          "ci_95_high": 0.9397206173223374
+        },
+        {
+          "term": "Br^2",
+          "coefficient": 0.372680990275899,
+          "ci_95_low": 0.29720018649802493,
+          "ci_95_high": 0.4481617940537731
+        }
+      ],
+      "selected_condition_number": 21.525446749159425
+    },
+    {
+      "stage": "M2",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 16,
+      "unique_valid_structure_count": 16,
+      "best_cv_rmse": 0.0632822727782194,
+      "five_percent_threshold": 0.06644638641713038,
+      "selected_candidate_index": 1,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Sn^2",
+        "Br^2"
+      ],
+      "selected_term_count": 5,
+      "selected_cv_rmse_mean": 0.06381619210960617,
+      "selected_cv_rmse_std": 0.0048707206201949885,
+      "selected_cv_r2": 0.9571879206007586,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.568925388787943,
+          "ci_95_low": 1.559413857995193,
+          "ci_95_high": 1.578436919580693
+        },
+        {
+          "term": "Sn",
+          "coefficient": -1.0996478865174957,
+          "ci_95_low": -1.1720163278358153,
+          "ci_95_high": -1.027279445199176
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.34522902520737436,
+          "ci_95_low": 0.2791236001198587,
+          "ci_95_high": 0.41133445029489
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.5102498090004057,
+          "ci_95_low": 1.4682233451892799,
+          "ci_95_high": 1.5522762728115316
+        },
+        {
+          "term": "Sn^2",
+          "coefficient": 0.8587412503131316,
+          "ci_95_low": 0.7777618833039259,
+          "ci_95_high": 0.9397206173223374
+        },
+        {
+          "term": "Br^2",
+          "coefficient": 0.372680990275899,
+          "ci_95_low": 0.29720018649802493,
+          "ci_95_high": 0.4481617940537731
+        }
+      ],
+      "selected_condition_number": 21.525446749159425
+    },
+    {
+      "stage": "M3",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 15,
+      "unique_valid_structure_count": 15,
+      "best_cv_rmse": 0.05682614850394132,
+      "five_percent_threshold": 0.059667455929138385,
+      "selected_candidate_index": 4,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Cs",
+        "Sn^2",
+        "Br^2",
+        "Cs*Sn"
+      ],
+      "selected_term_count": 7,
+      "selected_cv_rmse_mean": 0.05873674205630693,
+      "selected_cv_rmse_std": 0.003978764073945925,
+      "selected_cv_r2": 0.9637696779051705,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.5578367623450686,
+          "ci_95_low": 1.5487212774693837,
+          "ci_95_high": 1.5669522472207535
+        },
+        {
+          "term": "Sn",
+          "coefficient": -1.1013798994006034,
+          "ci_95_low": -1.168140036017811,
+          "ci_95_high": -1.034619762783396
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.3504843021204491,
+          "ci_95_low": 0.2898971950267466,
+          "ci_95_high": 0.41107140921415164
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.5254431598999378,
+          "ci_95_low": 1.486307762161865,
+          "ci_95_high": 1.5645785576380107
+        },
+        {
+          "term": "Cs",
+          "coefficient": 0.09879113454283442,
+          "ci_95_low": 0.07327775937090411,
+          "ci_95_high": 0.12430450971476473
+        },
+        {
+          "term": "Sn^2",
+          "coefficient": 0.9133612329111092,
+          "ci_95_low": 0.8369014060717223,
+          "ci_95_high": 0.9898210597504961
+        },
+        {
+          "term": "Br^2",
+          "coefficient": 0.3606396596739568,
+          "ci_95_low": 0.2914080384713971,
+          "ci_95_high": 0.42987128087651644
+        },
+        {
+          "term": "Cs*Sn",
+          "coefficient": -0.2504514725279483,
+          "ci_95_low": -0.3021838208570225,
+          "ci_95_high": -0.1987191241988741
+        }
+      ],
+      "selected_condition_number": 21.98723938339402
+    },
+    {
+      "stage": "M4",
+      "raw_candidate_count": 16,
+      "valid_candidate_count": 16,
+      "unique_valid_structure_count": 16,
+      "best_cv_rmse": 0.057952744190650884,
+      "five_percent_threshold": 0.06085038140018343,
+      "selected_candidate_index": 3,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br",
+      "selected_terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Cs",
+        "Sn^2",
+        "Br^2",
+        "Cs*Sn",
+        "Cs*Br"
+      ],
+      "selected_term_count": 8,
+      "selected_cv_rmse_mean": 0.058127236767094595,
+      "selected_cv_rmse_std": 0.004242602312181955,
+      "selected_cv_r2": 0.964495840398022,
+      "selected_coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 1.5527164396110915,
+          "ci_95_low": 1.5434163393375055,
+          "ci_95_high": 1.5620165398846775
+        },
+        {
+          "term": "Sn",
+          "coefficient": -1.102439679289998,
+          "ci_95_low": -1.1681756079861294,
+          "ci_95_high": -1.0367037505938665
+        },
+        {
+          "term": "Br",
+          "coefficient": 0.36371508896860427,
+          "ci_95_low": 0.30372805216911986,
+          "ci_95_high": 0.4237021257680887
+        },
+        {
+          "term": "Cl",
+          "coefficient": 1.5230643664017576,
+          "ci_95_low": 1.4845138857719977,
+          "ci_95_high": 1.5616148470315174
+        },
+        {
+          "term": "Cs",
+          "coefficient": 0.1476247185461348,
+          "ci_95_low": 0.11340675035152027,
+          "ci_95_high": 0.18184268674074933
+        },
+        {
+          "term": "Sn^2",
+          "coefficient": 0.9179045932057943,
+          "ci_95_low": 0.8425889722874291,
+          "ci_95_high": 0.9932202141241595
+        },
+        {
+          "term": "Br^2",
+          "coefficient": 0.3687910443036037,
+          "ci_95_low": 0.30051332409579584,
+          "ci_95_high": 0.4370687645114116
+        },
+        {
+          "term": "Cs*Sn",
+          "coefficient": -0.27025552664265057,
+          "ci_95_low": -0.3220568222663943,
+          "ci_95_high": -0.2184542310189068
+        },
+        {
+          "term": "Cs*Br",
+          "coefficient": -0.13556004936269955,
+          "ci_95_low": -0.20005519193712445,
+          "ci_95_high": -0.07106490678827466
+        }
+      ],
+      "selected_condition_number": 22.0039723673984
+    }
+  ],
+  "final_stage": "M4",
+  "final_cv_rmse_mean": 0.058127236767094595,
+  "final_cv_rmse_std": 0.004242602312181955,
+  "final_cv_r2": 0.964495840398022,
+  "terms": [
+    "Sn",
+    "Br",
+    "Cl",
+    "Cs",
+    "Sn^2",
+    "Br^2",
+    "Cs*Sn",
+    "Cs*Br"
+  ],
+  "term_count": 8,
+  "symbolic_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br",
+  "fitted_expression": "Eg = 1.55271644 - 1.10243968*Sn + 0.36371509*Br + 1.52306437*Cl + 0.14762472*Cs + 0.91790459*Sn^2 + 0.36879104*Br^2 - 0.27025553*Cs*Sn - 0.13556005*Cs*Br",
+  "coefficients": [
+    {
+      "term": "Intercept",
+      "coefficient": 1.552716439611091
+    },
+    {
+      "term": "Sn",
+      "coefficient": -1.1024396792899978
+    },
+    {
+      "term": "Br",
+      "coefficient": 0.36371508896860366
+    },
+    {
+      "term": "Cl",
+      "coefficient": 1.5230643664017565
+    },
+    {
+      "term": "Cs",
+      "coefficient": 0.14762471854613388
+    },
+    {
+      "term": "Sn^2",
+      "coefficient": 0.9179045932057938
+    },
+    {
+      "term": "Br^2",
+      "coefficient": 0.3687910443036017
+    },
+    {
+      "term": "Cs*Sn",
+      "coefficient": -0.2702555266426516
+    },
+    {
+      "term": "Cs*Br",
+      "coefficient": -0.13556004936269656
+    }
+  ],
+  "train_rows": 518,
+  "test_rows": 92,
+  "train_rmse": 0.05626078865030328,
+  "train_mae": 0.039758754592673064,
+  "train_r2": 0.9668970026758805,
+  "test_rmse": 0.06175816011399793,
+  "test_mae": 0.04660800300542293,
+  "test_r2": 0.975650857602251,
+  "completed_at_utc": "2026-06-07T08:30:14.492984+00:00"
+}

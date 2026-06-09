@@ -1,0 +1,22 @@
+{
+  "model": "deepseek-v4-flash",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You propose symbolic structures for a controlled scientific experiment.\nFollow the supplied stage constraints exactly. Do not fit coefficients, inspect data,\nreport performance, or explain your choices. Return only one JSON object with exactly\nthis shape: {\"candidates\": [\"expression 1\", \"...\", \"expression 16\"]}.\nThe candidates should be structurally distinct where the stage constraints allow."
+    },
+    {
+      "role": "user",
+      "content": "Independent workflow run: 003\nSampling temperature: 0.2\nCurrent stage: M0\n\nGenerate exactly 16 expression structures. Every expression must include a constant\nterm and follow the frozen stage prompt below. Return only JSON, without Markdown.\n\nFrozen stage prompt:\nYou are a materials-physics and symbolic-regression expert. We aim to build an interpretable analytical model for the optical band gap Eg (eV) of 3D ABX3 hybrid perovskites.\n\nInput features are composition fractions with clear physical meaning:\nSn (B-site Sn fraction), Br and Cl (X-site halide fractions). Each lies in [0,1].\n\nTask: Propose a strictly linear analytical structure (constant + first-order terms only) to be later fitted on the training set.\nConstraints:\n1) Allowed terms: {constant, Sn, Br, Cl} only.\n2) Do NOT use squared terms, interaction products, ratios, logs, exponentials, or any higher-order terms.\n3) Keep the structure minimal and physically interpretable.\n4) Do NOT provide any numerical coefficients and do NOT explain.\n\nOutput format: output exactly one line, e.g.\nEg = a0 + a1*Sn + a2*Br + a3*Cl\n"
+    }
+  ],
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "max_tokens": 3000,
+  "stream": false,
+  "extra_body": {
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

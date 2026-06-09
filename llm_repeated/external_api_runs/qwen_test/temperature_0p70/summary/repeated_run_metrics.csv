@@ -1,0 +1,2 @@
+﻿run_id,provider,requested_model,temperature,top_p,qwen_seed,terms,term_count,cv_rmse_mean,cv_rmse_std,test_rmse,test_mae,test_r2
+1,qwen,qwen-plus,0.7,1.0,,Sn;Br;Cl;Cs;Sn^2;Sn*Br;Cs*Sn;Cs*Br,8,0.06217078551478221,0.0037704923460199027,0.06467191373617677,0.05028564996982027,0.9732990694978745

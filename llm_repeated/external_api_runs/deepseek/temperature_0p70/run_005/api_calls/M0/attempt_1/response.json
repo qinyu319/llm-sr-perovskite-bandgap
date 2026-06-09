@@ -1,0 +1,36 @@
+{
+  "id": "ff587c41-e31b-416f-aed6-95d7ab72731c",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"candidates\": [\"Eg = a0 + a1*Sn + a2*Br + a3*Cl\", \"Eg = a0 + a1*Sn + a2*Br\", \"Eg = a0 + a1*Sn + a2*Cl\", \"Eg = a0 + a1*Br + a2*Cl\", \"Eg = a0 + a1*Sn\", \"Eg = a0 + a1*Br\", \"Eg = a0 + a1*Cl\", \"Eg = a0\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn + a5*Br\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn + a5*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Br + a5*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn + a5*Br + a6*Cl\", \"Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn + a5*Br + a6*Cl + a7*Sn\"]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1780841971,
+  "model": "deepseek-v4-flash",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+  "usage": {
+    "completion_tokens": 361,
+    "prompt_tokens": 335,
+    "total_tokens": 696,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 335
+  }
+}

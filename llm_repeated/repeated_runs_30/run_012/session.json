@@ -1,0 +1,65 @@
+{
+  "run_id": 12,
+  "model": "gpt-5.5",
+  "reasoning_effort": "low",
+  "independent_run_session": true,
+  "created_at_utc": "2026-06-07T08:30:14.495312+00:00",
+  "stages": [
+    {
+      "command_exit_code": 0,
+      "elapsed_seconds": 126.701,
+      "started_at_utc": "2026-06-07T08:32:21.199635+00:00",
+      "stdout_log": "llm_repeated/repeated_runs_30/run_012/logs/M0_attempt_1.stdout.jsonl",
+      "stderr_log": null,
+      "stage": "M0",
+      "attempt": 1,
+      "valid_candidate_count": 15,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl"
+    },
+    {
+      "command_exit_code": 0,
+      "elapsed_seconds": 128.689,
+      "started_at_utc": "2026-06-07T08:34:30.015099+00:00",
+      "stdout_log": "llm_repeated/repeated_runs_30/run_012/logs/M1_attempt_1.stdout.jsonl",
+      "stderr_log": null,
+      "stage": "M1",
+      "attempt": 1,
+      "valid_candidate_count": 15,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2"
+    },
+    {
+      "command_exit_code": 0,
+      "elapsed_seconds": 134.022,
+      "started_at_utc": "2026-06-07T08:36:44.161698+00:00",
+      "stdout_log": "llm_repeated/repeated_runs_30/run_012/logs/M2_attempt_1.stdout.jsonl",
+      "stderr_log": null,
+      "stage": "M2",
+      "attempt": 1,
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2"
+    },
+    {
+      "command_exit_code": 0,
+      "elapsed_seconds": 135.282,
+      "started_at_utc": "2026-06-07T08:38:59.574102+00:00",
+      "stdout_log": "llm_repeated/repeated_runs_30/run_012/logs/M3_attempt_1.stdout.jsonl",
+      "stderr_log": null,
+      "stage": "M3",
+      "attempt": 1,
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn"
+    },
+    {
+      "command_exit_code": 0,
+      "elapsed_seconds": 136.217,
+      "started_at_utc": "2026-06-07T08:41:15.918922+00:00",
+      "stdout_log": "llm_repeated/repeated_runs_30/run_012/logs/M4_attempt_1.stdout.jsonl",
+      "stderr_log": null,
+      "stage": "M4",
+      "attempt": 1,
+      "valid_candidate_count": 16,
+      "selected_expression": "Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br"
+    }
+  ],
+  "thread_id": "019ea134-3854-7712-96fc-71bf7d7f0616"
+}

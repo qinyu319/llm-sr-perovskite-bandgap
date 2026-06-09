@@ -1,0 +1,63 @@
+{
+  "started_at_utc": "2026-06-07T08:13:49.612669+00:00",
+  "requested_runs": 30,
+  "run_range": [
+    1,
+    30
+  ],
+  "model": "gpt-5.5",
+  "reasoning_effort": "low",
+  "codex_executable": "codex",
+  "codex_version": "codex-cli 0.137.0-alpha.4",
+  "python_version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3",
+  "cv_seed": 20260607,
+  "folds": 5,
+  "candidates_per_stage": 16,
+  "train_path": "data/train_518.xlsx",
+  "train_sha256": "a329ca43106a835bebc16516731871c9681d5704dbab7c539e8c8df07e3ff873",
+  "test_path": "data/test_92.xlsx",
+  "test_sha256": "00becf24ed7fe8866f5d3c966f2b2c2f0397c973ee372885eb145f8b94fc5352",
+  "prompt_sha256": {
+    "M0": "dcb41e27521111a968ba7b4fa44c8f7ba45b3a7e1720e5503527f44471665f69",
+    "M1": "306dd342fd22f20816e99a3c2687cb77ab0910fff9eb57b36cbc59838b579497",
+    "M2": "796c9c37bcb6114459ea7d04d7272db20b1b81b165acf51a2845cda345bacfc7",
+    "M3": "6a13cef161d4ea906f1e7123f664e6fd546330faf65534f358fece4af4af4491",
+    "M4": "df56e7cd1f5c8587fd41eb89c8de3977c29a21a294d525aab22bc29a076401da"
+  },
+  "schema_sha256": "09c22477e16df2584332028f661e51635d91f1dcd42ef38e66508a330fec10bd",
+  "codex_controls_note": "Codex CLI does not expose temperature or seed. Runs use separate new sessions with the same model, prompts, data, CV folds, and selection rules.",
+  "completed_runs": 30,
+  "unique_final_structures": 1,
+  "final_structure_frequencies": [
+    {
+      "terms": [
+        "Sn",
+        "Br",
+        "Cl",
+        "Cs",
+        "Sn^2",
+        "Br^2",
+        "Cs*Sn",
+        "Cs*Br"
+      ],
+      "frequency": 30
+    }
+  ],
+  "cv_rmse": {
+    "mean": 0.058127236767094595,
+    "std": 0.0,
+    "min": 0.058127236767094595,
+    "median": 0.058127236767094595,
+    "max": 0.058127236767094595
+  },
+  "test_rmse": {
+    "mean": 0.06175816011399793,
+    "std": 0.0,
+    "min": 0.06175816011399793,
+    "median": 0.06175816011399793,
+    "max": 0.06175816011399793
+  },
+  "mean_pairwise_jaccard": 1.0
+}

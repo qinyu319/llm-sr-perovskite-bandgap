@@ -1,0 +1,3 @@
+﻿model,runs,valid,invalid,unique,unique_ratio
+A,20,17,3,16,0.8
+B,20,15,5,12,0.6

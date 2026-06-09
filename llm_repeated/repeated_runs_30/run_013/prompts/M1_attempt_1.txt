@@ -1,0 +1,34 @@
+Independent repeated-run ID: 013; current stage: M1.
+
+Repeated-run batch instruction:
+- This is one stage inside an independently repeated M0-to-M4 experiment.
+- Apply the scientific and structural constraints in the stage prompt exactly.
+- Generate exactly 16 candidate expression structures.
+- Make the candidates structurally distinct where the constraints allow.
+- Each candidate must itself follow the original one-line expression format.
+- Do not fit coefficients, use data, report performance, or explain.
+- Return only the schema-conforming object containing the 16 candidate strings.
+
+Previous-stage deterministic training-set selection for this same run:
+- selected structure: Eg = a0 + a1*Sn + a2*Br + a3*Cl
+- selected non-constant terms: Sn, Br, Cl
+- mean five-fold CV RMSE: 0.08836923 eV
+
+Use this selected structure as the baseline inherited from the previous stage. Extend,
+revise, or simplify it only within the current stage's allowed term pool and constraints.
+
+Original frozen stage prompt:
+You are a materials-physics and symbolic-regression expert. The linear baseline is insufficient; we want to capture single-variable nonlinearity (curvature) in the band-gap response.
+
+Inputs: Sn, Br, Cl in [0,1].
+
+Task: Propose an interpretable quadratic structure with main effects and squared terms, to be fitted later on the training set.
+Constraints:
+1) Allowed terms: {constant, Sn, Br, Cl, Sn^2, Br^2, Cl^2}.
+2) Do NOT use any interaction/product terms (e.g., Sn*Br), and do NOT use higher powers.
+3) Do NOT use ratios, logs, exponentials, or any non-polynomial terms.
+4) Keep the structure compact; do not include unnecessary terms.
+5) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, e.g.
+Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2

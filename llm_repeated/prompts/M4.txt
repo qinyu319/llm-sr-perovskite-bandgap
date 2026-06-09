@@ -1,0 +1,15 @@
+You are a symbolic-regression and materials-physics expert. We already have a relatively expressive quadratic model using Sn/Br/Cl/Cs (main effects + squares + a few interactions). Now we want the final recommended formula: simplify the structure as much as possible while maintaining near-optimal predictive performance (to be verified on a held-out test set).
+
+Inputs: Sn, Br, Cl, Cs in [0,1].
+
+Task: Propose a final simplified quadratic structure:
+- Allowed: constant + a subset of main effects + a small subset of squares + a small subset of key pairwise interactions
+- Not allowed: any cubic+ terms, ratios, logs, exponentials
+
+Hard constraints:
+1) Minimize complexity: target 8-11 non-constant terms total.
+2) Every retained term must have clear physical meaning (Sn doping, halide mixing, A-site stabilization/lattice effect, and key couplings).
+3) Prefer terms likely to generalize: strong main effects + only a few essential couplings (e.g., Sn-halide, Cs-B/X).
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, the final expression structure.

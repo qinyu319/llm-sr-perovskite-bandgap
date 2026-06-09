@@ -1,0 +1,53 @@
+{
+  "dataset": {
+    "raw_rows": 610,
+    "processed_composition_means": 519,
+    "unique_full_rows": 599,
+    "exact_duplicate_row_excess": 11,
+    "unique_compositions": 552,
+    "duplicate_composition_groups": 48,
+    "duplicate_composition_excess": 58,
+    "split_multiset_equal": true
+  },
+  "split": {
+    "train_n": 518,
+    "test_n": 92,
+    "shared_full_composition_groups": 13,
+    "test_rows_in_shared_full_compositions": 13,
+    "shared_exact_full_rows": 2,
+    "test_rows_exactly_repeated_from_training": 2,
+    "shared_model_feature_combinations": 29,
+    "test_rows_shared_model_features": 43,
+    "test_rows_unseen_model_features": 49,
+    "shared_feature_rmse": 0.05281459137858383,
+    "unseen_feature_rmse": 0.06671045667022192,
+    "generation_seed_status": "Not present in the archive and not recovered from seeds 0-199999 under sklearn train_test_split(test_size=0.15)."
+  },
+  "checksums": {
+    "data/dataset_610_snapshot.xlsx": "2F4A5A0CA845137EC39798F8E06FF4F110B93458FD12B91EFF1D52A16B2B037A",
+    "data/train_518.xlsx": "A329CA43106A835BEBC16516731871C9681D5704DBAB7C539E8C8DF07E3FF873",
+    "data/test_92.xlsx": "00BECF24ED7FE8866F5D3C966F2B2C2F0397C973EE372885EB145F8B94FC5352"
+  },
+  "design_screen": {
+    "seed": 20260609,
+    "generated": 100000,
+    "target_window_eV": [
+      1.6,
+      1.8
+    ],
+    "distance_features": [
+      "Sn",
+      "Br",
+      "Cl",
+      "Cs",
+      "MA"
+    ],
+    "distance_threshold": 0.15,
+    "additional_domain_filters": {
+      "Cs_max": 0.5,
+      "Cl_max": 0.15
+    },
+    "eligible": 30119,
+    "reported_candidates": 12
+  }
+}

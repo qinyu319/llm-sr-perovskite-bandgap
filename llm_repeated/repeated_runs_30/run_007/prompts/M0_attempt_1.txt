@@ -1,0 +1,26 @@
+Independent repeated-run ID: 007; current stage: M0.
+
+Repeated-run batch instruction:
+- This is one stage inside an independently repeated M0-to-M4 experiment.
+- Apply the scientific and structural constraints in the stage prompt exactly.
+- Generate exactly 16 candidate expression structures.
+- Make the candidates structurally distinct where the constraints allow.
+- Each candidate must itself follow the original one-line expression format.
+- Do not fit coefficients, use data, report performance, or explain.
+- Return only the schema-conforming object containing the 16 candidate strings.
+
+Original frozen stage prompt:
+You are a materials-physics and symbolic-regression expert. We aim to build an interpretable analytical model for the optical band gap Eg (eV) of 3D ABX3 hybrid perovskites.
+
+Input features are composition fractions with clear physical meaning:
+Sn (B-site Sn fraction), Br and Cl (X-site halide fractions). Each lies in [0,1].
+
+Task: Propose a strictly linear analytical structure (constant + first-order terms only) to be later fitted on the training set.
+Constraints:
+1) Allowed terms: {constant, Sn, Br, Cl} only.
+2) Do NOT use squared terms, interaction products, ratios, logs, exponentials, or any higher-order terms.
+3) Keep the structure minimal and physically interpretable.
+4) Do NOT provide any numerical coefficients and do NOT explain.
+
+Output format: output exactly one line, e.g.
+Eg = a0 + a1*Sn + a2*Br + a3*Cl

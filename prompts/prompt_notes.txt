@@ -1,0 +1,87 @@
+Prompt–M0 (Linear baseline: main effects only)
+You are a materials-physics and symbolic-regression expert. We aim to build an interpretable analytical model for the optical band gap Eg (eV) of 3D ABX3 hybrid perovskites.
+
+Input features are composition fractions with clear physical meaning:
+Sn (B-site Sn fraction), Br and Cl (X-site halide fractions). Each lies in [0,1].
+
+Task: Propose a strictly linear analytical structure (constant + first-order terms only) to be later fitted on the training set.
+Constraints:
+1) Allowed terms: {constant, Sn, Br, Cl} only.
+2) Do NOT use squared terms, interaction products, ratios, logs, exponentials, or any higher-order terms.
+3) Keep the structure minimal and physically interpretable.
+4) Do NOT provide any numerical coefficients and do NOT explain.
+
+Output format: output exactly one line, e.g.
+Eg = a0 + a1*Sn + a2*Br + a3*Cl
+Prompt–M1 (Add single-variable curvature: allow squares, no interactions)
+You are a materials-physics and symbolic-regression expert. The linear baseline is insufficient; we want to capture single-variable nonlinearity (curvature) in the band-gap response.
+
+Inputs: Sn, Br, Cl in [0,1].
+
+Task: Propose an interpretable quadratic structure with main effects and squared terms, to be fitted later on the training set.
+Constraints:
+1) Allowed terms: {constant, Sn, Br, Cl, Sn^2, Br^2, Cl^2}.
+2) Do NOT use any interaction/product terms (e.g., Sn*Br), and do NOT use higher powers.
+3) Do NOT use ratios, logs, exponentials, or any non-polynomial terms.
+4) Keep the structure compact; do not include unnecessary terms.
+5) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, e.g.
+Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Sn^2 + a5*Br^2 + a6*Cl^2
+Prompt–M2 (Add coupling effects: allow pairwise interactions + squares)
+You are a materials-physics and symbolic-regression expert. To capture metal–halide coupling and mixed-halide effects, we now allow second-order interaction terms.
+
+Inputs: Sn, Br, Cl in [0,1].
+
+Task: Propose a second-order (quadratic) analytical structure that may include main effects, squared terms, and a small number of physically motivated pairwise interactions, to be fitted later on the training set.
+
+Allowed term pool:
+- Main effects: Sn, Br, Cl
+- Squares: Sn^2, Br^2, Cl^2
+- Pairwise interactions (choose up to 2–3): Sn*Br, Sn*Cl, Br*Cl
+- Constant term
+
+Constraints:
+1) Use only the term pool above. No higher-order terms, no ratios, no logs, no exponentials.
+2) Use at most 2–3 interaction terms; prioritize physically meaningful couplings (metal–halide and mixed-halide).
+3) Keep total non-constant terms <= 10.
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, a single expression structure.
+Prompt–M3 (Introduce A-site effect: include Cs + selected interactions)
+You are a materials-physics and symbolic-regression expert. We now incorporate A-site effects by introducing Cs (A-site Cs fraction in [0,1]) in addition to Sn, Br, Cl.
+
+Inputs: Sn, Br, Cl, Cs in [0,1].
+
+Task: Propose an interpretable quadratic analytical structure that includes Cs main effects and (optionally) Cs-related coupling terms, to be fitted later on the training set.
+
+Allowed terms:
+- Main effects: Sn, Br, Cl, Cs
+- Squares: Sn^2, Br^2, Cl^2, Cs^2 (optional)
+- Interactions: prioritize Cs with B/X terms (Cs*Sn, Cs*Br, Cs*Cl)
+- Optionally keep a small number of {Sn*Br, Sn*Cl, Br*Cl} if physically justified
+- Constant term
+
+Constraints:
+1) Only quadratic terms (main, squares, pairwise products). No higher-order, ratios, logs, exponentials.
+2) Total interaction terms <= 4; prioritize Cs-coupling terms first.
+3) Keep the structure compact (target <= 12 non-constant terms).
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, a single expression structure.
+Prompt–M4 (Final simplification: minimal complexity with near-best accuracy)
+You are a symbolic-regression and materials-physics expert. We already have a relatively expressive quadratic model using Sn/Br/Cl/Cs (main effects + squares + a few interactions). Now we want the final recommended formula: simplify the structure as much as possible while maintaining near-optimal predictive performance (to be verified on a held-out test set).
+
+Inputs: Sn, Br, Cl, Cs in [0,1].
+
+Task: Propose a final simplified quadratic structure:
+- Allowed: constant + a subset of main effects + a small subset of squares + a small subset of key pairwise interactions
+- Not allowed: any cubic+ terms, ratios, logs, exponentials
+
+Hard constraints:
+1) Minimize complexity: target 8–11 non-constant terms total.
+2) Every retained term must have clear physical meaning (Sn doping, halide mixing, A-site stabilization/lattice effect, and key couplings).
+3) Prefer terms likely to generalize: strong main effects + only a few essential couplings (e.g., Sn–halide, Cs–B/X).
+4) Do NOT provide numerical coefficients and do NOT explain.
+
+Output format: exactly one line, the final expression structure.

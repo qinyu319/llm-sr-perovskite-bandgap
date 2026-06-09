@@ -1,0 +1,26 @@
+{
+  "features": [
+    "Sn",
+    "Br",
+    "Cl",
+    "Cs",
+    "MA"
+  ],
+  "function_set": [
+    "add",
+    "sub",
+    "mul"
+  ],
+  "selection": "minimum mean five-fold training CV RMSE; test used post hoc only",
+  "best_parsimony": 0.0005,
+  "cv_rmse": 0.1452841619953396,
+  "cv_sd": 0.03271318667464909,
+  "mean_program_length_cv": 9.0,
+  "n_refit_seeds": 5,
+  "unique_programs": 5,
+  "test_rmse_mean": 0.1773217636473249,
+  "test_rmse_sd": 0.02278517916474288,
+  "test_rmse_min": 0.14178623464715387,
+  "test_rmse_max": 0.19383449003974745,
+  "best_posthoc_program": "add(add(Cl, Br), sub(1.462, mul(0.344, Sn)))"
+}

@@ -1,0 +1,58 @@
+{
+  "completed_runs": 10,
+  "failed_runs": 0,
+  "unique_final_structures": 7,
+  "mean_pairwise_jaccard": 0.7711111111111111,
+  "structure_frequencies": [
+    {
+      "terms": "Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Sn;Cs*Br",
+      "frequency": 3,
+      "percentage": 30.0
+    },
+    {
+      "terms": "Sn;Br;Cs;Sn^2;Br^2;Cs^2;Cs*Sn;Cs*Br",
+      "frequency": 2,
+      "percentage": 20.0
+    },
+    {
+      "terms": "Sn;Br;Cl;Cs;Sn^2;Br^2;Cs^2;Cs*Sn",
+      "frequency": 1,
+      "percentage": 10.0
+    },
+    {
+      "terms": "Sn;Br;Cl;Cs;Sn^2;Br^2;Sn*Br;Cs*Sn",
+      "frequency": 1,
+      "percentage": 10.0
+    },
+    {
+      "terms": "Sn;Br;Cl;Cs;Sn^2;Cs^2;Cs*Sn;Cs*Br",
+      "frequency": 1,
+      "percentage": 10.0
+    },
+    {
+      "terms": "Sn;Br;Cl;Cs;Sn^2;Cs*Sn;Cs*Br;Cs*Cl",
+      "frequency": 1,
+      "percentage": 10.0
+    },
+    {
+      "terms": "Sn;Br;Cl;Cs;Sn^2;Br^2;Sn*Br;Cs*Sn;Cs*Br",
+      "frequency": 1,
+      "percentage": 10.0
+    }
+  ],
+  "cv_rmse": {
+    "mean": 0.08655669694148295,
+    "std": 0.056355010311168977,
+    "min": 0.05800181294855572,
+    "median": 0.05861996025346779,
+    "max": 0.19336579039441507
+  },
+  "test_rmse": {
+    "mean": 0.10465985301401759,
+    "std": 0.09125054458992354,
+    "min": 0.05634017432526924,
+    "median": 0.061847801413260885,
+    "max": 0.277741406921881
+  },
+  "failures": []
+}

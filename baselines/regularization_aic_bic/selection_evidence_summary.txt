@@ -1,0 +1,15 @@
+LASSO / Ridge / Elastic Net + Stepwise AIC/BIC
+
+Generated: 2026-06-08T20:30:41
+Train file: 训练集.xlsx; n=518
+Test file: 测试集.xlsx; n=92
+Candidate terms: Sn, Br, Cl, Sn², Br², Cl², SnBr, SnCl, BrCl
+M4-pruned reference: Sn, Br, Cl, Sn², Br², Cl²
+
+Key answers:
+1. Minimum-CV LASSO/Elastic Net keep all 9 terms; Cl2 is not automatically zeroed under the prediction-optimal penalty.
+2. 1-SE LASSO/Elastic Net set Cl2 and BrCl to zero, but keep SnCl and SnBr; this is pruning evidence, but not exact support for M4-pruned.
+3. Ridge cannot perform term deletion; its selected alpha is effectively no pruning.
+4. Stepwise AIC and BIC both select 7 terms: Cl, Br, Sn, Sn², Br², SnCl, SnBr.
+5. Exhaustive AIC and exhaustive BIC both select the 9-term full model.
+6. Overall: auxiliary evidence does not exactly support M4-pruned; it weakens the case for retaining Cl2.

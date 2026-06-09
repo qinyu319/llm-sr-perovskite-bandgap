@@ -1,0 +1,47 @@
+﻿Selected expression report
+Generated: 2026-06-07 15:08:52 +08:00
+
+Selection policy:
+- OLS coefficients fitted only on the training set.
+- Five-fold CV seed: 20260607.
+- Within each stage: candidates within 5% of the best mean CV RMSE are accuracy-equivalent; the fewest-term expression wins, then lower CV RMSE.
+- Across stages: only stage selections with mean CV RMSE < 0.06 eV qualify; the fewest-term qualified expression wins, then lower CV RMSE.
+- The test set was evaluated only after the final structure was selected.
+
+Candidate-pool construction:
+- No saved LLM candidate outputs were present in the project, so this run used deterministic exhaustive legal structures rather than 30 repeated LLM calls.
+- M0 enumerated non-empty subsets of Sn/Br/Cl.
+- M1 enforced polynomial hierarchy: a squared term could appear only with its main effect.
+- M2 retained Sn/Br/Cl main effects and enumerated allowed squares/interactions.
+- M3 and M4 retained all four main effects and enumerated allowed second-order terms under each prompt's interaction and term-count limits.
+
+Data validation:
+Training rows: 518
+Test rows: 92
+Total rows: 610
+Training ID range: 0..517; unique IDs: 518
+Test ID range: 0..91; unique IDs: 92
+Exact duplicate rows excluding ID - training: 9; test: 0
+Duplicate Sn/Br/Cl/Cs feature rows - training: 197; test: 15
+Unique Sn/Br/Cl/Cs feature combinations shared by train and test: 29
+Maximum composition closure error - A site: 0.04; B site: 0.01; X site: 0.017
+
+Final selected stage: M3
+Non-constant term count: 7
+Mean five-fold CV RMSE: 0.05859615 eV
+Five-fold CV RMSE SD: 0.00903352 eV
+Five-fold out-of-fold R2: 0.96337451
+
+Symbolic structure:
+Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn
+
+OLS fitted expression:
+Eg = 1.55783676 - 1.10137990*Sn + 0.35048430*Br + 1.52544316*Cl + 0.09879113*Cs + 0.91336123*Sn^2 + 0.36063966*Br^2 - 0.25045147*Cs*Sn
+
+Post-selection metrics:
+Train RMSE: 0.05719542 eV
+Train MAE: 0.04088568 eV
+Train R2: 0.96578802
+Test RMSE: 0.06532045 eV
+Test MAE: 0.04963598 eV
+Test R2: 0.97276086

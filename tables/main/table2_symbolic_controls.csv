@@ -1,0 +1,5 @@
+method,selection,complexity,cv_rmse,test_rmse,test_rmse_sd
+Final M4,Physics-constrained LLM symbolic regression,8.0,0.05753177282412343,0.060613471751538577,
+Exhaustive-6,Best six-term exhaustive polynomial control,6.0,0.06285301689084975,0.06671115624633457,
+PySR-P,Five-seed polynomial symbolic control,,,0.0683,0.0096
+GPLearn,minimum mean five-fold training CV RMSE; test used post hoc only,9.0,0.1452841619953396,0.1773217636473249,0.02278517916474288

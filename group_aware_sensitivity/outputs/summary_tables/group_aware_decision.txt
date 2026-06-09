@@ -1,0 +1,1 @@
+Decision B: moderate robustness; strict halide leave-one-group-out identifies Cl-containing compositions as an applicability-domain boundary.

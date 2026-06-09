@@ -1,0 +1,30 @@
+{
+  "created_at_utc": "2026-06-07T14:33:30.182276+00:00",
+  "provider": "qwen",
+  "requested_model": "qwen-plus",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "api_key_environment_variable": "DASHSCOPE_API_KEY",
+  "temperatures": [
+    0.7
+  ],
+  "top_p": 1.0,
+  "runs_per_temperature": 1,
+  "max_tokens": 3000,
+  "max_generation_attempts": 3,
+  "qwen_seed_base": null,
+  "cv_seed": 20260607,
+  "python_version": "3.13.7",
+  "openai_version": "2.6.1",
+  "train_path": "data/train_518.xlsx",
+  "train_sha256": "a329ca43106a835bebc16516731871c9681d5704dbab7c539e8c8df07e3ff873",
+  "test_path": "data/test_92.xlsx",
+  "test_sha256": "00becf24ed7fe8866f5d3c966f2b2c2f0397c973ee372885eb145f8b94fc5352",
+  "prompt_sha256": {
+    "M0": "dcb41e27521111a968ba7b4fa44c8f7ba45b3a7e1720e5503527f44471665f69",
+    "M1": "306dd342fd22f20816e99a3c2687cb77ab0910fff9eb57b36cbc59838b579497",
+    "M2": "796c9c37bcb6114459ea7d04d7272db20b1b81b165acf51a2845cda345bacfc7",
+    "M3": "6a13cef161d4ea906f1e7123f664e6fd546330faf65534f358fece4af4af4491",
+    "M4": "df56e7cd1f5c8587fd41eb89c8de3977c29a21a294d525aab22bc29a076401da"
+  },
+  "protocol_note": "Each run is independent. M0-M4 use frozen prompts and inherit only the same run's preceding selected structure. Candidate coefficients and selection metrics are computed locally; no data are sent to the LLM."
+}

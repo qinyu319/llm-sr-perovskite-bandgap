@@ -1,0 +1,1 @@
+1 + Sn + Br + Cl + Cs + Sn^2 + BrCl + SnBr + SnCl + CsSn + CsBr

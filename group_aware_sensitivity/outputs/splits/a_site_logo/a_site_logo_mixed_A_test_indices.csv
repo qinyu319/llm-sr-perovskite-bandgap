@@ -1,0 +1,3 @@
+﻿dataset_index,sample_id,id,source_row_index,Eg,A_group,B_group,X_group,composition_family,halide_group,A_site_group
+203,train_207,207,207,1.607,mixed_A,Pb_rich,I_rich,mixed_A__Pb_rich__I_rich,I_rich,mixed_A
+468,train_478,478,478,1.64,mixed_A,Pb_rich,I_rich,mixed_A__Pb_rich__I_rich,I_rich,mixed_A

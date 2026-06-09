@@ -1,0 +1,1 @@
+y = β0 + β1Sn + β2Br + β3Cl + β4Cs + β5Sn² + β6Br² + β7Cl² + β8Sn·Br + β9Sn·Cl + β10Cs·Br + β11Cs·Cl

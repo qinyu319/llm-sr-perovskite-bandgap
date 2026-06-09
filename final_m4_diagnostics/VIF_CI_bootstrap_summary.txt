@@ -1,0 +1,13 @@
+Final M4 VIF / CI / bootstrap experiment
+
+Final M4:
+Eg = 1.55527 - 1.10253*Sn + 0.34320*Br + 1.61932*Cl + 0.12268*Cs + 0.91702*Sn² + 0.36607*Br² - 0.22716*Cs·Sn - 0.32528*Cs·Cl
+
+Main answers:
+1. Every final M4 slope is stable: min bootstrap sign stability = 0.999; no final slope OLS/bootstrap CI crosses zero.
+2. Main-effect directions are stable: Sn negative; Br positive; Cl positive; each has sign stability = 1.000.
+3. VIF is acceptable with a raw-polynomial caveat: max VIF = 15.79, driven by Sn/Sn2 and Br/Br2. No severe VIF comparable to Cl2/full models remains.
+4. Cl2 retention is not justified: in Final M4 + Cl2, Cl2 OLS CI crosses zero = Yes, bootstrap CI crosses zero = Yes, sign stability = 0.603, nested F-test p = 0.2332.
+5. Deleting Cl2 is reasonable: final CV RMSE = 0.057532; +Cl2 CV RMSE = 0.058256; max VIF decreases from 16.18 to 15.79.
+
+Generated: 2026-06-08T22:37:53

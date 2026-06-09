@@ -1,0 +1,17 @@
+﻿candidate_index,raw,valid,invalid_reasons,duplicate_of,canonical_expression,terms,term_count,cv_rmse_mean,cv_rmse_std,cv_r2,condition_number
+1,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br,True,,,Eg = a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn + a8*Cs*Br,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Sn;Cs*Br,8.0,0.058127236767094595,0.004242602312181955,0.964495840398022,22.0039723673984
+2,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Sn,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Sn,,,,,
+3,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn + a7*Cs*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Cs*Sn;Cs*Br,,,,,
+4,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2 + a7*Cs*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2;Cs*Br,,,,,
+5,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Sn,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Cs*Sn,,,,,
+6,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Br^2,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Br^2,,,,,
+7,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2 + a6*Cs*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2;Cs*Br,,,,,
+8,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs*Sn + a6*Cs*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Cs*Sn;Cs*Br,,,,,
+9,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs*Sn,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Br^2;Cs*Sn,,,,,
+10,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2 + a6*Cs*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Br^2;Cs*Br,,,,,
+11,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Sn^2,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Sn^2,,,,,
+12,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Br^2,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Br^2,,,,,
+13,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs*Sn,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Cs*Sn,,,,,
+14,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs + a5*Cs*Br,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs;Cs*Br,,,,,
+15,a0 + a1*Sn + a2*Br + a3*Cl + a4*Cs,False,fewer than 8 non-constant terms,,,Sn;Br;Cl;Cs,,,,,
+16,a0 + a1*Sn + a2*Br + a3*Cl,False,fewer than 8 non-constant terms,,,Sn;Br;Cl,,,,,

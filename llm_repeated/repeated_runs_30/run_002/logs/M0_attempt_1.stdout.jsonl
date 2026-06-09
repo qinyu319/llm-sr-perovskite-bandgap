@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"019ea125-3225-78a2-a3bd-6653f9465f3f"}
+{"type":"turn.started"}
+{"type":"error","message":"Reconnecting... 2/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 3/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 4/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 5/5 (request timed out)"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"candidates\":[\"Eg = a0\",\"Eg = a1*Sn\",\"Eg = a1*Br\",\"Eg = a1*Cl\",\"Eg = a1*Sn + a2*Br\",\"Eg = a1*Sn + a2*Cl\",\"Eg = a1*Br + a2*Cl\",\"Eg = a1*Sn + a2*Br + a3*Cl\",\"Eg = a0 + a1*Sn\",\"Eg = a0 + a1*Br\",\"Eg = a0 + a1*Cl\",\"Eg = a0 + a1*Sn + a2*Br\",\"Eg = a0 + a1*Sn + a2*Cl\",\"Eg = a0 + a1*Br + a2*Cl\",\"Eg = a0 + a1*Sn + a2*Br + a3*Cl\",\"Eg = a1*Cl + a2*Br + a3*Sn + a0\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":10455,"cached_input_tokens":2432,"output_tokens":448,"reasoning_output_tokens":237}}
