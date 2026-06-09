@@ -121,14 +121,19 @@ def save_splits(df: pd.DataFrame, splits: list[SplitRecord]) -> pd.DataFrame:
                 "train_groups": len(set(df.iloc[list(split.train_indices)][split.group_column])),
                 "test_groups": len(set(df.iloc[list(split.test_indices)][split.group_column])),
                 "no_group_leakage": True,
-                "train_indices_file": str(
+                "train_indices_file": (
                     Path("outputs") / "splits" / split.group_strategy / f"{split.split_id}_train_indices.csv"
-                ),
-                "test_indices_file": str(
+                ).as_posix(),
+                "test_indices_file": (
                     Path("outputs") / "splits" / split.group_strategy / f"{split.split_id}_test_indices.csv"
-                ),
+                ).as_posix(),
             }
         )
     manifest = pd.DataFrame(rows)
-    manifest.to_csv(PROJECT_ROOT / "outputs" / "splits" / "split_manifest.csv", index=False, encoding="utf-8-sig")
+    manifest.to_csv(
+        PROJECT_ROOT / "outputs" / "splits" / "split_manifest.csv",
+        index=False,
+        encoding="utf-8-sig",
+        lineterminator="\n",
+    )
     return manifest
