@@ -8,6 +8,7 @@
 | `data/train_518.xlsx` | Immutable 518-row training split |
 | `data/test_92.xlsx` | Immutable 92-row same-source test split |
 | `group_aware_sensitivity/data/curated_dataset.csv` | Strict-QC 507-row table |
+| `external_validation/external_validation_candidates.csv` | Audited external-panel input and exclusion log |
 
 ## Final Model
 
@@ -29,6 +30,7 @@
 | `scripts/reproduce_tables.py` | Main and supplementary tables |
 | `scripts/verify_checksums.py` | SHA-256 verification |
 | `scripts/security_scan.py` | Secret, private-path, and filename scan |
+| `external_validation/run_external_validation.py` | External-panel metrics, bootstrap, and figure rerun |
 
 ## Audit Evidence
 
@@ -40,6 +42,7 @@
 | `baselines/` | Exhaustive, regularized, GP, GPLearn, and PySR controls |
 | `blackbox_shap/` | Tree benchmarks and SHAP artifacts |
 | `group_aware_sensitivity/` | Group-aware scripts, tests, splits, and outputs |
+| `external_validation/` | Source-audited post-snapshot panel and transfer analysis |
 | `archive/` | Historical, non-authoritative material |
 
 ## Publication Artifacts
@@ -53,3 +56,7 @@
 | `figures/source_data/` | Figure source CSV files |
 | `tables/main/` | Main-text source tables |
 | `tables/supplementary/` | Supplementary source tables |
+| `external_validation/Fig_external_validation.pdf` | SI Figure S13 |
+| `external_validation/external_panel_audited.csv` | SI Table S25 source data |
+| `external_validation/metrics_summary.csv` | SI Table S26 source data |
+| `external_validation/leave_one_doi_out.csv` | SI Table S27 source data |

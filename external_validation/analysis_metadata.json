@@ -1,0 +1,40 @@
+{
+  "snapshot_cutoff": "2026-01-28",
+  "analysis_lock_date": "2026-06-11",
+  "model": "M4 frozen eight-term expression",
+  "coefficients": {
+    "Intercept": 1.5552651680420202,
+    "Sn": -1.1025280815784506,
+    "Br": 0.3431953132457202,
+    "Cl": 1.6193177112496755,
+    "Cs": 0.12267888917628159,
+    "Sn2": 0.9170216432831477,
+    "Br2": 0.36607403560749485,
+    "CsSn": -0.22715626984385914,
+    "CsCl": -0.3252750459356003
+  },
+  "feature_order": [
+    "FA",
+    "MA",
+    "Cs",
+    "Pb",
+    "Sn",
+    "I",
+    "Br",
+    "Cl"
+  ],
+  "train_n": 518,
+  "snapshot_n": 610,
+  "distance": "Euclidean L2 on eight site fractions",
+  "in_domain_threshold": 0.25,
+  "composition_duplicate_threshold": 0.01,
+  "value_duplicate_threshold_eV": 0.01,
+  "same_source_heldout_rmse_eV": 0.060613471751538577,
+  "consistency_threshold_eV": 0.12122694350307715,
+  "bootstrap_seed": 20260611,
+  "bootstrap_replicates": 20000,
+  "confirmatory_n": 20,
+  "confirmatory_doi_n": 8,
+  "out_of_domain_n": 0,
+  "warning": "The analysis lock is not a public or blinded preregistration."
+}

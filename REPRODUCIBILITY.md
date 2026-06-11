@@ -69,7 +69,31 @@ python run_all.py --mode group-aware
 The 92-row same-source test set remains isolated from group-aware model
 selection and is used only as a frozen reference.
 
-## 5. Optional Controls
+## 5. External Validation
+
+The source-audited post-snapshot panel is reproduced without refitting:
+
+```bash
+python run_all.py --mode external-validation
+```
+
+Expected paper-authoritative values:
+
+```text
+external_n              20
+publication_n            8
+external_rmse_eV         0.0416709074
+external_mae_eV          0.0326785198
+composition_novel_n     16
+composition_novel_rmse   0.0452602333
+```
+
+Outputs are written to `reproduced/external_validation/`. The default analysis
+uses 20,000 bootstrap replicates with seed 20260611. Source PDFs are not
+redistributed; provenance and audited file hashes are retained in
+`external_validation/source_evidence_manifest.csv`.
+
+## 6. Optional Controls
 
 Archived deterministic and fitted controls are under `baselines/` and
 `blackbox_shap/`. The GPLearn rerun is optional:
@@ -85,7 +109,7 @@ claimed.
 PySR outputs are archived in `baselines/pysr/`; a fresh PySR run additionally
 requires Julia and is not part of CI.
 
-## 6. LLM Audit Boundary
+## 7. LLM Audit Boundary
 
 No API key is needed for deterministic reproduction. `llm_repeated/` retains:
 
@@ -96,16 +120,19 @@ No API key is needed for deterministic reproduction. `llm_repeated/` retains:
 
 Exact LLM text regeneration is stochastic and is not claimed.
 
-## 7. Data Boundary
+## 8. Data Boundary
 
 - The original random split-generation seed is unavailable.
 - Reproducibility relies on checksummed `data/train_518.xlsx` and
   `data/test_92.xlsx`.
 - Candidate selection uses training CV and diagnostics.
 - The test set is loaded only for post-freeze reporting.
-- No independent external literature-validation panel is included.
+- The independent external panel is post-snapshot, source-audited, and used
+  only after model freezing.
+- All accepted external records are within the declared applicability domain;
+  no unrestricted extrapolation claim is made.
 
-## 8. Bootstrap Audit Note
+## 9. Bootstrap Audit Note
 
 The paper-authoritative rerun uses 1,000 resamples with seed 2026. The retained
 raw archive contains 5,000 fits per diagnostic model and matches the published

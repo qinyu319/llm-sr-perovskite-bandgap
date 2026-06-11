@@ -13,7 +13,14 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run deterministic reproduction tasks.")
     parser.add_argument(
         "--mode",
-        choices=("main", "figures", "tables", "group-aware", "all"),
+        choices=(
+            "main",
+            "figures",
+            "tables",
+            "group-aware",
+            "external-validation",
+            "all",
+        ),
         default="main",
     )
     return parser.parse_args()
@@ -51,6 +58,10 @@ def run_group_aware() -> None:
     run([sys.executable, "-m", "pytest", "tests"], cwd=project)
 
 
+def run_external_validation() -> None:
+    run([sys.executable, "external_validation/run_external_validation.py"])
+
+
 def main() -> None:
     mode = parse_args().mode
     if mode in {"main", "all"}:
@@ -61,6 +72,8 @@ def main() -> None:
         run_tables()
     if mode in {"group-aware", "all"}:
         run_group_aware()
+    if mode in {"external-validation", "all"}:
+        run_external_validation()
 
 
 if __name__ == "__main__":

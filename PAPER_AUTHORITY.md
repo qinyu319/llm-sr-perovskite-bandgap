@@ -4,8 +4,8 @@
 
 | Document | SHA-256 |
 | --- | --- |
-| `paper/main_REVISED.docx` | `59bccce2ca9c93936b9b55661a2e6db43c7f632be5fbc95b673b071d9e5e8855` |
-| `paper/si_REVISED.docx` | `aa7a5e95a8463d5848ef75ff05e981a44b3fa5ae499ef1cce95aee0f0195dd15` |
+| `paper/main_REVISED.docx` | `3a34c77b5adb24e06ff817af4afbb1da61a8a86ff4944c2ce1d712f9f13b2788` |
+| `paper/si_REVISED.docx` | `e7a91927251d59cfadaa68a4a8c5c37167234c65f842fb18714c4548ace00460` |
 
 When artifacts disagree, use this order:
 
@@ -24,6 +24,9 @@ When artifacts disagree, use this order:
 - Test RMSE and R2: 0.060613 eV and 0.976545.
 - Bootstrap: 1,000 training-row resamples, seed 2026.
 - Group-aware strict-QC training size: 507.
+- External validation: 20 measurements from 8 post-snapshot publications.
+- External RMSE and MAE: 0.0417 eV and 0.0327 eV.
+- Composition-novel external subset: 16 measurements, RMSE 0.0453 eV.
 - GPLearn report: CV RMSE 0.145284 eV and five-refit test RMSE
   0.177322 +/- 0.022785 eV.
 

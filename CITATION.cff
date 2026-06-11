@@ -5,8 +5,8 @@ title: "Reproducible Physics-Constrained LLM-Assisted Symbolic Regression for In
 authors:
   - family-names: "Wen"
     given-names: "Qinyu"
-version: "1.0.0"
-date-released: "2026-06-10"
+version: "1.1.0"
+date-released: "2026-06-11"
 license: MIT
 repository-code: "https://github.com/qinyu319/llm-sr-perovskite-bandgap"
 keywords:

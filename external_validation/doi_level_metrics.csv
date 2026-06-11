@@ -1,0 +1,9 @@
+﻿DOI,title,n,rmse_eV,mae_eV,bias_eV,r2
+10.1038/s41563-026-02494-w,Crystal-facet-directed all-vacuum-deposited perovskite solar cells,8,0.0630108670222153,0.06292320771752932,0.06292320771752932,-7.769451933498173
+10.1021/acsenergylett.6c00210,Codeposition Strategy Enables Stable Built-In Electric Field in Sn-Pb Perovskite Solar Cells,1,0.03446827336283009,0.03446827336283009,-0.03446827336283009,
+10.1021/acsenergylett.6c00617,Suppressing Sn-Rich Phase Precipitation Enables Controlled Crystallization in Sn-Pb Perovskite Solar Cells,1,0.024923311075547794,0.024923311075547794,-0.024923311075547794,
+10.1021/acsenergylett.6c00771,Redox-Active Flavonoid Interlayers Enable Strain-Relieved and Efficient Sn-Pb Perovskite Solar Cells,1,0.015833386500982982,0.015833386500982982,-0.015833386500982982,
+10.1021/acsenergylett.6c00156,Bandgap Tunable Two-Step Vapor-Deposited Perovskite Absorbers for Perovskite-Based Tandem Solar Cells,3,0.012490064571229666,0.008869478927588492,0.005272803495702731,0.8567331207202671
+10.1021/acsenergylett.6c00227,Solution-Processed SnOx Nanoparticles for Efficient Perovskite Solar Cells and All-Perovskite Tandems,4,0.009901164974005826,0.009728532559820091,-0.004028976309403021,0.9838628694909498
+10.1021/acsenergylett.6c01038,Photochemical Iodine Immobilization for Stabilizing Wide-Bandgap Perovskite Solar Cells,1,0.005650916872763645,0.005650916872763645,0.005650916872763645,
+10.1021/acsaelm.6c00264,CsBr-Buffered Self-Assembled Monolayers for Efficient and Stable Inverted Wide-Bandgap Cs0.7FA0.3PbI2Br Perovskite Solar Cells,1,0.0037862791364804416,0.0037862791364804416,-0.0037862791364804416,

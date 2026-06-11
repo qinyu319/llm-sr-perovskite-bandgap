@@ -1,6 +1,6 @@
 # Publication Security Check
 
-Audit date: 2026-06-10
+Audit date: 2026-06-11
 
 The release scan covers tracked text, JSON, JSONL, Python, PowerShell, YAML,
 CSV, and Markdown files. It checks for token-like secrets, authorization
@@ -18,6 +18,8 @@ Results:
 - stderr logs, smoke runs, caches, temporary work directories, and duplicate
   train/test workbooks were removed;
 - tracked path names are ASCII and contain no spaces.
+- publisher PDFs used for external source auditing are not redistributed;
+  only DOI links, source locators, and audited file hashes are retained.
 
 Repeat the automated check before every release:
 

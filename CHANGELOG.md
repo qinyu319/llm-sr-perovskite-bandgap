@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0 - 2026-06-11
+
+- Added the source-audited external validation reported in the revised paper.
+- Added 20 measurements from 8 post-snapshot publications, candidate and
+  exclusion audit data, DOI-level diagnostics, bootstrap intervals, and SI
+  Figure S13.
+- Added a deterministic external-validation rerun and `run_all.py` entry point.
+- Updated the authoritative manuscript and Supporting Information.
+- Kept publisher source PDFs out of the public package while retaining DOI
+  links, source locators, and audited file hashes.
+
 ## 1.0.0 - 2026-06-10
 
 - Organized immutable data under stable English paths.
