@@ -25,7 +25,6 @@ def _save(fig: plt.Figure, stem: str) -> None:
     out = PROJECT_ROOT / "outputs" / "figures"
     out.mkdir(parents=True, exist_ok=True)
     fig.savefig(out / f"{stem}.png", dpi=300, bbox_inches="tight")
-    fig.savefig(out / f"{stem}.pdf", bbox_inches="tight")
     plt.close(fig)
 
 

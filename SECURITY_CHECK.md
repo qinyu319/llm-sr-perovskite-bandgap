@@ -1,11 +1,11 @@
-# Publication Security Check
+# Release Security Check
 
 Audit date: 2026-06-11
 
 The release scan covers tracked text, JSON, JSONL, Python, PowerShell, YAML,
 CSV, and Markdown files. It checks for token-like secrets, authorization
 headers, hard-coded private Windows paths, manuscript-system links, non-ASCII
-path names, and spaces in tracked path names.
+path names, spaces in tracked path names, and prohibited release artifacts.
 
 Results:
 
@@ -18,7 +18,9 @@ Results:
 - stderr logs, smoke runs, caches, temporary work directories, and duplicate
   train/test workbooks were removed;
 - tracked path names are ASCII and contain no spaces.
-- publisher PDFs used for external source auditing are not redistributed;
+- no `paper/`, `scripts/publication/`, cache directory, PYC, DOCX, PDF,
+  response-letter, cover-letter, or submission artifact is distributed;
+- publisher files used for external source auditing are not redistributed;
   only DOI links, source locators, and audited file hashes are retained.
 
 Repeat the automated check before every release:

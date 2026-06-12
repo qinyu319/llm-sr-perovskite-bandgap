@@ -1,19 +1,17 @@
-# Paper Authority and Conflict Policy
+# Evidence Authority and Conflict Policy
 
-## Canonical Documents
+## Distribution Boundary
 
-| Document | SHA-256 |
-| --- | --- |
-| `paper/main_REVISED.docx` | `3a34c77b5adb24e06ff817af4afbb1da61a8a86ff4944c2ce1d712f9f13b2788` |
-| `paper/si_REVISED.docx` | `e7a91927251d59cfadaa68a4a8c5c37167234c65f842fb18714c4548ace00460` |
+This package does not distribute manuscript, Supporting Information,
+response-letter, or submission-file sources. It also excludes scripts and
+templates that generate those documents.
 
 When artifacts disagree, use this order:
 
-1. revised main manuscript;
-2. revised Supporting Information;
-3. final publication tables and frozen model evidence;
-4. deterministic reproduction scripts;
-5. archived intermediate and historical outputs.
+1. frozen final-model files and checksummed inputs;
+2. final tables, figures, and external-validation evidence;
+3. deterministic reproduction scripts;
+4. archived intermediate and historical outputs.
 
 ## Locked Claims
 
@@ -32,17 +30,16 @@ When artifacts disagree, use this order:
 
 ## Retained Discrepancies
 
-**Bootstrap:** the paper declares 1,000 resamples, while
+**Bootstrap:** the frozen release protocol declares 1,000 resamples, while
 `final_m4_diagnostics/bootstrap_coefficient_samples.csv` contains 5,000 fits
 per diagnostic model and matches the archived summary table. Canonical reruns
-follow the paper's 1,000-resample method; the larger archive remains audit
+follow the 1,000-resample method; the larger archive remains audit
 evidence.
 
-**GPLearn:** SI Table S14 prints a parsimony grid of `1e-6, 1e-5, 1e-4`, while
-the archived CV output associated with the reported values uses
-`0.0005, 0.001, 0.003, 0.01`. Current pinned packages do not exactly reproduce
-the archived metrics. The paper values are therefore treated as archived
-publication results, not an exact deterministic replay claim.
+**GPLearn:** `scripts/reproduce_gplearn.py` and the archived CV output use the
+parsimony grid `0.0005, 0.001, 0.003, 0.01`. Pinned package versions do not
+guarantee bit-for-bit replay, so the frozen values remain archived results
+rather than an exact deterministic replay claim.
 
 ## Public Path Mapping
 
@@ -54,7 +51,6 @@ Historical manuscript labels were normalized for portability:
 | VIF/CI/bootstrap folder | `final_m4_diagnostics/` |
 | group-aware split folder | `group_aware_sensitivity/` |
 | repeated LLM folder | `llm_repeated/` |
-| paper/SI build folders | `scripts/publication/` and `archive/publication_build/` |
 
-Publication builders write review copies under `reproduced/` and never
-overwrite the canonical DOCX files.
+The retained scripts rebuild research figures and data assets only. They do
+not generate manuscript, SI, response-letter, submission, DOCX, or PDF files.

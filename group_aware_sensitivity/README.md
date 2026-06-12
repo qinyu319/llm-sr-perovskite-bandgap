@@ -60,5 +60,5 @@ The external test result of the frozen final M4 is included only as a visual ran
 - `outputs/summary_tables/group_aware_term_frequency.csv`
 - `outputs/summary_tables/group_aware_summary.csv`
 - `outputs/summary_tables/group_aware_selected_formulas.csv`
-- `outputs/figures/*.png` and `outputs/figures/*.pdf`
+- `outputs/figures/*.png`
 - `group_aware_split_sensitivity_results.xlsx`

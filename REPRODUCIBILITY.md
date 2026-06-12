@@ -1,19 +1,22 @@
 # Reproducibility Guide
 
-The final revised files in `paper/` are authoritative. Known archive conflicts
-are documented in [PAPER_AUTHORITY.md](PAPER_AUTHORITY.md).
+The package distributes research data, results, and deterministic analysis
+code. Publication documents and their generation sources are excluded. Known
+archive conflicts are documented in
+[PAPER_AUTHORITY.md](PAPER_AUTHORITY.md).
 
 ## 1. Verify the Release
 
 ```bash
-python scripts/verify_checksums.py
-python scripts/security_scan.py
+python run_all.py --mode verify
 ```
+
+These commands verify immutable inputs and scan the retained release files.
 
 ## 2. Reproduce Final M4
 
 ```bash
-python scripts/reproduce_main_results.py
+python run_all.py --mode main
 ```
 
 Expected values, subject only to floating-point rounding:
@@ -48,14 +51,9 @@ Main figures are written to `figures/main/`, supplementary figures to
 `figures/supplementary/`, figure source data to `figures/source_data/`, and CSV
 tables to `tables/`.
 
-Optional review-copy DOCX builds:
-
-```bash
-python scripts/publication/build_main_docx.py
-python scripts/publication/build_si_docx.py
-```
-
-These write only under `reproduced/`.
+Equivalent dispatcher commands are `python run_all.py --mode figures` and
+`python run_all.py --mode tables`. No manuscript, Supporting Information,
+DOCX, or PDF builder is included.
 
 ## 4. Group-Aware Sensitivity
 
@@ -77,7 +75,7 @@ The source-audited post-snapshot panel is reproduced without refitting:
 python run_all.py --mode external-validation
 ```
 
-Expected paper-authoritative values:
+Expected frozen release values:
 
 ```text
 external_n              20
@@ -134,6 +132,6 @@ Exact LLM text regeneration is stochastic and is not claimed.
 
 ## 9. Bootstrap Audit Note
 
-The paper-authoritative rerun uses 1,000 resamples with seed 2026. The retained
+The canonical rerun uses 1,000 resamples with seed 2026. The retained
 raw archive contains 5,000 fits per diagnostic model and matches the published
 summary. Both are preserved, but they must not be conflated.

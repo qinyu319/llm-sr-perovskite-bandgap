@@ -1,12 +1,26 @@
 # Changelog
 
+## 1.1.1 - 2026-06-11
+
+- Removed manuscript and Supporting Information files, document builders,
+  document-specific audits, and the retained manuscript source template.
+- Removed PDF and DOCX artifacts and disabled PDF generation in retained
+  analysis workflows.
+- Restored `run_all.py`, `.gitignore`, and `.gitattributes`.
+- Moved research-asset scripts directly under `scripts/` and removed
+  `scripts/publication/`.
+- Removed stale document links, workflow-dispatcher references, checksums, and
+  DOCX-only dependencies.
+- Retained deterministic model, figure, table, sensitivity, and
+  external-validation workflows.
+
 ## 1.1.0 - 2026-06-11
 
 - Added the source-audited external validation reported in the revised paper.
 - Added 20 measurements from 8 post-snapshot publications, candidate and
   exclusion audit data, DOI-level diagnostics, bootstrap intervals, and SI
   Figure S13.
-- Added a deterministic external-validation rerun and `run_all.py` entry point.
+- Added a deterministic external-validation rerun.
 - Updated the authoritative manuscript and Supporting Information.
 - Kept publisher source PDFs out of the public package while retaining DOI
   links, source locators, and audited file hashes.

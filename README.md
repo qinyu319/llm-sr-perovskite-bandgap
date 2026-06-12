@@ -1,17 +1,15 @@
 # Physics-Constrained LLM Symbolic Regression for Perovskite Band Gaps
 
-Reproducibility package for:
+Research data and reproducibility package for:
 
 > **Reproducible Physics-Constrained LLM-Assisted Symbolic Regression for
 > Interpretable Band-Gap Modeling in Hybrid Perovskites**
 
 Repository: https://github.com/qinyu319/llm-sr-perovskite-bandgap
 
-The revised manuscript and Supporting Information are the scientific authority:
-
-- [Main manuscript](paper/main_REVISED.docx)
-- [Supporting Information](paper/si_REVISED.docx)
-- [Conflict and precedence policy](PAPER_AUTHORITY.md)
+Manuscript, Supporting Information, response-letter, and submission-file
+sources are intentionally excluded. Frozen results and conflict-resolution
+rules are documented in [PAPER_AUTHORITY.md](PAPER_AUTHORITY.md).
 
 ## Final Model
 
@@ -46,8 +44,8 @@ Python 3.11 is recommended.
 python -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-python scripts/verify_checksums.py
-python scripts/reproduce_main_results.py
+python run_all.py --mode verify
+python run_all.py --mode main
 ```
 
 Or create the pinned Conda environment:
@@ -57,19 +55,21 @@ conda env create -f environment.yml
 conda activate llm-sr-perovskite
 ```
 
-Run all deterministic workflows:
+Rebuild figures, tables, and external-validation results:
 
 ```bash
-python run_all.py --mode all
+python run_all.py --mode figures
+python run_all.py --mode tables
+python run_all.py --mode external-validation
 ```
 
-Outputs are written under `reproduced/`. Authoritative files and archived
-evidence are not overwritten.
+Model and external-validation reruns are written under `reproduced/`.
+Archived evidence is not overwritten.
 
 ## Reproduction Levels
 
-1. **Publication audit:** inspect `paper/`, `tables/`, `figures/`, and frozen
-   evidence without fitting or API access.
+1. **Release audit:** verify checksums, security constraints, tables, figures,
+   and frozen evidence without fitting or API access.
 2. **Final M4 rerun:** recompute coefficients, CV, test metrics, VIF, confidence
    intervals, bootstrap stability, and the `Cl^2` diagnostic.
 3. **Figures, tables, controls, and sensitivity:** rebuild publication assets,
@@ -95,10 +95,13 @@ See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for commands and expected values.
 | `group_aware_sensitivity/` | Strict-QC group-aware workflow and outputs |
 | `external_validation/` | Post-snapshot literature panel, audit, metrics, and figure |
 | `figures/`, `tables/` | Publication assets and source data |
-| `scripts/` | Deterministic reproduction and publication builders |
+| `scripts/` | Deterministic reproduction and research-asset builders |
 | `archive/` | Historical material retained only for audit |
 
 All tracked path names are ASCII and contain no spaces.
+
+Publication-document builders, manuscript templates, DOCX files, and PDF files
+are not distributed in this package.
 
 ## Scope and Limitations
 

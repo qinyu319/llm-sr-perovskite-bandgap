@@ -238,7 +238,6 @@ def create_plot(panel: pd.DataFrame) -> None:
             fontsize=8,
         )
     fig.savefig(OUT / "Fig_external_validation.png", dpi=400, bbox_inches="tight")
-    fig.savefig(OUT / "Fig_external_validation.pdf", bbox_inches="tight")
     plt.close(fig)
 
 
@@ -301,7 +300,7 @@ The rule was supplied before this audited reconstruction and locked in the analy
 - `metrics_summary.csv`: primary and sensitivity metrics.
 - `doi_level_metrics.csv`: per-publication performance.
 - `leave_one_doi_out.csv`: source-dependence analysis.
-- `Fig_external_validation.png` and `.pdf`: manuscript/SI figure.
+- `Fig_external_validation.png`: external-validation figure.
 - `analysis_metadata.json`: coefficients, thresholds, and run settings.
 - `source_evidence_manifest.csv`: DOI links, source locators, and hashes of the locally audited source files. The source PDFs themselves are not redistributed.
 

@@ -28,6 +28,12 @@ EXPECTED = {
     "max_vif": 15.786310623222805,
 }
 
+INFORMATION_CRITERION_CONVENTION = (
+    "Gaussian least-squares criteria without the common n*(log(2*pi)+1) "
+    "constant: AIC=n*log(RSS/n)+2*k; BIC=n*log(RSS/n)+log(n)*k, where k "
+    "includes the intercept."
+)
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -77,6 +83,14 @@ def build_design(frame: pd.DataFrame, terms: tuple[str, ...]) -> pd.DataFrame:
 def fit_ols(frame: pd.DataFrame, terms: tuple[str, ...]):
     design = sm.add_constant(build_design(frame, terms), has_constant="add")
     return sm.OLS(frame["Eg"].to_numpy(float), design).fit()
+
+
+def reduced_information_criteria(model) -> tuple[float, float]:
+    """Match the AIC/BIC scale used by the archived Cl2 diagnostic and SI."""
+    n = float(model.nobs)
+    k = float(model.df_model + 1)
+    deviance = n * np.log(float(model.ssr) / n)
+    return float(deviance + 2 * k), float(deviance + np.log(n) * k)
 
 
 def regression_metrics(actual: np.ndarray, predicted: np.ndarray) -> dict[str, float]:
@@ -202,6 +216,7 @@ def evaluate_model(
     fixed_details, fixed = cross_validation(train, terms, [42])
     repeated_details, repeated = cross_validation(train, terms, list(range(100)))
     vif = calculate_vif(train, terms)
+    aic, bic = reduced_information_criteria(model)
 
     cl_mask = test["Cl"].to_numpy(float) > 0
     ma_mask = test["MA"].to_numpy(float) >= 0.5
@@ -229,8 +244,8 @@ def evaluate_model(
         ),
         "max_vif": max(vif.values()),
         "median_vif": float(np.median(list(vif.values()))),
-        "aic": float(model.aic),
-        "bic": float(model.bic),
+        "aic": aic,
+        "bic": bic,
     }
     return result, model, fixed_details, repeated_details, vif
 
@@ -418,6 +433,7 @@ def main() -> None:
             "+ 0.12268*Cs + 0.91702*Sn^2 + 0.36607*Br^2 "
             "- 0.22716*Cs*Sn - 0.32528*Cs*Cl"
         ),
+        "information_criterion_convention": INFORMATION_CRITERION_CONVENTION,
         "bootstrap_samples_per_model": args.bootstrap_samples,
         "bootstrap_seed": args.bootstrap_seed,
         "models": [final_result, csbr_result, cl2_result],

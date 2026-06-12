@@ -157,8 +157,8 @@ def export_source_data() -> None:
 
 
 def main() -> None:
-    run_script(ROOT / "scripts" / "publication" / "build_main_figures.py")
-    run_script(ROOT / "scripts" / "publication" / "prepare_si_assets.py")
+    run_script(ROOT / "scripts" / "build_main_figures.py")
+    run_script(ROOT / "scripts" / "build_supplementary_assets.py")
     export_source_data()
     print(f"Figure source data: {SOURCE}")
 

@@ -44,11 +44,11 @@ Outputs are written to `reproduced/external_validation/`. The default run uses
 | `external_panel_audited.csv` | Table S25 source data |
 | `metrics_summary.csv` | Table S26 source data |
 | `leave_one_doi_out.csv` | Table S27 source data |
-| `Fig_external_validation.pdf` | Figure S13 |
+| `Fig_external_validation.png` | External-validation figure |
 | `candidate_audit_log.csv` | Inclusion and exclusion audit |
 | `source_evidence_manifest.csv` | DOI links, locators, and audited file hashes |
 | `external_validation_candidates.csv` | Script input |
 
-Publisher PDFs and extracted page images used during source auditing are not
-redistributed. Their filenames, hashes, source locators, and public DOI links
-are retained in `source_evidence_manifest.csv`.
+Publisher files used during source auditing are not redistributed. Their
+filenames, hashes, source locators, and public DOI links are retained in
+`source_evidence_manifest.csv`.

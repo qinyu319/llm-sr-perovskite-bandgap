@@ -71,8 +71,8 @@ X_test = test[features].to_numpy(float)
 y_test = test["Eg"].to_numpy(float)
 
 folds = list(KFold(n_splits=5, shuffle=True, random_state=42).split(X))
-# Canonical paper-first rerun configuration from SI Table S14.
-grid = [0.000001, 0.00001, 0.0001]
+# Archived search grid used to produce baselines/gplearn/gplearn_cv.csv.
+grid = [0.0005, 0.001, 0.003, 0.01]
 cv_rows: list[dict[str, object]] = []
 
 for parsimony in grid:

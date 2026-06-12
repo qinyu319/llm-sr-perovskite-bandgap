@@ -7,73 +7,78 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
+GROUP_AWARE = ROOT / "group_aware_sensitivity"
+
+
+def run(relative: str, *, cwd: Path = ROOT, args: tuple[str, ...] = ()) -> None:
+    command = [sys.executable, relative, *args]
+    print("+", " ".join(command))
+    subprocess.run(command, cwd=cwd, check=True)
+
+
+def verify() -> None:
+    run("scripts/verify_checksums.py")
+    run("scripts/security_scan.py")
+
+
+def main_results() -> None:
+    run("scripts/reproduce_main_results.py")
+
+
+def figures() -> None:
+    run("scripts/reproduce_figures.py")
+
+
+def tables() -> None:
+    run("scripts/reproduce_tables.py")
+
+
+def group_aware() -> None:
+    for script in (
+        "scripts/01_validate_data.py",
+        "scripts/02_make_group_labels.py",
+        "scripts/03_make_and_validate_splits.py",
+        "scripts/03_run_group_aware_workflow.py",
+        "scripts/04_summarize_group_results.py",
+        "scripts/05_plot_group_results.py",
+        "scripts/06_make_excel_report.py",
+    ):
+        run(script, cwd=GROUP_AWARE)
+    run("-m", cwd=GROUP_AWARE, args=("pytest", "-p", "no:cacheprovider", "tests"))
+
+
+def external_validation() -> None:
+    run("external_validation/run_external_validation.py")
+
+
+WORKFLOWS = {
+    "verify": verify,
+    "main": main_results,
+    "figures": figures,
+    "tables": tables,
+    "group-aware": group_aware,
+    "external-validation": external_validation,
+}
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run deterministic reproduction tasks.")
+    parser = argparse.ArgumentParser(description="Run deterministic project workflows.")
     parser.add_argument(
         "--mode",
-        choices=(
-            "main",
-            "figures",
-            "tables",
-            "group-aware",
-            "external-validation",
-            "all",
-        ),
-        default="main",
+        choices=(*WORKFLOWS, "all"),
+        default="verify",
+        help="Workflow to run (default: verify).",
     )
     return parser.parse_args()
 
 
-def run(command: list[str], cwd: Path = ROOT) -> None:
-    print(f"+ {' '.join(command)}")
-    subprocess.run(command, cwd=cwd, check=True)
-
-
-def run_main() -> None:
-    run([sys.executable, "scripts/reproduce_main_results.py"])
-
-
-def run_figures() -> None:
-    run([sys.executable, "scripts/reproduce_figures.py"])
-
-
-def run_tables() -> None:
-    run([sys.executable, "scripts/reproduce_tables.py"])
-
-
-def run_group_aware() -> None:
-    project = ROOT / "group_aware_sensitivity"
-    for script in (
-        "01_validate_data.py",
-        "02_make_group_labels.py",
-        "03_make_and_validate_splits.py",
-        "03_run_group_aware_workflow.py",
-        "04_summarize_group_results.py",
-        "05_plot_group_results.py",
-        "06_make_excel_report.py",
-    ):
-        run([sys.executable, f"scripts/{script}"], cwd=project)
-    run([sys.executable, "-m", "pytest", "tests"], cwd=project)
-
-
-def run_external_validation() -> None:
-    run([sys.executable, "external_validation/run_external_validation.py"])
-
-
 def main() -> None:
     mode = parse_args().mode
-    if mode in {"main", "all"}:
-        run_main()
-    if mode in {"figures", "all"}:
-        run_figures()
-    if mode in {"tables", "all"}:
-        run_tables()
-    if mode in {"group-aware", "all"}:
-        run_group_aware()
-    if mode in {"external-validation", "all"}:
-        run_external_validation()
+    if mode == "all":
+        for workflow in WORKFLOWS.values():
+            workflow()
+        return
+    WORKFLOWS[mode]()
 
 
 if __name__ == "__main__":

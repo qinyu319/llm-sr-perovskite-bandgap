@@ -24,7 +24,7 @@
 
 | Path | Purpose |
 | --- | --- |
-| `run_all.py` | Workflow dispatcher |
+| `run_all.py` | Deterministic workflow dispatcher |
 | `scripts/reproduce_main_results.py` | Final M4 deterministic rerun |
 | `scripts/reproduce_figures.py` | Figures and source-data export |
 | `scripts/reproduce_tables.py` | Main and supplementary tables |
@@ -45,18 +45,24 @@
 | `external_validation/` | Source-audited post-snapshot panel and transfer analysis |
 | `archive/` | Historical, non-authoritative material |
 
-## Publication Artifacts
+## Figures and Tables
 
 | Path | Purpose |
 | --- | --- |
-| `paper/main_REVISED.docx` | Authoritative revised manuscript |
-| `paper/si_REVISED.docx` | Authoritative revised Supporting Information |
 | `figures/main/` | Main-text figures |
 | `figures/supplementary/` | Supplementary figures |
+| `figures/supplementary/figure_s6_symbolic_baselines.png` | SI Figure S6: symbolic baselines |
+| `figures/supplementary/figure_s7_llm_stochasticity.png` | SI Figure S7: LLM stochasticity |
+| `figures/supplementary/figure_s13_external_validation.png` | SI Figure S13: copy of the external-validation figure |
+| `figures/supplementary/figure_s14_design_maps.png` | SI Figure S14: design maps |
 | `figures/source_data/` | Figure source CSV files |
 | `tables/main/` | Main-text source tables |
 | `tables/supplementary/` | Supplementary source tables |
-| `external_validation/Fig_external_validation.pdf` | SI Figure S13 |
+| `external_validation/Fig_external_validation.png` | External-validation figure |
 | `external_validation/external_panel_audited.csv` | SI Table S25 source data |
 | `external_validation/metrics_summary.csv` | SI Table S26 source data |
 | `external_validation/leave_one_doi_out.csv` | SI Table S27 source data |
+
+Manuscripts, Supporting Information documents, response letters, submission
+files, PDF/DOCX files, document-generation scripts, and document templates are
+intentionally excluded.

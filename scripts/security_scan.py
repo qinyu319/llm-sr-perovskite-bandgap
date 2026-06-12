@@ -34,32 +34,66 @@ PATTERNS = {
         re.IGNORECASE,
     ),
 }
+IGNORED_DIRECTORIES = {".git", ".pytest_cache", "__pycache__"}
+PROHIBITED_DIRECTORIES = {
+    ".pytest_cache",
+    "__pycache__",
+    "_external_validation_work",
+    "paper",
+}
+PROHIBITED_SUFFIXES = {".docx", ".pdf", ".pyc"}
+PROHIBITED_NAME = re.compile(
+    r"^(?:response_letter|cover_letter|submission)",
+    re.IGNORECASE,
+)
 
 
 def repository_files() -> list[Path]:
-    result = subprocess.run(
-        [
-            "git",
-            "ls-files",
-            "--cached",
-            "--others",
-            "--exclude-standard",
-            "-z",
-        ],
-        cwd=ROOT,
-        check=True,
-        capture_output=True,
+    if (ROOT / ".git").is_dir():
+        result = subprocess.run(
+            [
+                "git",
+                "ls-files",
+                "--cached",
+                "--others",
+                "--exclude-standard",
+                "-z",
+            ],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+        )
+        if result.returncode == 0:
+            return [
+                ROOT / item.decode("utf-8")
+                for item in result.stdout.split(b"\0")
+                if item
+            ]
+
+    return sorted(
+        path
+        for path in ROOT.rglob("*")
+        if path.is_file()
+        and not any(part in IGNORED_DIRECTORIES for part in path.parts)
     )
-    return [
-        ROOT / item.decode("utf-8")
-        for item in result.stdout.split(b"\0")
-        if item
-    ]
 
 
 def main() -> int:
     findings: list[str] = []
     files = repository_files()
+
+    for path in ROOT.rglob("*"):
+        relative = path.relative_to(ROOT).as_posix()
+        if path.is_dir():
+            if path.name in PROHIBITED_DIRECTORIES:
+                findings.append(f"{relative}: prohibited directory")
+            if relative == "scripts/publication":
+                findings.append(f"{relative}: prohibited directory")
+            continue
+        if path.suffix.lower() in PROHIBITED_SUFFIXES:
+            findings.append(f"{relative}: prohibited file type")
+        if PROHIBITED_NAME.match(path.name):
+            findings.append(f"{relative}: prohibited release artifact")
 
     for path in files:
         relative = path.relative_to(ROOT).as_posix()
@@ -82,12 +116,12 @@ def main() -> int:
                 findings.append(f"{relative}:{line}: {label}")
 
     if findings:
-        print("Publication security scan failed:")
+        print("Release security scan failed:")
         for finding in findings:
             print(f"  {finding}")
         return 1
 
-    print(f"Publication security scan passed ({len(files)} files checked).")
+    print(f"Release security scan passed ({len(files)} files checked).")
     return 0
 
 

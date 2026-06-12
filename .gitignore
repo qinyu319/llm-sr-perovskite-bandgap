@@ -1,40 +1,17 @@
-# Python
 __pycache__/
-*.py[cod]
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
+*.py[cod]
 
-# Environments
+paper/
+scripts/publication/
+_external_validation_work/
+
+*.docx
+*.pdf
+response_letter*
+cover_letter*
+submission*
+
+reproduced/
 .venv/
 venv/
-env/
-.env
-.env.*
-
-# Editors and operating systems
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-~$*
-
-# Temporary and generated files
-*.tmp
-*.temp
-*.pid
-*.log
-*.zip
-reproduced/
-_paper_build/
-_si_build/
-**/_work/
-**/*.stderr.log
-**/repeated_runs_smoke/
-_docx_qa/
-
-# API credentials must never be committed
-*credentials*
-*secrets*

@@ -1,6 +1,12 @@
 ﻿Selected expression report
 Generated: 2026-06-07 15:08:52 +08:00
 
+Archive authority note:
+- This is a historical deterministic exhaustive rerun and belongs to the
+  lowest authority tier in PAPER_AUTHORITY.md.
+- "No saved LLM candidate outputs" below describes the inputs available to
+  this rerun only; it does not mean that the release contains no LLM outputs.
+
 Selection policy:
 - OLS coefficients fitted only on the training set.
 - Five-fold CV seed: 20260607.
